@@ -1,0 +1,322 @@
+# hRecipe translations.
+# Copyright (C) 2009 David M. Doolin
+# This file is distributed under the same license as the hRecipe package.
+# David M. Doolin <david.doolin@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-15 10:45-0700\n"
+"PO-Revision-Date: 2010-10-12 19:32+0100\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: hrecipe.php:50
+msgid "My rating: "
+msgstr "Saját értékelése:"
+
+#: hrecipe.php:51
+msgid "stars"
+msgstr "Csillagok"
+
+#: hrecipe.php:112
+msgid "hRecipe Support for Editor"
+msgstr "hRecipe szerkesztő támogatása"
+
+#: hrecipe.php:121
+msgid "Rating text"
+msgstr "Értékelés szöveg"
+
+#: hrecipe.php:126
+msgid "Stars text"
+msgstr "Csillag szöveg"
+
+#: hrecipe.php:131
+msgid "Background color"
+msgstr "Háttérszín"
+
+#: hrecipe.php:136
+msgid "Ingredient list"
+msgstr "Összetevők listája"
+
+#: hrecipe.php:140
+msgid "Bullets"
+msgstr "Pontok"
+
+#: hrecipe.php:144
+msgid "Numbers"
+msgstr "Számok"
+
+#: hrecipe.php:149
+msgid "Link love!"
+msgstr "Link szerelem!"
+
+#: hrecipe.php:153
+msgid "Yes!"
+msgstr "Igen!"
+
+#: hrecipe.php:158
+msgid "Copyright (no HTML)"
+msgstr "Copyright (nem HTML)"
+
+#: hrecipe.php:169
+msgid "Save Changes"
+msgstr "Változtatások mentése"
+
+#: hrecipeinput.php:136
+msgid "New Recipe"
+msgstr "Új recept"
+
+#: hrecipeinput.php:141
+msgid "Name of recipe"
+msgstr "Recept neve"
+
+#: hrecipeinput.php:145
+msgid "Reference URL"
+msgstr "Hivatkozási URL"
+
+#: hrecipeinput.php:150
+msgid "Summary"
+msgstr "Összefoglalás"
+
+#: hrecipeinput.php:155
+msgid "Ingredients"
+msgstr "Hozzávalók"
+
+#: hrecipeinput.php:155
+#: hrecipeinput.php:161
+msgid "(May use HTML)"
+msgstr "(HTML használható)"
+
+#: hrecipeinput.php:161
+msgid "Description"
+msgstr "Leírás"
+
+#: hrecipeinput.php:166
+msgid "Preparation time (minutes)"
+msgstr "Elkészülési idő (perc)"
+
+#: hrecipeinput.php:171
+msgid "Recipe type:"
+msgstr "Recept típusa:"
+
+#: hrecipeinput.php:175
+msgid "breakfast"
+msgstr "reggeli"
+
+#: hrecipeinput.php:176
+msgid "lunch"
+msgstr "ebéd"
+
+#: hrecipeinput.php:177
+msgid "dinner"
+msgstr "vacsora"
+
+#: hrecipeinput.php:178
+msgid "supper"
+msgstr "vacsora"
+
+#: hrecipeinput.php:179
+msgid "brunch"
+msgstr "villásreggeli"
+
+#: hrecipeinput.php:180
+msgid "dessert"
+msgstr "desszert"
+
+#: hrecipeinput.php:181
+msgid "cocktail"
+msgstr "koktél"
+
+#: hrecipeinput.php:182
+msgid "hors d'oerves"
+msgstr "hors d'oerves"
+
+#: hrecipeinput.php:183
+msgid "snack"
+msgstr "tízórai"
+
+#: hrecipeinput.php:190
+msgid "Number of servings:"
+msgstr "Adagok száma:"
+
+#: hrecipeinput.php:207
+msgid "Diet type:"
+msgstr "Diéta típusa:"
+
+#: hrecipeinput.php:211
+msgid "Vegetarian"
+msgstr "Vegetáriánus"
+
+#: hrecipeinput.php:212
+msgid "Pescatarian"
+msgstr "Pescatárianius"
+
+#: hrecipeinput.php:213
+msgid "Vegan"
+msgstr "Vegán"
+
+#: hrecipeinput.php:214
+msgid "Macrobiotic"
+msgstr "Makrobiotikus"
+
+#: hrecipeinput.php:220
+msgid "Diet restriction:"
+msgstr "Diéta korlátozás:"
+
+#: hrecipeinput.php:224
+msgid "Kosher"
+msgstr "Kosher"
+
+#: hrecipeinput.php:225
+msgid "Halal"
+msgstr "Halal"
+
+#: hrecipeinput.php:226
+msgid "Buddhist"
+msgstr "Buddhista"
+
+#: hrecipeinput.php:233
+msgid "Diet (other):"
+msgstr "Diéta (egyéb):"
+
+#: hrecipeinput.php:234
+msgid "(Check all that apply)"
+msgstr "(Ellenőrizze az összes vonatkozót)"
+
+#: hrecipeinput.php:236
+msgid "Low calorie"
+msgstr "Alacsony kalóriatartalmú"
+
+#: hrecipeinput.php:237
+msgid "Reduced fat"
+msgstr "Csökkentett zsírtartalmú"
+
+#: hrecipeinput.php:238
+msgid "Reduced carbohydrate"
+msgstr "Csökkentett szénhidrát"
+
+#: hrecipeinput.php:239
+msgid "High protein"
+msgstr "Magas fehérjetartalmú"
+
+#: hrecipeinput.php:240
+msgid "Gluten free"
+msgstr "Gluténmentes"
+
+#: hrecipeinput.php:241
+msgid "Raw"
+msgstr "Nyers"
+
+#: hrecipeinput.php:248
+msgid "Culinary Tradition:"
+msgstr "Kulináris hagyomány:"
+
+#: hrecipeinput.php:252
+msgid "USA (General)"
+msgstr "Amerikai Egyesült Államok (Általános)"
+
+#: hrecipeinput.php:253
+msgid "USA (Traditional)"
+msgstr "Amerikai Egyesült Államok (hagyományos)"
+
+#: hrecipeinput.php:254
+msgid "USA (Southern)"
+msgstr "Amerikai Egyesült Államok (déli)"
+
+#: hrecipeinput.php:255
+msgid "USA (Southwestern)"
+msgstr "Amerikai Egyesült Államok (dél-nyugati)"
+
+#: hrecipeinput.php:256
+msgid "USA (Nouveau)"
+msgstr "Amerikai Egyesült Államok (Nouveau)"
+
+#: hrecipeinput.php:257
+msgid "English"
+msgstr "Angol"
+
+#: hrecipeinput.php:258
+msgid "Irish"
+msgstr "Ír"
+
+#: hrecipeinput.php:259
+msgid "French"
+msgstr "Francia"
+
+#: hrecipeinput.php:260
+msgid "German"
+msgstr "Német"
+
+#: hrecipeinput.php:261
+msgid "Spanish"
+msgstr "Spanyol"
+
+#: hrecipeinput.php:262
+msgid "Chinese"
+msgstr "Kínai"
+
+#: hrecipeinput.php:263
+msgid "Thai"
+msgstr "Thai"
+
+#: hrecipeinput.php:264
+msgid "Mexican"
+msgstr "Mexikói"
+
+#: hrecipeinput.php:265
+msgid "Central American"
+msgstr "Közép-amerikai"
+
+#: hrecipeinput.php:266
+msgid "Russian"
+msgstr "Orosz"
+
+#: hrecipeinput.php:267
+msgid "Scandinavian"
+msgstr "Skandináv"
+
+#: hrecipeinput.php:268
+msgid "Italian"
+msgstr "Olasz"
+
+#: hrecipeinput.php:269
+msgid "Persian"
+msgstr "Perzsa"
+
+#: hrecipeinput.php:270
+msgid "Indian (Southern)"
+msgstr "Indiai (Déli)"
+
+#: hrecipeinput.php:271
+msgid "Indian (Northern)"
+msgstr "Indiai (Észak)"
+
+#: hrecipeinput.php:272
+msgid "Pakistani"
+msgstr "Pakisztáni"
+
+#: hrecipeinput.php:273
+msgid "African"
+msgstr "Afrikai"
+
+#: hrecipeinput.php:274
+msgid "Middle Eastern"
+msgstr "Közel-keleti"
+
+#: hrecipeinput.php:275
+msgid "Greek"
+msgstr "Görög"
+
+#: hrecipeinput.php:280
+msgid "My rating:"
+msgstr "Saját értékelése:"
+
+#: hrecipeinput.php:281
+msgid "(number of stars, leave blank if rating is undesired)"
+msgstr "(Csillagok száma, hagyja üresen, ha értékelés nem kívánatos)"
+

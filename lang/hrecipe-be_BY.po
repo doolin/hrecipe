@@ -1,0 +1,324 @@
+# Copyright (C) 2009 David M. Doolin, Jean-Philippe Daigle
+# This file is distributed under the same license as the hRecipe package.
+# David M. Doolin <david.doolin@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-15 10:45-0700\n"
+"PO-Revision-Date: 2009-08-28 13:56+0200\n"
+"Last-Translator: Fat Cow <zhr@tut.by>\n"
+"Language-Team: ilyuha <iliamrv@ya.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Belarusian\n"
+"X-Poedit-Country: BELARUS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Project-Id-Version: hrecipe\n"
+
+#: hrecipe.php:50
+msgid "My rating: "
+msgstr "Мой рэйтынг:"
+
+#: hrecipe.php:51
+msgid "stars"
+msgstr "зорак"
+
+#: hrecipe.php:112
+msgid "hRecipe Support for Editor"
+msgstr "Падтрымка для рэдактара"
+
+#: hrecipe.php:121
+msgid "Rating text"
+msgstr "Тэкст рэйтынгу"
+
+#: hrecipe.php:126
+msgid "Stars text"
+msgstr "Тэкст зорак"
+
+#: hrecipe.php:131
+msgid "Background color"
+msgstr "Фонавы колер"
+
+#: hrecipe.php:136
+msgid "Ingredient list"
+msgstr "Ингредиентный спіс"
+
+#: hrecipe.php:140
+msgid "Bullets"
+msgstr "Спіс"
+
+#: hrecipe.php:144
+msgid "Numbers"
+msgstr "Нумары"
+
+#: hrecipe.php:149
+msgid "Link love!"
+msgstr "Спасылка кахання!"
+
+#: hrecipe.php:153
+msgid "Yes!"
+msgstr "Так!"
+
+#: hrecipe.php:158
+msgid "Copyright (no HTML)"
+msgstr "Капірайт (без HTML) "
+
+#: hrecipe.php:169
+msgid "Save Changes"
+msgstr "Захаваць змены"
+
+#: hrecipeinput.php:136
+msgid "New Recipe"
+msgstr "Новы рэцэпт"
+
+#: hrecipeinput.php:141
+msgid "Name of recipe"
+msgstr "Імя рэцэпту"
+
+#: hrecipeinput.php:145
+msgid "Reference URL"
+msgstr "УРЛ пераходу"
+
+#: hrecipeinput.php:150
+msgid "Summary"
+msgstr "Кароткі змест"
+
+#: hrecipeinput.php:155
+msgid "Ingredients"
+msgstr "Ингридиенты"
+
+#: hrecipeinput.php:155
+#: hrecipeinput.php:161
+msgid "(May use HTML)"
+msgstr "(Можаце выкарыстоўваць HTML)"
+
+#: hrecipeinput.php:161
+msgid "Description"
+msgstr "Апісанне"
+
+#: hrecipeinput.php:166
+msgid "Preparation time (minutes)"
+msgstr "Час падрыхтоўкі (мінуць)"
+
+#: hrecipeinput.php:171
+msgid "Recipe type:"
+msgstr "Выгляд рэцэпту:"
+
+#: hrecipeinput.php:175
+msgid "breakfast"
+msgstr "брекфаст"
+
+#: hrecipeinput.php:176
+msgid "lunch"
+msgstr "ланч"
+
+#: hrecipeinput.php:177
+msgid "dinner"
+msgstr "абед"
+
+#: hrecipeinput.php:178
+msgid "supper"
+msgstr "ужинsouper"
+
+#: hrecipeinput.php:179
+msgid "brunch"
+msgstr "позні сняданак"
+
+#: hrecipeinput.php:180
+msgid "dessert"
+msgstr "дэсерт"
+
+#: hrecipeinput.php:181
+msgid "cocktail"
+msgstr "кактэйль"
+
+#: hrecipeinput.php:182
+msgid "hors d'oerves"
+msgstr "hors-d'oeuvre"
+
+#: hrecipeinput.php:183
+msgid "snack"
+msgstr "закуска"
+
+#: hrecipeinput.php:190
+msgid "Number of servings:"
+msgstr "Колькасць порцый:"
+
+#: hrecipeinput.php:207
+msgid "Diet type:"
+msgstr "Тып дыеты:"
+
+#: hrecipeinput.php:211
+msgid "Vegetarian"
+msgstr "Вегетарыянец"
+
+#: hrecipeinput.php:212
+msgid "Pescatarian"
+msgstr "Pescatarian"
+
+#: hrecipeinput.php:213
+msgid "Vegan"
+msgstr "Строгі вегетарыянец"
+
+#: hrecipeinput.php:214
+msgid "Macrobiotic"
+msgstr "Макробиотика"
+
+#: hrecipeinput.php:220
+msgid "Diet restriction:"
+msgstr "Диетологические абмежаванні:"
+
+#: hrecipeinput.php:224
+msgid "Kosher"
+msgstr "Диетологии абмежаванні:"
+
+#: hrecipeinput.php:225
+msgid "Halal"
+msgstr "Халяль"
+
+#: hrecipeinput.php:226
+msgid "Buddhist"
+msgstr "Будыст"
+
+#: hrecipeinput.php:233
+msgid "Diet (other):"
+msgstr "Сілкаванне (іншае):"
+
+#: hrecipeinput.php:234
+msgid "(Check all that apply)"
+msgstr "(Адзначце ўсё, што падыходзіць)"
+
+#: hrecipeinput.php:236
+msgid "Low calorie"
+msgstr "Нізкакаларыйныя"
+
+#: hrecipeinput.php:237
+msgid "Reduced fat"
+msgstr "Памяншэнне тлушчу"
+
+#: hrecipeinput.php:238
+msgid "Reduced carbohydrate"
+msgstr "Скарачэнне вугляводаў"
+
+#: hrecipeinput.php:239
+msgid "High protein"
+msgstr "З высокім утрыманнем бялку"
+
+#: hrecipeinput.php:240
+msgid "Gluten free"
+msgstr "Клейкавіны бясплатна"
+
+#: hrecipeinput.php:241
+msgid "Raw"
+msgstr "Волкі"
+
+#: hrecipeinput.php:248
+msgid "Culinary Tradition:"
+msgstr "Кулінарныя традыцыі:"
+
+#: hrecipeinput.php:252
+msgid "USA (General)"
+msgstr "ЗША (агульнае)"
+
+#: hrecipeinput.php:253
+msgid "USA (Traditional)"
+msgstr "ЗША (традыцыйны)"
+
+#: hrecipeinput.php:254
+msgid "USA (Southern)"
+msgstr "ЗША (Паўднёвы)"
+
+#: hrecipeinput.php:255
+msgid "USA (Southwestern)"
+msgstr "ЗША (паўднёва-заходні)"
+
+#: hrecipeinput.php:256
+msgid "USA (Nouveau)"
+msgstr "ЗША (мадэрн)"
+
+#: hrecipeinput.php:257
+msgid "English"
+msgstr "Англія"
+
+#: hrecipeinput.php:258
+msgid "Irish"
+msgstr "Ірландскі"
+
+#: hrecipeinput.php:259
+msgid "French"
+msgstr "Францыя"
+
+#: hrecipeinput.php:260
+msgid "German"
+msgstr "Нямеччына"
+
+#: hrecipeinput.php:261
+msgid "Spanish"
+msgstr "Іспанія"
+
+#: hrecipeinput.php:262
+msgid "Chinese"
+msgstr "Кітай"
+
+#: hrecipeinput.php:263
+msgid "Thai"
+msgstr "Тайскі"
+
+#: hrecipeinput.php:264
+msgid "Mexican"
+msgstr "Мексіка"
+
+#: hrecipeinput.php:265
+msgid "Central American"
+msgstr "Цэнтральная Амерыка"
+
+#: hrecipeinput.php:266
+msgid "Russian"
+msgstr "Расія"
+
+#: hrecipeinput.php:267
+msgid "Scandinavian"
+msgstr "Скандынавія"
+
+#: hrecipeinput.php:268
+msgid "Italian"
+msgstr "Італія"
+
+#: hrecipeinput.php:269
+msgid "Persian"
+msgstr "Perse"
+
+#: hrecipeinput.php:270
+msgid "Indian (Southern)"
+msgstr "Indien (Sud)"
+
+#: hrecipeinput.php:271
+msgid "Indian (Northern)"
+msgstr "Індыя (Нарвегія)"
+
+#: hrecipeinput.php:272
+msgid "Pakistani"
+msgstr "Пакістан"
+
+#: hrecipeinput.php:273
+msgid "African"
+msgstr "Афрыка"
+
+#: hrecipeinput.php:274
+msgid "Middle Eastern"
+msgstr "Moyen orient"
+
+#: hrecipeinput.php:275
+msgid "Greek"
+msgstr "Грэцыя"
+
+#: hrecipeinput.php:280
+msgid "My rating:"
+msgstr "Мой рэйтынг:"
+
+#: hrecipeinput.php:281
+msgid "(number of stars, leave blank if rating is undesired)"
+msgstr "(колькасць зорак, ці пакіньце пустым)"
+

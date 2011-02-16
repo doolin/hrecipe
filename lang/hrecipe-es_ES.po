@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hRecipe\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: David M Doolin <david.doolin@gmail.com>\n"
+"Language-Team:  <david.doolin@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: english\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: hrecipe.php:50
+msgid "My rating: "
+msgstr "A minha classificação: "
+
+#: hrecipe.php:51
+msgid "stars"
+msgstr "Estrelas"
+
+#: hrecipe.php:147
+msgid "Link love!"
+msgstr "Link love!"
+
+#: hrecipe.php:164
+msgid "Save Changes"
+msgstr "Guardar alterações"
+
+#: hrecipeinput.php:136
+msgid "New Recipe"
+msgstr "Recipe nuevo"
+

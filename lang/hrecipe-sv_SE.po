@@ -1,0 +1,322 @@
+# hRecipe translations.
+# Copyright (C) 2009 David M. Doolin
+# This file is distributed under the same license as the hRecipe package.
+# David M. Doolin <david.doolin@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-15 10:45-0700\n"
+"PO-Revision-Date: 2009-11-03 18:02+0100\n"
+"Last-Translator: Robert Hrncjar <no1troca@hotmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: hrecipe.php:50
+msgid "My rating: "
+msgstr "Mitt betyg:"
+
+#: hrecipe.php:51
+msgid "stars"
+msgstr "Stjärnor"
+
+#: hrecipe.php:112
+msgid "hRecipe Support for Editor"
+msgstr "hRecipe Hjälp för Editorn"
+
+#: hrecipe.php:121
+msgid "Rating text"
+msgstr "Betyg text"
+
+#: hrecipe.php:126
+msgid "Stars text"
+msgstr "Stjärn text"
+
+#: hrecipe.php:131
+msgid "Background color"
+msgstr "Bakgrunds färg"
+
+#: hrecipe.php:136
+msgid "Ingredient list"
+msgstr "Ingredienser lista"
+
+#: hrecipe.php:140
+msgid "Bullets"
+msgstr "Punkter"
+
+#: hrecipe.php:144
+msgid "Numbers"
+msgstr "Nummer"
+
+#: hrecipe.php:149
+msgid "Link love!"
+msgstr "Länk"
+
+#: hrecipe.php:153
+msgid "Yes!"
+msgstr "Ja!"
+
+#: hrecipe.php:158
+msgid "Copyright (no HTML)"
+msgstr "Copyright (Ingen HTML)"
+
+#: hrecipe.php:169
+msgid "Save Changes"
+msgstr "Spara Ändringar"
+
+#: hrecipeinput.php:136
+msgid "New Recipe"
+msgstr "Nytt Recept"
+
+#: hrecipeinput.php:141
+msgid "Name of recipe"
+msgstr "Namn på Receptet"
+
+#: hrecipeinput.php:145
+msgid "Reference URL"
+msgstr "Referens URL"
+
+#: hrecipeinput.php:150
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#: hrecipeinput.php:155
+msgid "Ingredients"
+msgstr "Ingredienser"
+
+#: hrecipeinput.php:155
+#: hrecipeinput.php:161
+msgid "(May use HTML)"
+msgstr "(Kan använda HTML)"
+
+#: hrecipeinput.php:161
+msgid "Description"
+msgstr "Beskrivning"
+
+#: hrecipeinput.php:166
+msgid "Preparation time (minutes)"
+msgstr "Förberedelse tid (minuter)"
+
+#: hrecipeinput.php:171
+msgid "Recipe type:"
+msgstr "Recept typ:"
+
+#: hrecipeinput.php:175
+msgid "breakfast"
+msgstr "frukost"
+
+#: hrecipeinput.php:176
+msgid "lunch"
+msgstr "lunch"
+
+#: hrecipeinput.php:177
+msgid "dinner"
+msgstr "middag"
+
+#: hrecipeinput.php:178
+msgid "supper"
+msgstr "kvällsmat"
+
+#: hrecipeinput.php:179
+msgid "brunch"
+msgstr "brunch"
+
+#: hrecipeinput.php:180
+msgid "dessert"
+msgstr "dessert"
+
+#: hrecipeinput.php:181
+msgid "cocktail"
+msgstr "cocktail"
+
+#: hrecipeinput.php:182
+msgid "hors d'oerves"
+msgstr "hors d'oerves"
+
+#: hrecipeinput.php:183
+msgid "snack"
+msgstr "tilltugg"
+
+#: hrecipeinput.php:190
+msgid "Number of servings:"
+msgstr "Antal portioner:"
+
+#: hrecipeinput.php:207
+msgid "Diet type:"
+msgstr "Diet typ:"
+
+#: hrecipeinput.php:211
+msgid "Vegetarian"
+msgstr "Vegetarian"
+
+#: hrecipeinput.php:212
+msgid "Pescatarian"
+msgstr "Pescatarian"
+
+#: hrecipeinput.php:213
+msgid "Vegan"
+msgstr "Vegan"
+
+#: hrecipeinput.php:214
+msgid "Macrobiotic"
+msgstr "Makrobiotisk"
+
+#: hrecipeinput.php:220
+msgid "Diet restriction:"
+msgstr "Diet restriktion:"
+
+#: hrecipeinput.php:224
+msgid "Kosher"
+msgstr "Koscher"
+
+#: hrecipeinput.php:225
+msgid "Halal"
+msgstr "Halal"
+
+#: hrecipeinput.php:226
+msgid "Buddhist"
+msgstr "Buddistisk"
+
+#: hrecipeinput.php:233
+msgid "Diet (other):"
+msgstr "Diet (annat)"
+
+#: hrecipeinput.php:234
+msgid "(Check all that apply)"
+msgstr "(Bocka i alla som passar)"
+
+#: hrecipeinput.php:236
+msgid "Low calorie"
+msgstr "Låg kalori"
+
+#: hrecipeinput.php:237
+msgid "Reduced fat"
+msgstr "Reducerat fett"
+
+#: hrecipeinput.php:238
+msgid "Reduced carbohydrate"
+msgstr "Reducerade kolhydrater"
+
+#: hrecipeinput.php:239
+msgid "High protein"
+msgstr "Hög protein"
+
+#: hrecipeinput.php:240
+msgid "Gluten free"
+msgstr "Gluten fri"
+
+#: hrecipeinput.php:241
+msgid "Raw"
+msgstr "Rått"
+
+#: hrecipeinput.php:248
+msgid "Culinary Tradition:"
+msgstr "Kulinarisk Tradition:"
+
+#: hrecipeinput.php:252
+msgid "USA (General)"
+msgstr "USA (Generell)"
+
+#: hrecipeinput.php:253
+msgid "USA (Traditional)"
+msgstr "USA (Traditionell)"
+
+#: hrecipeinput.php:254
+msgid "USA (Southern)"
+msgstr "USA (Syd)"
+
+#: hrecipeinput.php:255
+msgid "USA (Southwestern)"
+msgstr "USA (Sydvästra)"
+
+#: hrecipeinput.php:256
+msgid "USA (Nouveau)"
+msgstr "USA (Nouveau)"
+
+#: hrecipeinput.php:257
+msgid "English"
+msgstr "Engelskt"
+
+#: hrecipeinput.php:258
+msgid "Irish"
+msgstr "Irlänskt"
+
+#: hrecipeinput.php:259
+msgid "French"
+msgstr "Franskt"
+
+#: hrecipeinput.php:260
+msgid "German"
+msgstr "Tyskt"
+
+#: hrecipeinput.php:261
+msgid "Spanish"
+msgstr "Spanskt"
+
+#: hrecipeinput.php:262
+msgid "Chinese"
+msgstr "Kinesiskt"
+
+#: hrecipeinput.php:263
+msgid "Thai"
+msgstr "Thai"
+
+#: hrecipeinput.php:264
+msgid "Mexican"
+msgstr "Mexikanskt"
+
+#: hrecipeinput.php:265
+msgid "Central American"
+msgstr "Central Amrikanskt"
+
+#: hrecipeinput.php:266
+msgid "Russian"
+msgstr "Ryskt"
+
+#: hrecipeinput.php:267
+msgid "Scandinavian"
+msgstr "Skandinaviskt"
+
+#: hrecipeinput.php:268
+msgid "Italian"
+msgstr "Italienskt"
+
+#: hrecipeinput.php:269
+msgid "Persian"
+msgstr "Persiskt"
+
+#: hrecipeinput.php:270
+msgid "Indian (Southern)"
+msgstr "Indiskt (Södra)"
+
+#: hrecipeinput.php:271
+msgid "Indian (Northern)"
+msgstr "Indiskt (Norra)"
+
+#: hrecipeinput.php:272
+msgid "Pakistani"
+msgstr "Pakistanskt"
+
+#: hrecipeinput.php:273
+msgid "African"
+msgstr "Afrikanskt"
+
+#: hrecipeinput.php:274
+msgid "Middle Eastern"
+msgstr "Mellanöstern"
+
+#: hrecipeinput.php:275
+msgid "Greek"
+msgstr "Grekiskt"
+
+#: hrecipeinput.php:280
+msgid "My rating:"
+msgstr "Mitt betyg:"
+
+#: hrecipeinput.php:281
+msgid "(number of stars, leave blank if rating is undesired)"
+msgstr "(antal stjärnor, lämna blankt om betyget är tveksammat)"
+

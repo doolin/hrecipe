@@ -1,0 +1,326 @@
+# hRecipe translations.
+# Copyright (C) 2009 David M. Doolin
+# This file is distributed under the same license as the hRecipe package.
+# David M. Doolin <david.doolin@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hrecipe.0.5.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-15 10:45-0700\n"
+"PO-Revision-Date: 2010-03-22 21:33+0100\n"
+"Last-Translator: WordPressPluginGuide.com <info@wppg.me>\n"
+"Language-Team: WPwebshop.com <info@wppg.me>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: hrecipe.php:50
+msgid "My rating: "
+msgstr "Mijn waardering:"
+
+#: hrecipe.php:51
+msgid "stars"
+msgstr "sterren"
+
+#: hrecipe.php:112
+msgid "hRecipe Support for Editor"
+msgstr "hRecipe Ondersteuning voor Editor"
+
+#: hrecipe.php:121
+msgid "Rating text"
+msgstr "Waardering tekst"
+
+#: hrecipe.php:126
+msgid "Stars text"
+msgstr "Sterren tekst"
+
+#: hrecipe.php:131
+msgid "Background color"
+msgstr "Achtergrondkleur"
+
+#: hrecipe.php:136
+msgid "Ingredient list"
+msgstr "Ingrediënten lijst"
+
+#: hrecipe.php:140
+msgid "Bullets"
+msgstr "Bullets"
+
+#: hrecipe.php:144
+msgid "Numbers"
+msgstr "Nummers"
+
+#: hrecipe.php:149
+msgid "Link love!"
+msgstr "Link Liefde!"
+
+#: hrecipe.php:153
+msgid "Yes!"
+msgstr "Ja!"
+
+#: hrecipe.php:158
+msgid "Copyright (no HTML)"
+msgstr "Copyright (geen HTML)"
+
+#: hrecipe.php:169
+msgid "Save Changes"
+msgstr "Veranderingen Opslaan"
+
+#: hrecipeinput.php:136
+msgid "New Recipe"
+msgstr "Nieuw Recept"
+
+#: hrecipeinput.php:141
+msgid "Name of recipe"
+msgstr "Naam van het recept"
+
+#: hrecipeinput.php:145
+msgid "Reference URL"
+msgstr "Referentie URL"
+
+#: hrecipeinput.php:150
+msgid "Summary"
+msgstr "Samenvatting"
+
+#: hrecipeinput.php:155
+msgid "Ingredients"
+msgstr "Ingrediënten"
+
+#: hrecipeinput.php:155
+#: hrecipeinput.php:161
+msgid "(May use HTML)"
+msgstr "(Mag HTML gebruiken)"
+
+#: hrecipeinput.php:161
+msgid "Description"
+msgstr "Omschrijving"
+
+#: hrecipeinput.php:166
+msgid "Preparation time (minutes)"
+msgstr "Voorbereidingstijd (minuten)"
+
+#: hrecipeinput.php:171
+msgid "Recipe type:"
+msgstr "Type recept:"
+
+#: hrecipeinput.php:175
+msgid "breakfast"
+msgstr "ontbijt"
+
+#: hrecipeinput.php:176
+msgid "lunch"
+msgstr "lunch"
+
+#: hrecipeinput.php:177
+msgid "dinner"
+msgstr "diner"
+
+#: hrecipeinput.php:178
+msgid "supper"
+msgstr "avondmaal"
+
+#: hrecipeinput.php:179
+msgid "brunch"
+msgstr "brunch"
+
+#: hrecipeinput.php:180
+msgid "dessert"
+msgstr "dessert"
+
+#: hrecipeinput.php:181
+msgid "cocktail"
+msgstr "cocktail"
+
+#: hrecipeinput.php:182
+msgid "hors d'oerves"
+msgstr "hors d'oerves"
+
+#: hrecipeinput.php:183
+msgid "snack"
+msgstr "snack"
+
+#: hrecipeinput.php:190
+msgid "Number of servings:"
+msgstr "Aantal gangen:"
+
+#: hrecipeinput.php:207
+msgid "Diet type:"
+msgstr "Type Dieet:"
+
+#: hrecipeinput.php:211
+msgid "Vegetarian"
+msgstr "Vegetarisch"
+
+#: hrecipeinput.php:212
+msgid "Pescatarian"
+msgstr "Pescotarisch"
+
+#: hrecipeinput.php:213
+msgid "Vegan"
+msgstr "Veganistisch"
+
+#: hrecipeinput.php:214
+msgid "Macrobiotic"
+msgstr "Macrobiotisch"
+
+#: hrecipeinput.php:220
+msgid "Diet restriction:"
+msgstr "Dieet ristricties:"
+
+#: hrecipeinput.php:224
+msgid "Kosher"
+msgstr "Kosher"
+
+#: hrecipeinput.php:225
+msgid "Halal"
+msgstr "Halal"
+
+#: hrecipeinput.php:226
+msgid "Buddhist"
+msgstr "Buddhist"
+
+#: hrecipeinput.php:233
+msgid "Diet (other):"
+msgstr "Dieet (anders):"
+
+#: hrecipeinput.php:234
+msgid "(Check all that apply)"
+msgstr "(Selecteer alles wat van toepassing is)"
+
+#: hrecipeinput.php:236
+msgid "Low calorie"
+msgstr "Caloriearm"
+
+#: hrecipeinput.php:237
+msgid "Reduced fat"
+msgstr "Gereduceerd vet"
+
+#: hrecipeinput.php:238
+msgid "Reduced carbohydrate"
+msgstr "Minder koolhydraten"
+
+#: hrecipeinput.php:239
+msgid "High protein"
+msgstr "Hoog eiwitgehalte"
+
+#: hrecipeinput.php:240
+msgid "Gluten free"
+msgstr "Glutenvrij"
+
+#: hrecipeinput.php:241
+msgid "Raw"
+msgstr "Rauw"
+
+#: hrecipeinput.php:248
+msgid "Culinary Tradition:"
+msgstr "Keuken Traditie:"
+
+#: hrecipeinput.php:252
+msgid "USA (General)"
+msgstr "USA (Algemeen)"
+
+#: hrecipeinput.php:253
+msgid "USA (Traditional)"
+msgstr "USA (Traditioneel)"
+
+#: hrecipeinput.php:254
+msgid "USA (Southern)"
+msgstr "USA (Zuidelijk)"
+
+#: hrecipeinput.php:255
+msgid "USA (Southwestern)"
+msgstr "USA (Zuidwesters)"
+
+#: hrecipeinput.php:256
+msgid "USA (Nouveau)"
+msgstr "USA (nieuwe keuken)"
+
+#: hrecipeinput.php:257
+msgid "English"
+msgstr "Engels"
+
+#: hrecipeinput.php:258
+msgid "Irish"
+msgstr "Iers"
+
+#: hrecipeinput.php:259
+msgid "French"
+msgstr "Frans"
+
+#: hrecipeinput.php:260
+msgid "German"
+msgstr "Duits"
+
+#: hrecipeinput.php:261
+msgid "Spanish"
+msgstr "Spaans"
+
+#: hrecipeinput.php:262
+msgid "Chinese"
+msgstr "Chinees"
+
+#: hrecipeinput.php:263
+msgid "Thai"
+msgstr "Thais"
+
+#: hrecipeinput.php:264
+msgid "Mexican"
+msgstr "Mexicaans"
+
+#: hrecipeinput.php:265
+msgid "Central American"
+msgstr "Centraal Amerikaans"
+
+#: hrecipeinput.php:266
+msgid "Russian"
+msgstr "Russisch"
+
+#: hrecipeinput.php:267
+msgid "Scandinavian"
+msgstr "Scandinavisch"
+
+#: hrecipeinput.php:268
+msgid "Italian"
+msgstr "Italiaans"
+
+#: hrecipeinput.php:269
+msgid "Persian"
+msgstr "Perzisch"
+
+#: hrecipeinput.php:270
+msgid "Indian (Southern)"
+msgstr "Indiaans (Zuidelijk)"
+
+#: hrecipeinput.php:271
+msgid "Indian (Northern)"
+msgstr "Indiaans (Noordelijk)"
+
+#: hrecipeinput.php:272
+msgid "Pakistani"
+msgstr "Pakistaans"
+
+#: hrecipeinput.php:273
+msgid "African"
+msgstr "Afrikaans"
+
+#: hrecipeinput.php:274
+msgid "Middle Eastern"
+msgstr "Midden Oosten"
+
+#: hrecipeinput.php:275
+msgid "Greek"
+msgstr "Grieks"
+
+#: hrecipeinput.php:280
+msgid "My rating:"
+msgstr "Mijn waardering:"
+
+#: hrecipeinput.php:281
+msgid "(number of stars, leave blank if rating is undesired)"
+msgstr "(aantal sterren, laat leeg indien je geen waardering wil plaatsen)"
+

@@ -1,0 +1,10 @@
+
+
+= hRecipe 0.2 =	
+* Fixed recipe label in editor.
+* Changed enclosing block to fieldset element.	
+* Added "Culinary Tradition" selection.
+
+	
+= hRecipe 0.1 =
+* Initial release

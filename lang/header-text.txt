@@ -1,0 +1,5 @@
+# hRecipe translations.
+# Copyright (C) 2009 David M. Doolin
+# This file is distributed under the same license as the hRecipe package.
+# David M. Doolin <david.doolin@gmail.com>, 2009.
+#

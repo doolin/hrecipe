@@ -1,0 +1,22 @@
+div.hrecipe p.item {
+    font-size: 1.6em;
+    text-align: left;
+    margin-top: !important 0px;
+    color: #1374B9;
+}
+
+div.hrecipe p.summary {
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe p.ingredients {
+    font-style: italic;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe p.myrating {
+    font-weight: bold;
+}

@@ -1,0 +1,321 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hrecipe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-15 10:45-0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Carsten Peters <carsten.peters@gmail.com>\n"
+"Language-Team: Carsten Peters, Dave Doolin <carsten.peters@gmail.com; david.doolin@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: AUSTRIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: hrecipe.php:50
+msgid "My rating: "
+msgstr "Meine Bewertung"
+
+#: hrecipe.php:51
+msgid "stars"
+msgstr "Sterne"
+
+#: hrecipe.php:112
+msgid "hRecipe Support for Editor"
+msgstr "hRecipe-Support für den Redakteur"
+
+#: hrecipe.php:121
+msgid "Rating text"
+msgstr "Text der Bewertung"
+
+#: hrecipe.php:126
+msgid "Stars text"
+msgstr "Text der Sterne"
+
+#: hrecipe.php:131
+#, fuzzy
+msgid "Background color"
+msgstr "Hintergrundfarbe"
+
+#: hrecipe.php:136
+msgid "Ingredient list"
+msgstr "Liste der Zutaten"
+
+#: hrecipe.php:140
+msgid "Bullets"
+msgstr "Aufzählung"
+
+#: hrecipe.php:144
+msgid "Numbers"
+msgstr "Nummerierung"
+
+#: hrecipe.php:149
+msgid "Link love!"
+msgstr "Link-Liebe!"
+
+#: hrecipe.php:153
+msgid "Yes!"
+msgstr "Ja!"
+
+#: hrecipe.php:158
+msgid "Copyright (no HTML)"
+msgstr "Copyright (kein HTML)"
+
+#: hrecipe.php:169
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: hrecipeinput.php:136
+msgid "New Recipe"
+msgstr "Neues Rezept"
+
+#: hrecipeinput.php:141
+msgid "Name of recipe"
+msgstr "Name des Rezepts"
+
+#: hrecipeinput.php:145
+msgid "Reference URL"
+msgstr "Referenz-URL"
+
+#: hrecipeinput.php:150
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#: hrecipeinput.php:155
+msgid "Ingredients"
+msgstr "Zutaten"
+
+#: hrecipeinput.php:155
+#: hrecipeinput.php:161
+msgid "(May use HTML)"
+msgstr "(HTML kann benutzt werden)"
+
+#: hrecipeinput.php:161
+msgid "Description"
+msgstr "Beschreibung"
+
+#: hrecipeinput.php:166
+msgid "Preparation time (minutes)"
+msgstr "Zubereitungszeit (Minuten)"
+
+#: hrecipeinput.php:171
+msgid "Recipe type:"
+msgstr "Rezeptart:"
+
+#: hrecipeinput.php:175
+msgid "breakfast"
+msgstr "Frühstück"
+
+#: hrecipeinput.php:176
+msgid "lunch"
+msgstr "Mittagessen"
+
+#: hrecipeinput.php:177
+msgid "dinner"
+msgstr "Abendessen"
+
+#: hrecipeinput.php:178
+msgid "supper"
+msgstr "Leichtes Abendessen"
+
+#: hrecipeinput.php:179
+msgid "brunch"
+msgstr "Brunch"
+
+#: hrecipeinput.php:180
+msgid "dessert"
+msgstr "Nachspeise"
+
+#: hrecipeinput.php:181
+msgid "cocktail"
+msgstr "Cocktail"
+
+#: hrecipeinput.php:182
+msgid "hors d'oerves"
+msgstr "Vorspeise"
+
+#: hrecipeinput.php:183
+msgid "snack"
+msgstr "Snack"
+
+#: hrecipeinput.php:190
+msgid "Number of servings:"
+msgstr "Anzahl der Portionen:"
+
+#: hrecipeinput.php:207
+msgid "Diet type:"
+msgstr "Diätart:"
+
+#: hrecipeinput.php:211
+msgid "Vegetarian"
+msgstr "Vegetarisch"
+
+#: hrecipeinput.php:212
+msgid "Pescatarian"
+msgstr "Fisch"
+
+#: hrecipeinput.php:213
+msgid "Vegan"
+msgstr "Veganisch"
+
+#: hrecipeinput.php:214
+msgid "Macrobiotic"
+msgstr "Makrobiotisch"
+
+#: hrecipeinput.php:220
+msgid "Diet restriction:"
+msgstr "Ernährungseinschränkung:"
+
+#: hrecipeinput.php:224
+msgid "Kosher"
+msgstr "Koscher"
+
+#: hrecipeinput.php:225
+msgid "Halal"
+msgstr "Halal"
+
+#: hrecipeinput.php:226
+msgid "Buddhist"
+msgstr "Buddhistisch"
+
+#: hrecipeinput.php:233
+msgid "Diet (other):"
+msgstr "Andere Diät:"
+
+#: hrecipeinput.php:234
+msgid "(Check all that apply)"
+msgstr "(Alle zutreffenden ankreuzen)"
+
+#: hrecipeinput.php:236
+msgid "Low calorie"
+msgstr "Kalorienarm"
+
+#: hrecipeinput.php:237
+msgid "Reduced fat"
+msgstr "Fettarm"
+
+#: hrecipeinput.php:238
+msgid "Reduced carbohydrate"
+msgstr "Kohlenhydratarm"
+
+#: hrecipeinput.php:239
+msgid "High protein"
+msgstr "Reich an Proteinen"
+
+#: hrecipeinput.php:240
+msgid "Gluten free"
+msgstr "Glutenfrei"
+
+#: hrecipeinput.php:241
+msgid "Raw"
+msgstr "Roh"
+
+#: hrecipeinput.php:248
+msgid "Culinary Tradition:"
+msgstr "Kulinarische Tradition:"
+
+#: hrecipeinput.php:252
+msgid "USA (General)"
+msgstr "USA (allgemein)"
+
+#: hrecipeinput.php:253
+msgid "USA (Traditional)"
+msgstr "USA (traditionell)"
+
+#: hrecipeinput.php:254
+msgid "USA (Southern)"
+msgstr "USA (Süden)"
+
+#: hrecipeinput.php:255
+msgid "USA (Southwestern)"
+msgstr "USA (Südwesten)"
+
+#: hrecipeinput.php:256
+msgid "USA (Nouveau)"
+msgstr "USA (neue Küche)"
+
+#: hrecipeinput.php:257
+msgid "English"
+msgstr "Englisch"
+
+#: hrecipeinput.php:258
+msgid "Irish"
+msgstr "Irisch"
+
+#: hrecipeinput.php:259
+msgid "French"
+msgstr "Französisch"
+
+#: hrecipeinput.php:260
+msgid "German"
+msgstr "Deutsch"
+
+#: hrecipeinput.php:261
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: hrecipeinput.php:262
+msgid "Chinese"
+msgstr "Chinesisch"
+
+#: hrecipeinput.php:263
+msgid "Thai"
+msgstr "Thailändisch"
+
+#: hrecipeinput.php:264
+msgid "Mexican"
+msgstr "Mexikanisch"
+
+#: hrecipeinput.php:265
+msgid "Central American"
+msgstr "Zentralamerikanisch"
+
+#: hrecipeinput.php:266
+msgid "Russian"
+msgstr "Russisch"
+
+#: hrecipeinput.php:267
+msgid "Scandinavian"
+msgstr "Skandinavisch"
+
+#: hrecipeinput.php:268
+msgid "Italian"
+msgstr "Italienisch"
+
+#: hrecipeinput.php:269
+msgid "Persian"
+msgstr "Persisch"
+
+#: hrecipeinput.php:270
+msgid "Indian (Southern)"
+msgstr "Indisch (Süden)"
+
+#: hrecipeinput.php:271
+msgid "Indian (Northern)"
+msgstr "Indisch (Norden)"
+
+#: hrecipeinput.php:272
+msgid "Pakistani"
+msgstr "Pakistanisch"
+
+#: hrecipeinput.php:273
+msgid "African"
+msgstr "Afrikanisch"
+
+#: hrecipeinput.php:274
+msgid "Middle Eastern"
+msgstr "Mittlerer Osten"
+
+#: hrecipeinput.php:275
+msgid "Greek"
+msgstr "Griechisch"
+
+#: hrecipeinput.php:280
+msgid "My rating:"
+msgstr "Meine Bewertung:"
+
+#: hrecipeinput.php:281
+msgid "(number of stars, leave blank if rating is undesired)"
+msgstr "(Anzahl der Sterne, frei lassen, wenn keine Bewertung gewünscht ist)"
+

@@ -1,0 +1,290 @@
+
+/* Microformat */
+.hrlabel {
+    /*color: #FF0000;*/
+	font-weight: bold;	
+}
+
+.hritem {
+	/*color: #1374B9;*/
+    font-style: italic;
+}
+
+
+/* Fieldset layouts */
+
+fieldset.hrecipe {
+  background-color: white; 
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+fieldset.hrecipe legend {
+  background-color: white;
+  font-weight: bold;
+   margin-left: 2em;
+   border-style: solid;
+   border-width: thin;
+   padding-left: 1em;
+  padding-right: 1em;
+ }
+
+fieldset.hrecipe legend.fn {
+  background-color: white;
+  font-weight: bold;
+   margin-left: 2em;
+   border-style: solid;
+   border-width: thin;
+   padding-left: 1em;
+   padding-right: 1em;
+ }
+
+fieldset.hrecipe img.hrecipe_image  {
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    /* margin-right-value: 1px;*/
+    /* margin-left-value: 1px;*/
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none !important;
+}
+
+
+fieldset.hrecipe p.summary {
+    /* color: italic; */
+    padding-top: 0px;
+    margin-top: 1em;
+}
+
+
+
+/*
+fieldset.hrecipe p.yield, p.restriction {
+	color: #1374B9;
+    font-style: italic;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+*/
+
+/*
+fieldset.hrecipe p.mealtype {
+	color: #1374B9;
+    font-style: italic;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+fieldset.hrecipe p.restriction {
+	color: #1374B9;
+    font-style: italic;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+*/
+
+
+/* div-based layouts */
+div.hrecipe p.item {
+    font-size: 1.6em;
+    text-align: left;
+    margin-top: 0px !important; 
+    /*color: #1374B9;*/
+}
+
+div.hrecipe p.summary {
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe p.ingredients {
+    /* font-style: italic; */ 
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe p.yield {
+	/*color: #FF00FF;*/
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+div.hrecipe div.ingredients {
+    /* color: blue; */
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe div.quicknotes {
+    /* color: blue; */
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe p.quicknotes {
+    /* color: blue; */
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe div.variations {
+    /* color: blue; */
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe p.variations {
+    /* color: blue; */
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+
+div.hrecipe ol.ingredients {
+    /* font-style: italic; */
+    /* color: #00ff00; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div.hrecipe ol.ingredient {
+    /* font-style: italic; */
+    /* color: #ff0000; */
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+div.hrecipe blockquote.instructions {
+    margin: 1px 2px 1px 5px;
+    padding: 1px 2px 1px 5px;
+    color: #444;
+    font-size: 1em;
+    line-height: 100%;
+    text-align: left;
+    font-style: italic;
+    border-top: 2px solid #F4F4F4;
+    border-bottom: 2px solid #F4F4F4;
+    background-image: none;
+}
+
+div.hrecipe p.myrating {
+    font-weight: bold;
+}
+
+div.hrecipe img.hrecipe_image  {
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+	/* mozilla serialization? */
+    /* margin-right-value: 1px;*/
+    /*margin-left-value: 1px;*/
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none !important;
+}
+
+div.hrecipe legend {
+  background-color: white;
+  font-weight: bold;
+   margin-left: 2em;
+   border-style: solid;
+   border-width: thin;
+   padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+/* Internal fieldsets, not using */
+div.hrecipe fieldset.summary {
+    /* font-weight: bold; */
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+div.hrecipe fieldset.ingredients {
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+div.hrecipe fieldset.instructions {
+    /* font-style: italic; */
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Admin page css.
+ * From yoast tools, thanks Joost! 
+ * TODO: Move these to their own css file.
+ */
+
+div.inside p {
+	margin-left: 20px;
+}
+
+div.inside ul {
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+div.inside ul li {
+	list-style: square;
+	line-height:16px;
+	padding-left: 0px;
+}
+div.inside a, div.inside a.rsswidget {
+	font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+	text-decoration: none;
+}
+div.inside a:hover, div.inside a.rsswidget:hover {
+	text-decoration: underline;
+}
+div.inside ul li.rss {
+	list-style-image: url(images/rss.png);
+}
+
+div.inside ul li.email {
+	list-style-image: url(images/email_sub.png);
+}
+
+div.inside ul li.wiaw {
+	list-style-image: url(images/wiaw_icon.png); 
+}
+
+div.inside ul li.tinobox {
+	list-style-image: url(images/tinobox_icon.png); 
+}
+
+div.inside ul li.hrecipe {
+	list-style-image: url(images/hrecipe_icon.png); 
+}
+
+.postbox#donate {
+	border-color: #fa0913;
+	border-width: 2px;
+}
+
+strong.red {
+	color: #fa0913;
+	font-weight: bold;
+	font-size: 105%;
+}
+
