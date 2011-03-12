@@ -23,6 +23,8 @@ class hrecipe extends PluginBase {
         // in any case, Recip.ly shouldn't depend on a 
         // particular version. IMO.  Makes for too much
         // overhead for hRecipe maintenance.
+        //register_setting('hrecipe_options', 'hrecipe_options', 'hrecipe_validate');
+        
     }
 
     function hrecipe_deactivate() {
@@ -43,8 +45,16 @@ class hrecipe extends PluginBase {
         //wp_register_script('hrecipe-reciply', 'http://www.recip.ly/static/js/jquery-reciply.js');
         wp_enqueue_script('hrecipe-jquery-min');
         //wp_enqueue_script('hrecipe-reciply');
+       
+    }
+    
+    function register_mysettings() {
+       //register_setting('hrecipe_options-group', 'hrecipe_options', 'hrecipe_validate');
     }
 
+function hrecipe_validate() {
+  return true;
+}
 
     function hrecipe_plugin_menu() {
 
@@ -55,7 +65,7 @@ class hrecipe extends PluginBase {
              * up a detailed report of what's going on here.
              */
             global $hrecipe_pagehook;
-            $hrecipe_pagehook = add_options_page('hRecipe Options', 'hRecipe', 8, 'hrecipe.class', array($this, 'hrecipe_plugin_options_page'));
+            $hrecipe_pagehook = add_options_page('hRecipe Options', 'hRecipe', 'administrator', 'hrecipe.class', array($this, 'hrecipe_plugin_options_page'));
             add_action('load-'.$hrecipe_pagehook, array($this,'on_load_page'));
         }
     }

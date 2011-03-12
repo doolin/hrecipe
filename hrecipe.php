@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: hRecipe
-Plugin URI: http://website-in-a-weekend.net/hrecipe/
+Plugin URI: http://hrecipe.com/
 Description: Fast and easy recipe formatting. Allows the correct microformat content to be easily added for recipes.
 Version: 0.5.4.3
 Author: Dave Doolin
@@ -77,6 +77,7 @@ $firephp->log(__FILE__, 'if (isset())');
     add_action('admin_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
 
     add_action('init', array ($recipe, 'hrecipe_plugin_init'));
+    //add_action('init', array ($recipe, 'register_mysettings'));
     add_action('admin_menu', array ($recipe, 'hrecipe_plugin_menu'));
 
    /**

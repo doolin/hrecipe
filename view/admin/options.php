@@ -63,7 +63,10 @@
 
 <div class="wrap">
 
-<?php //echo $this->url(); ?>
+<?php 
+//echo $this->url(); 
+//$options = get_option('hrecipe_options');
+?>
 
 <?php screen_icon(); ?>
 
@@ -84,6 +87,9 @@
 
         <?php wp_nonce_field('update-options'); ?>
 
+    <?php //settings_fields('hrecipe_options-group'); ?>
+    <?php //do_settings_sections(__FILE__); ?>
+    
 	  <table cellpadding="3" width="100%" class="form-table">
 			<tr>
 				<th align="right"><?php _e ('Plugin Support', 'hrecipe'); ?>:</th>

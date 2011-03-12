@@ -1,8 +1,8 @@
 === hRecipe ===
 Contributors: doolin
 Tags: hrecipe, editor, microformat
-Requires at least: 2.7.1
-Tested up to: 3.0.1
+Requires at least: 3.0
+Tested up to: 3.1
 Stable tag: 0.5.4.3
 
 This is a plugin to allow the easy entry of microformat content for
@@ -21,6 +21,7 @@ and search engines will like them better too.
 
 Each of the following people have donated to help hRecipe to continue development:
 
+* Susan Voisin http://http://sbvdesigns.com/ and http://blog.fatfreevegan.com/
 * Anon: http://transcriptionconnections.com/
 * Anne Bender: http://annebender.com/
 * Branson Sparks: http://bransonsparks.com/
@@ -86,6 +87,9 @@ microformat.
 
 
 == Changelog ==
+
+= 0.5.4.4 =
+* Changed Plugin URI to point to http://hrecipe.com/
 
 = 0.5.4.3 = 
 * Fixed a broken link for http://annebender.com

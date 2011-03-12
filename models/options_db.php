@@ -1,5 +1,16 @@
 <?php
 
+// http://planetozh.com/blog/2009/09/top-10-most-common-coding-mistakes-in-wordpress-plugins/
+// http://striderweb.com/nerdaphernalia/2008/07/consolidate-options-with-arrays/
+// Some "best practice" 
+/**
+ * http://scribu.net/wordpress/front-end-editor
+ * http://wordpress.stackexchange.com/questions/266/best-of-breed-features-of-a-high-end-wordpress-web-host
+ * http://wordpress.stackexchange.com/questions/4702/best-practices-for-a-b-testing
+ * http://wordpress.stackexchange.com/questions/715/objective-best-practices-for-plugin-development
+ * http://www.heavyworks.net/blog/posts/5-best-practices-on-developing-wordpress-plugins
+ */
+
 function hrecipe_add_options() {
 
 	// Set up defaults for options
