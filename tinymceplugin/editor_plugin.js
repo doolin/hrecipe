@@ -20,7 +20,7 @@ tinymce.create('tinymce.plugins.hrecipe_plugin', {
 	init : function(ed, url) {
 		ed.addButton('hrecipe_button', {
 			title : 'hrecipe_plugin.insertbutton',
-			image : url + '/../starfull.gif',
+			image : url + '/../hrecipe_icon_20x20.png',
 			onclick : function () {
 				edInsertHRecipe();
 			}

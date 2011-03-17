@@ -63,9 +63,14 @@ $firephp->log(__FILE__, 'if (isset())');
 
     register_activation_hook( __FILE__ , array (&$recipe, 'hrecipe_activate'));
     register_deactivation_hook( __FILE__ , array (&$recipe, 'hrecipe_deactivate'));
-    add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
+    // TODO: this call only loads a php file which inserts the javascript.
+    // Find a way to leverage wp_enqueue_script for this.
+    //add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
     add_filter('plugin_action_links', 'plugin_links', 10, 2);
     $recipe->init();
+
+
+    add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
 
     //add_action('wp_head', array ($recipe, 'hrecipe_plugin_head'));
     //add_action('marker_css', array ($recipe, 'hrecipe_plugin_css'));
@@ -89,7 +94,7 @@ $firephp->log(__FILE__, 'if (isset())');
         
         if (!$this_plugin) {
             $this_plugin =  plugin_basename(__FILE__);
-		}
+		    }
 		
         if ($file == $this_plugin) {
             $settings_link = '<a href="admin.php?page=hrecipe.class">'.__("Settings", "hrecipe").'</a>';
@@ -98,7 +103,6 @@ $firephp->log(__FILE__, 'if (isset())');
         
         return $links;
     }
-
 
 }
 

@@ -3,7 +3,7 @@ Contributors: doolin
 Tags: hrecipe, editor, microformat
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 0.5.4.3
+Stable tag: 0.5.4.4
 
 This is a plugin to allow the easy entry of microformat content for
 recipes (i.e. the hRecipe microformat) in WordPress pages and
@@ -90,6 +90,8 @@ microformat.
 
 = 0.5.4.4 =
 * Changed Plugin URI to point to http://hrecipe.com/
+* Spiffy new icon for visual editor
+* Javascript cleanup, removed php calls for future script enqueue.
 
 = 0.5.4.3 = 
 * Fixed a broken link for http://annebender.com

@@ -2,9 +2,12 @@
 
 include dirname( __FILE__ ).'/plugin_base.php';
 include_once dirname( __FILE__ ).'/models/options_db.php';
+//include dirname( __FILE__ ).'/controller/shortcode.php';
 
 
 $hrecipe_pagehook = null;
+  
+include('hrecipe_localize_vars.php');
 
 class hrecipe extends PluginBase {
 
@@ -41,10 +44,18 @@ class hrecipe extends PluginBase {
         global $hrecipe_plugin_url;
         load_plugin_textdomain('hrecipe', $hrecipe_plugin_url.'/lang', 'hrecipe/lang');
         
-        wp_register_script('hrecipe-jquery-min', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
+        //wp_register_script('hrecipe-jquery-min', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
         //wp_register_script('hrecipe-reciply', 'http://www.recip.ly/static/js/jquery-reciply.js');
-        wp_enqueue_script('hrecipe-jquery-min');
+        //wp_enqueue_script('hrecipe-jquery-min');
         //wp_enqueue_script('hrecipe-reciply');
+        wp_register_script('hrecipe-format',plugins_url('hrecipe/js/hrecipe_format.js',dirname(__FILE__)));
+        wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js',dirname(__FILE__)));
+        wp_localize_script('hrecipescript','hrecipe_handle',hrecipe_localize_vars());
+
+        // TODO: Move the enqueue to where it's needed.
+        wp_enqueue_script('hrecipescript');
+        //wp_enqueue_script('hrecipe-format');
+        
        
     }
     
@@ -52,9 +63,12 @@ class hrecipe extends PluginBase {
        //register_setting('hrecipe_options-group', 'hrecipe_options', 'hrecipe_validate');
     }
 
-function hrecipe_validate() {
-  return true;
-}
+  /**
+   * Place holder for options registration.
+   */
+   function hrecipe_validate() {
+     return true;
+   }
 
     function hrecipe_plugin_menu() {
 
@@ -117,12 +131,17 @@ function hrecipe_validate() {
 
     function hrecipe_plugin_footer() {
 
-        //global $hrecipe_plugin_url;
+        // TODO: see if the necessary javascript can be enqueued from here instead 
+        // of in the init function.  All the php in the hrecipe_format.php file
+        // should go away, and it should be renamed to hrecipe_format.js        
+        // See if wp_enqueue_script will work here.
+        //wp_enqueue_script('hrecipe-format');
         include ('hrecipe_format.php');
     }
 
     function add_hrecipe_stylesheet() {
 
+        // TODO: Replace constants with plugins_url()
         $css_url = WP_PLUGIN_URL.'/hrecipe/hrecipe.css';
         $css_file = WP_PLUGIN_DIR.'/hrecipe/hrecipe.css';
         if (file_exists($css_file)) {

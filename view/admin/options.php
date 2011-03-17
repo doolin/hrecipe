@@ -48,7 +48,7 @@
 				foreach ( (array) $rss->items as $item ) {
 				    /* Credit: Joost de Valk, yoast.com */
 					$content .= '<li class="'.$class.'">';
-					$content .= '<a class="rsswidget" href="'.clean_url( $item['link'], $protocolls=null, 'display' ).'">'. htmlentities($item['title']) .'</a> ';
+					$content .= '<a class="rsswidget" href="'.esc_url( $item['link'], $protocolls=null, 'display' ).'">'. htmlentities($item['title']) .'</a> ';
 					$content .= '</li>';
 				}
 				$content .= '<li class="rss"><a href="'.$feed.'">Subscribe with RSS</a></li>';
@@ -319,6 +319,7 @@
                     </p>
                     
                         <table class="form-table">
+
                             <tr valign="top">
                                 <th scope="row">
                                     <?php _e('Enclosure formatting', 'hrecipe'); ?>

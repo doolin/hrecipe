@@ -44,7 +44,6 @@ function hrecipe_add_options() {
 	add_option('hrecipe_support','');
 }
 
-
 function hrecipe_delete_options() {
 	
 	delete_option('hrecipe_recipe');

@@ -1,22 +1,20 @@
 
-<?php
-    global $hrecipe_plugin_url;
-?>      
 
 <script type="text/javascript">//<![CDATA[
 
   var hrecipe_from_gui;
 
-  function edInsertHRecipe() {      
-    tb_show("Add an hRecipe", "<?php echo $hrecipe_plugin_url; ?>/view/lightbox.php?TB_iframe=true");
+  // TODO: rename these next two functions appropriately.
+  function edInsertHRecipe() {    
+    tb_show("Add an hRecipe", hrecipe_handle.PluginsUrl + "/view/lightbox.php?TB_iframe=true");
     hrecipe_from_gui = true; /** Called from TinyMCE **/
-  } // End edInsertHRecipe()
+  }
 
 
   function edInsertHRecipeCode() {
-    tb_show("Add an hRecipe", "<?php echo $hrecipe_plugin_url; ?>/view/lightbox.php?TB_iframe=true");
+    tb_show("Add an hRecipe", hrecipe_handle.PluginsUrl + "/view/lightbox.php?TB_iframe=true");
     hrecipe_from_gui = false; /** Called from Quicktags **/
-  } // End edInsertHRecipe()
+  }
 
   if (hrecipe_qttoolbar = document.getElementById("ed_toolbar")){
     newbutton = document.createElement("input");
@@ -30,93 +28,25 @@
 
   function edInsertHRecipeAbort() {
     tb_remove();
-  } // End edInsertHRecipeAbort()
-
-
-  function edInsertHRecipeStars(itemRating) {
-    var markup = '';
-    if ( itemRating ) {
-      var i, stars, itemRatingValue = parseFloat(itemRating);
-      markup = '<p class="myrating"><?php echo get_option('hrecipe_rating_text');?>' +
-        '<span class="rating">' + itemRating + '</span> <?php echo get_option('hrecipe_stars_text');?><br />';
-      stars = 0;
-      for ( i = 1; i <= itemRatingValue; i++ ) {
-        stars++;
-        markup = markup + '<img class="hrecipe_image" width="20" height="20" src="<?php echo $hrecipe_plugin_url;
-?>/starfull.gif" alt="*" />';
-      } // End for
-      i = parseInt(itemRatingValue);
-      if ( itemRatingValue - i > 0.1 ) {
-        stars++;
-        markup = markup + '<img class="hrecipe_image" width="20" height="20" src="<?php echo $hrecipe_plugin_url;
-?>/starhalf.gif" alt="1/2" />';
-      } // End if
-      for ( i = stars; i < 5; i++ ) {
-        markup = markup + '<img class="hrecipe_image" width="20" height="20" src="<?php echo $hrecipe_plugin_url;
-?>/starempty.gif" alt="" />';
-      } // End for
-      markup = markup + '</p>';
-    } // End if
-    return markup;
-  } // End edInsertHRecipeStars()
-
-
-
-  function edInsertHRecipeStarChars(itemRating) {
-
-    var markup = '';
-
-    if ( itemRating ) {        
-      var i;
-      var itemRatingValue = parseInt(itemRating);
-      
-      markup = '<p class="myrating"><?php echo get_option('hrecipe_rating_text');?>' +
-        '<span class="rating">' + itemRating + '</span> <?php echo get_option('hrecipe_stars_text');?>:&nbsp;';
-        
-      var stars = 0;
-      for ( i = 1; i <= itemRatingValue; i++ ) {
-        stars++;
-        markup = markup + '&#9733;'; // solid_star
-      }
-     
-      for ( i = stars; i < 5; i++ ) {
-        markup = markup + '&#9734;'; // outline_star
-      }
-
-      markup = markup + '</p>';
-    } // End if
-
-    return markup;
-    
-  } // End edInsertHRecipeStarsChars()
-
-
-
-
-  /*
-  <p class="review hreview-aggregate">
-  <span class="rating">
-     <span class="average">4.0</span> stars based on
-     <span class="count">35</span> reviews
-  </span> 
- </p>
-  */
+  } 
 
   
   function google_compliant_rating(itemRating) {
 
 	    var markup = '';
+	    //var solid_star = ''
+	    //var outline_star = ''
 	    
 	    if ( itemRating ) {        
 	      var i;
 	      var itemRatingValue = parseInt(itemRating);
 	      
 	      markup =  '<p class="review hreview-aggregate">';
-          markup += '<?php echo get_option('hrecipe_rating_text');?> ';
+        markup += hrecipe_handle.hrecipe_rating_text + ' ';
           
 	      markup += '<span class="rating">';
 	      markup += '<span class="average">' + itemRating + ' </span> ';
-	      markup += '<?php echo get_option('hrecipe_stars_text'); ?>:&nbsp; ';
+        markup += hrecipe_handle.hrecipe_stars_text + ':&nbsp; ';
 	      
 	      // These are the loops the print the star symbols.  
 	      var stars = 0;
@@ -129,7 +59,7 @@
 	        markup += '&#9734;'; // outline_star
 	      }
 	      
-          markup += '<span class="count"> 1</span> review(s)';
+        markup += '<span class="count"> 1</span> review(s)';
 	      markup += '</span>';  
 	      markup += '</p>';
 
@@ -143,13 +73,12 @@
 
   function format_ingredients(itemIngredients) {
     //listtype
-    lt =  '<?php if (get_option('hrecipe_ingredientlist') == 'bullets') echo "ul"; else echo "ol";?>';
+    var lt =  (hrecipe_handle.hrecipe_ingredientlist == 'bullets') ? 'ul' : 'ol';
     var imarkup = '';
     var lines = '';
     lines = itemIngredients.split("\*");
     imarkup = '<div class="ingredients">';
-    //imarkup += '<h4>Ingredients</h4>';
-    imarkup += '<h4><?php echo get_option('hrecipe_ingredients_text');?></h4>';
+    imarkup += '<h4  class="ingredients">' + hrecipe_handle.hrecipe_ingredients_text + '</h4>';
     imarkup += '<' + lt + ' class="ingredients">';
     for(var i=0; i<lines.length; i++) {
       if (lines[i] == '') continue;
@@ -166,9 +95,7 @@
     var lines = '';
     lines = itemDescription.split("\*");
     imarkup = '<div class="instructions">';
-    // Get the option for this.
-    imarkup += '<h4><?php echo get_option('hrecipe_instructions_text');?></h4>';
-    //imarkup += '<h4>Instructions</h4>';
+    imarkup += '<h4 class="instructions">' + hrecipe_handle.hrecipe_instructions_text + '</h4>';
     imarkup += '<ol class="instructions">';
     for(var i=0; i<lines.length; i++) {
       if (lines[i] == '') continue;
@@ -184,8 +111,7 @@
     var lines = '';
     //lines = itemQuicknotes.split("\*");
     imarkup = '<div class="quicknotes">';
-    imarkup += '<h4><?php echo get_option('hrecipe_quicknotes_text');?></h4>';
-    //imarkup += '<h4>Quick Notes</h4>';
+    imarkup += '<h4 class="quicknotes">' + hrecipe_handle.hrecipe_quicknotes_text  + '</h4>';
     imarkup += '<p class="quicknotes">';
     imarkup += itemQuicknotes;
     imarkup += '</p>';
@@ -199,7 +125,7 @@
     var lines = '';
     //lines = itemVariations.split("\*");
     imarkup = '<div class="variations">';
-    imarkup += '<h4><?php echo get_option('hrecipe_variations_text');?></h4>';
+    imarkup += '<h4>' + hrecipe_handle.hrecipe_variations_text + '</h4>';
     //imarkup += '<h4>Variations</h4>';
     imarkup += '<p class="variations">';
     imarkup += itemVariations;
@@ -214,8 +140,7 @@
     var markup = '';
     if (itemSummary == '') return;
     markup = '<p class="summary">';
-    markup += '<strong><?php echo get_option('hrecipe_summary_text');?></strong>: ';
-    //markup += '<strong>Summary: </strong>';
+    markup += '<strong>' +  hrecipe_handle.hrecipe_summary_text + '</strong>: ';
     markup += '<em>' + itemSummary + '</em>';    
     markup += '</p>';
     return markup;
@@ -233,14 +158,14 @@
  // TODO: Add an hrlabel span for formatting
   function format_duration(totalminutes) {
 
-	    //Convert the minutes into hours and minutes
-	    var hours = Math.floor(totalminutes/60);
-	    var minutes = totalminutes%60;
+	  //Convert the minutes into hours and minutes
+	  var hours = Math.floor(totalminutes/60);
+	  var minutes = totalminutes%60;
 	  
 		var markup = '';
 		markup = '<p class="duration">Cooking time (duration): ';
 		markup += '<span class="value-title" title="PT' + hours + 'H' + minutes + 'M"></span>';    
-	    markup += totalminutes + '</p>';
+	  markup += totalminutes + '</p>';
 		return markup;
 	}
 	  
@@ -257,19 +182,17 @@ function format_item(hrclass, hrtext, hritem) {
 
   function format_enclosure(itemName, itemURL) {
 
-    var et =  '<?php if (get_option('hrecipe_enclosure') == 'div') echo "div"; else echo "fieldset";?>';
-	var markup = '';
+    var et =  (hrecipe_handle.hrecipe_enclosure == 'div') ? 'div' : 'fieldset';
+  	var markup = '';
 	
 	if ("div" == et) {
 		markup += '<div class="hrecipe">';
-        markup += '<h2 class="fn"><?php echo get_option('hrecipe_recipe_text');?>: ';
-		//markup += '<h2 class="fn">Recipe: ';
+    markup += '<h2 class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
 		markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
 		markup += '</h2>';
 	} else {
 		markup += '<fieldset class="hrecipe">';
-		markup += '<legend class="fn"><?php echo get_option('hrecipe_recipe_text');?>: ';
-		//markup += '<legend class="fn">Recipe: ';
+    markup += '<legend class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
 		markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
 		markup += '</legend>';
 	}	
@@ -278,7 +201,7 @@ function format_item(hrclass, hrtext, hritem) {
   }
 
   function linklove() {  	
-	return 'Microformatting by <a href="http://website-in-a-weekend.net/hrecipe/" target="_blank">hRecipe</a>.<br />';
+	  return 'Microformatting by <a href="http://website-in-a-weekend.net/hrecipe/" target="_blank">hRecipe</a>.<br />';
   }
 
   function reciply() {
@@ -291,7 +214,7 @@ function format_item(hrclass, hrtext, hritem) {
   	
     tb_remove();
 	
-	var HRecipeOutput = '';	
+	  var HRecipeOutput = '';	
     HRecipeOutput += format_enclosure(r["name"], r["url"]);
 
     HRecipeOutput += ( r["summary"]     ? format_summary(r["summary"]) : '' );
@@ -303,56 +226,54 @@ function format_item(hrclass, hrtext, hritem) {
     //HRecipeOutput += ( r["duration"]    ? format_item('duration', 'Cooking time (duration)', r["duration"]) : '' );
     HRecipeOutput += ( r["diettype"]    ? format_item('diettype', 'Diet type', r["diettype"]) : '' );
     HRecipeOutput += ( r["dietother"]   ? format_item('dietother', 'Diet (other)', r["dietother"]) : '' );
-	HRecipeOutput += ( r["restriction"] ? format_item('restriction', 'Dietary restriction', r["restriction"]) : '' );
-	HRecipeOutput += ( r["servings"]    ? format_item('yield', 'Number of servings (yield)', r["servings"]) : '' );
+	  HRecipeOutput += ( r["restriction"] ? format_item('restriction', 'Dietary restriction', r["restriction"]) : '' );
+	  HRecipeOutput += ( r["servings"]    ? format_item('yield', 'Number of servings (yield)', r["servings"]) : '' );
     HRecipeOutput += ( r["mealtype"]    ? format_item('mealtype', 'Meal type', r["mealtype"]) : '');
     HRecipeOutput += ( r["tradition"]   ? format_item('tradition', 'Culinary tradition', r["tradition"]) : '');
-	//HRecipeOutput += ( r["rating"]      ? edInsertHRecipeStarChars(r["rating"]) : '' );
-	HRecipeOutput += ( r["rating"]      ? google_compliant_rating(r["rating"]) : '' );
+	  //HRecipeOutput += ( r["rating"]      ? edInsertHRecipeStarChars(r["rating"]) : '' );
+	  HRecipeOutput += ( r["rating"]      ? google_compliant_rating(r["rating"]) : '' );
 
 
-    var want_copyright = '<?php echo get_option('hrecipe_copyright'); ?>'
+    var want_copyright = hrecipe_handle.hrecipe_copyright;
     //alert (want_copyright);
 	if (want_copyright != ''){
 		HRecipeOutput += 'Copyright &copy; ' + want_copyright + '.<br />'
 	}
 
 	///*
-	var want_byline = '<?php echo get_option('hrecipe_byline'); ?>'
+	var want_byline = hrecipe_handle.hrecipe_byline; 
     if (want_byline != '') {
 		HRecipeOutput += 'Recipe by ' + want_byline + '.<br />'
 	}
     //*/
 
-    var want_linklove = '<?php if (get_option('hrecipe_linklove') == 'on') echo 'true'; else echo ''; ?>'
+    var want_linklove = (hrecipe_handle.hrecipe_linklove == 'on') ? 'true' : '';
     //alert (want_linklove);
     if (want_linklove) {
 	   HRecipeOutput += linklove();
     }
 	
-    var want_reciply = '<?php if (get_option('hrecipe_reciply') == 'on') echo 'true'; else echo ''; ?>'
+    var want_reciply = (hrecipe_handle.hrecipe_reciply == 'on') ? 'true' : '';
     //alert (want_reciply);
     if (want_reciply) {
         // This is supposed to result from a function call 
         // to reciply(), which for some reason is crashing the 
         // entire hrecipe output.  Stupid.    
 	   HRecipeOutput += '<div class="reciply-addtobasket-widget" href="' 
-		             + '<?php echo get_permalink(); ?>' 
+		             + hrecipe_handle.Permalink 
 		             + '"></div>';
     }
 	
-    var et =  '<?php if (get_option('hrecipe_enclosure') == 'div') echo "div"; else echo "fieldset";?>';
+    var et =  (hrecipe_handle.hrecipe_enclosure == 'div') ? 'div' : 'fieldset';
     HRecipeOutput += '</' + et + '>';
     //HRecipeOutput += '</div>';
 
-    if (hrecipe_from_gui)
-      {
-	tinyMCE.execInstanceCommand('content', 'mceInsertContent', false, HRecipeOutput);
-	tinyMCE.execCommand('mceCleanup');
-      } else
-      {
-	edInsertContent(edCanvas, HRecipeOutput);
-      }
+    if (hrecipe_from_gui) {
+      tinyMCE.execInstanceCommand('content', 'mceInsertContent', false, HRecipeOutput);
+      tinyMCE.execCommand('mceCleanup');
+    } else {
+      edInsertContent(edCanvas, HRecipeOutput);
+    }
   } // End edInsertHRecipeDone()
 
 //]]></script>
