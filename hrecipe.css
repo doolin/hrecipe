@@ -90,6 +90,12 @@ fieldset.hrecipe p.restriction {
 
 
 /* div-based layouts */
+
+div.hrecipe h4 {
+  font-weight: bold;
+  font-size: 115%; 
+}
+
 div.hrecipe p.item {
     font-size: 1.6em;
     text-align: left;

@@ -147,7 +147,7 @@
   }
 
 /**
- * Thanks for Michael Allen Smith for help 
+ * Thanks for Michael Allen Smith for help
  * with bringing duration into spec so that 
  * hrecipes will be properly displayed as 
  * Google Rich Snippets.  Please visit Michael:

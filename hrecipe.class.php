@@ -48,15 +48,14 @@ class hrecipe extends PluginBase {
         //wp_register_script('hrecipe-reciply', 'http://www.recip.ly/static/js/jquery-reciply.js');
         //wp_enqueue_script('hrecipe-jquery-min');
         //wp_enqueue_script('hrecipe-reciply');
-        wp_register_script('hrecipe-format',plugins_url('hrecipe/js/hrecipe_format.js',dirname(__FILE__)));
-        wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js',dirname(__FILE__)));
-        wp_localize_script('hrecipescript','hrecipe_handle',hrecipe_localize_vars());
+        wp_register_script('hrecipeformat',plugins_url('hrecipe/js/hrecipe_format.js', dirname(__FILE__)),'','',true);
+        //wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js', dirname(__FILE__)));
+        //wp_localize_script('hrecipescript','hrecipe_handle',hrecipe_localize_vars());
+        wp_localize_script('hrecipeformat','hrecipe_handle',hrecipe_localize_vars());
 
         // TODO: Move the enqueue to where it's needed.
-        wp_enqueue_script('hrecipescript');
-        //wp_enqueue_script('hrecipe-format');
-        
-       
+        //wp_enqueue_script('hrecipescript');
+        wp_enqueue_script('hrecipeformat');
     }
     
     function register_mysettings() {
@@ -135,8 +134,9 @@ class hrecipe extends PluginBase {
         // of in the init function.  All the php in the hrecipe_format.php file
         // should go away, and it should be renamed to hrecipe_format.js        
         // See if wp_enqueue_script will work here.
-        //wp_enqueue_script('hrecipe-format');
-        include ('hrecipe_format.php');
+        wp_register_script('hrecipeformat',plugins_url('hrecipe/js/hrecipe_format.js', dirname(__FILE__)),'','',true);
+        wp_enqueue_script('hrecipeformat');
+        //include ('hrecipe_format.php');
     }
 
     function add_hrecipe_stylesheet() {

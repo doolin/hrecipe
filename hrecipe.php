@@ -1,12 +1,12 @@
 <?php 
 /*
-Plugin Name: hRecipe
-Plugin URI: http://hrecipe.com/
-Description: Fast and easy recipe formatting. Allows the correct microformat content to be easily added for recipes.
-Version: 0.5.4.3
-Author: Dave Doolin
-Author URI: http://website-in-a-weekend.net/
-*/ 
+ * Plugin Name: hRecipe
+ * Plugin URI: http://hrecipe.com/
+ * Description: Fast and easy recipe formatting. Allows the correct microformat content to be easily added for recipes.
+ * Version: 0.5.4.5
+ * Author: Dave Doolin
+ * Author URI: http://website-in-a-weekend.net/
+ */ 
 
 /*  Copyright 2009 David M. Doolin
 
@@ -70,7 +70,8 @@ $firephp->log(__FILE__, 'if (isset())');
     $recipe->init();
 
 
-    add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
+    //add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
+    //add_action('admin_print_scripts', array ($recipe, 'hrecipe_plugin_footer'));
 
     //add_action('wp_head', array ($recipe, 'hrecipe_plugin_head'));
     //add_action('marker_css', array ($recipe, 'hrecipe_plugin_css'));
@@ -82,6 +83,7 @@ $firephp->log(__FILE__, 'if (isset())');
     add_action('admin_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
 
     add_action('init', array ($recipe, 'hrecipe_plugin_init'));
+    // Not yet ready to move to internal options handling.
     //add_action('init', array ($recipe, 'register_mysettings'));
     add_action('admin_menu', array ($recipe, 'hrecipe_plugin_menu'));
 
