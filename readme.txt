@@ -93,6 +93,7 @@ microformat.
 * Fixed index error associated with null index in GET for donation support
 * Updated css to match current WordPress media popup for tabs, much cleaner now
 * Synchronised bottom button navigation with sidemenu tabs
+* Reorganized the bottom button navigation
 
 = 0.5.4.5 =
 * Scripting cleanup including s/$/jQuery/ and enqueueing script with variables now localized.

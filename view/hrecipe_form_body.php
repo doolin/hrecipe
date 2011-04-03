@@ -34,10 +34,10 @@
 </tr>
 </table>
 
-<ul class="tabs" style="margin-top:50px; border:0; background:transparent;">
-    <li class="btmtabs"><a href="#tab-2">Next</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
-  </ul>
+<ul class="tabs bottom">
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-2">Next</a></li>
+</ul>
+  
 </div>
 
 <div id="tab-2" class="tab_content">
@@ -54,11 +54,12 @@
 <td><textarea id="item-description" rows="10" cols="45"></textarea></td>
 </tr>
 </table>
-<ul class="tabs" style="margin-top:50px; border:0; background:transparent;">
-<li class="btmtabs"><a href="#tab-1">Back</a></li>
-    <li class="btmtabs"><a href="#tab-3">Next</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
-  </ul>
+
+<ul class="tabs bottom">
+  <li class="btmtabs"><a href="#tab-1">Back</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-3">Next</a></li>
+</ul>
+
 </div>
 
 <div id="tab-3" class="tab_content">
@@ -77,11 +78,10 @@
 </tr>
 
 </table>
-<ul class="tabs" style="margin-top:50px; border:0; background:transparent;">
-<li class="btmtabs"><a href="#tab-2">Back</a></li>
-    <li class="btmtabs"><a href="#tab-4">Next</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
-  </ul>
+<ul class="tabs bottom">
+  <li class="btmtabs"><a href="#tab-2">Back</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-4">Next</a></li>
+</ul>
 </div>
 
 <div id="tab-4" class="tab_content">
@@ -217,10 +217,10 @@
 </select></td>
 </tr>
 </table>
-<ul class="tabs" style="margin-top:50px; border:0; background:transparent;">
-<li class="btmtabs"><a href="#tab-3">Back</a></li>
+<ul class="tabs bottom">
+  <li class="btmtabs"><a href="#tab-3">Back</a></li>
   <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
-  </ul>
+</ul>
 </div>
 </form>
 </div>

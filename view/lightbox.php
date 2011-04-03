@@ -121,6 +121,11 @@ ul.tabs li a.current {
 }
 
 
+ul.tabs.bottom {
+  background-color: transparent;
+  margin-top: 50px;
+  border: 0px;
+}
 
 ul.tabs li.btmtabs {
 	background: transparent;
@@ -307,11 +312,11 @@ jQuery(document).ready(function() {
   
   // Handle the bottom tabs.
   jQuery("ul.tabs li.btmtabs a").click(function() {
-    alert("Bottom tab clicked " + this);
+    //alert("Bottom tab clicked " + this);
     var activeTab = jQuery(this).attr("href"); //Find the rel attribute value to identify the active tab + content
-    alert("Active tab: " + activeTab);
+    //alert("Active tab: " + activeTab);
     jQuery("ul.tabs li a").removeClass("current"); 
-    alert("ul.tabs li a."+activeTab.substring(1));
+    //alert("ul.tabs li a."+activeTab.substring(1));
     jQuery("ul.tabs li a."+activeTab.substring(1)).addClass("current"); 
     jQuery(".tab_content").hide(); //Hide all tab content
     jQuery(activeTab).fadeIn(); //Fade in the active content
