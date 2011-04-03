@@ -272,7 +272,6 @@
     HRecipeOutput += (r.mealtype    ? format_item('mealtype', 'Meal type', r.mealtype) : '');
     HRecipeOutput += (r.tradition   ? format_item('tradition', 'Culinary tradition', r.tradition) : '');
 
-
     HRecipeOutput += (r.rating      ? google_compliant_rating(r.rating) : '');
 
 
@@ -305,6 +304,9 @@
         + hrecipe_handle.Permalink 
         + '"></div>';
     }
+
+    // From keith@solowebdesigns.net
+    //HRecipeOutput += '<a class="printlink" href="#" onclick="javascript:window.print();">Print this recipe</a>';
   
     var et =  (hrecipe_handle.hrecipe_enclosure === 'div') ? 'div' : 'fieldset';
     HRecipeOutput += '</' + et + '>';

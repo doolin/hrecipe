@@ -106,7 +106,7 @@ class hrecipe extends PluginBase {
         global $hrecipe_plugin_url;
         global $hrecipe_plugin_url1;
 
-        if ( $_GET['sub'] == 'support' ) {
+        if ( isset($_GET['sub']) && $_GET['sub'] == 'support' ) {
             return $this->render_admin('support');
         } else {
             include ('view/admin/options.php');

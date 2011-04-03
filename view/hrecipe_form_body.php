@@ -6,10 +6,10 @@
   
   <div id="hrecipe-tab-wrapper">
     <ul class="tabs">
-      <li><a href="#tab-1">General</a></li>
-      <li><a href="#tab-2">Ingredients/Instructions</a></li>
-      <li><a href="#tab-3">Notes/Variations</a></li>
-      <li><a href="#tab-4">Additional Information</a></li>
+      <li><a class="tab-1" href="#tab-1">General</a></li>
+      <li><a class="tab-2" href="#tab-2">Ingredients/Instructions</a></li>
+      <li><a class="tab-3" href="#tab-3">Notes/Variations</a></li>
+      <li><a class="tab-4" href="#tab-4">Additional Information</a></li>
     </ul>
   </div><!-- tabbed menu wrapper -->
 

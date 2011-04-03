@@ -295,7 +295,7 @@ jQuery(document).ready(function() {
   jQuery("ul.tabs li:first a").addClass("current").show(); //Activate first tab
   jQuery(".tab_content:first").show(); //Show first tab content
   
-  //On Click Event
+  //On Click Event for the sidemenu across the media popup
   jQuery("ul.tabs li a").click(function() {
     jQuery("ul.tabs li a").removeClass("current"); 
     jQuery(this).addClass("current"); 
@@ -304,6 +304,20 @@ jQuery(document).ready(function() {
     jQuery(activeTab).fadeIn(); //Fade in the active content
     return false;
   });
+  
+  // Handle the bottom tabs.
+  jQuery("ul.tabs li.btmtabs a").click(function() {
+    alert("Bottom tab clicked " + this);
+    var activeTab = jQuery(this).attr("href"); //Find the rel attribute value to identify the active tab + content
+    alert("Active tab: " + activeTab);
+    jQuery("ul.tabs li a").removeClass("current"); 
+    alert("ul.tabs li a."+activeTab.substring(1));
+    jQuery("ul.tabs li a."+activeTab.substring(1)).addClass("current"); 
+    jQuery(".tab_content").hide(); //Hide all tab content
+    jQuery(activeTab).fadeIn(); //Fade in the active content
+    return false;
+  });
+  
 });
 //]]>
 </script>

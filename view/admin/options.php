@@ -37,10 +37,7 @@
 <?php   
     }
     
-		/**
-		 * Box with latest RSS news
-		 */
-		function hrecipe_news($id, $title, $feed, $class) {
+		function hrecipe_news_old($id, $title, $feed, $class) {
 			require_once(ABSPATH.WPINC.'/rss.php');
 			if ( $rss = fetch_rss($feed)) {
 			    $content = '<ul>';
@@ -58,6 +55,23 @@
 			}
 		}
     
+    // http://www.mrspeaker.net/2009/08/07/convert-wordpress-fetch_rss-to-fetch_feed/
+    function hrecipe_news($id, $title, $feed, $class) {
+      if ( $rss = fetch_feed($feed)) {
+        $content = '<ul>';
+        $rssitems = array_slice( $rss->get_items(), 0, 3 );
+        foreach ((array)$rssitems as $item) {
+          /* Credit: Joost de Valk, yoast.com */
+          $content .= '<li class="'.$class.'">';
+          $content .= '<a class="rsswidget" href="'.esc_url( $item->get_permalink(), $protocolls=null, 'display' ).'">'. htmlentities($item->get_title()) .'</a> ';
+          $content .= '</li>';
+        }
+        $content .= '<li class="rss"><a href="'.$feed.'">Subscribe with RSS</a></li>';
+        hrecipe_postbox($id, $title, $content);
+      } else {
+        hrecipe_postbox($id, $title, 'Nothing to say...');
+      }
+    }
     
 ?>
 
@@ -404,19 +418,22 @@ function hrecipe_donate_postbox($id,$title) {
 	$content = <<<EOF
 <p>
 hRecipe is truly a labor of love, but 
-love always better with a little bread.
+love always goes better with a little bread.
 </p>
 EOF;
 	hrecipe_postbox($id,$title,$content);
 }
 ?>
 
+<?php
+ // Check out the side boxes for XML Sitemaps, very slick.
+?>
 <?php //bpe_appreciation('bpe-appreciation','Like this plugin?'); ?> 
 <?php //bpe_support('bpe-get-support','Need support?'); ?>
-<?php //hrecipe_donate_postbox('donate','<strong class="red">Donate $5, $10, $20 or $50!</strong>'); ?>
+<?php hrecipe_donate_postbox('donate','<strong class="red">Donate $5, $10, $20 or $50!</strong>'); ?>
 <?php hrecipe_news('wiawlatest', 'News: Website In A Weekend','http://website-in-a-weekend.net/feed/','wiaw'); ?>
-<?php hrecipe_news('tinoboxlatest', 'News: There Is No Box','http://tinobox.com/wordpress/feed/','tinobox'); ?>
 <?php hrecipe_news('hrecipelatest', 'News: hRecipe for WordPress','http://hrecipe.com/feed/','hrecipe'); ?>
+<?php hrecipe_news('tinoboxlatest', 'News: There Is No Box','http://tinobox.com/wordpress/feed/','tinobox'); ?>
 
 </div><!-- meta-box-sortables -->
 <br />

@@ -88,8 +88,14 @@ microformat.
 
 == Changelog ==
 
+= 0.5.4.6 =
+* Updated from rss to simplepie feed reader
+* Fixed index error associated with null index in GET for donation support
+* Updated css to match current WordPress media popup for tabs, much cleaner now
+* Synchronised bottom button navigation with sidemenu tabs
+
 = 0.5.4.5 =
-* Scripting cleanup including s/$/jQeury/ and enqueueing script with variables now localized.
+* Scripting cleanup including s/$/jQuery/ and enqueueing script with variables now localized.
 
 = 0.5.4.4 =
 * Changed Plugin URI to point to http://hrecipe.com/
