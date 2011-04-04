@@ -21,6 +21,7 @@ and search engines will like them better too.
 
 Each of the following people have donated to help hRecipe to continue development:
 
+* Theresa S.
 * Susan Voisin http://http://sbvdesigns.com/ and http://blog.fatfreevegan.com/
 * Anon: http://transcriptionconnections.com/
 * Anne Bender: http://annebender.com/
@@ -87,6 +88,9 @@ microformat.
 
 == Changelog ==
 
+= 0.5.5.1 = 
+* Add Theresa S to supporters list.
+ 
 = 0.5.5 =
 * Updated from rss to simplepie feed reader
 * Fixed index error associated with null index in GET for donation support

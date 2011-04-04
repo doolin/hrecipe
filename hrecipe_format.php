@@ -1,5 +1,4 @@
 
-
 <script type="text/javascript">//<![CDATA[
 
   var hrecipe_from_gui;
