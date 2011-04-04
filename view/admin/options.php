@@ -420,6 +420,16 @@ function hrecipe_donate_postbox($id,$title) {
 hRecipe is truly a labor of love, but 
 love always goes better with a little bread.
 </p>
+<ul>
+<li>Theresa S.</li>
+<li>Susan Voison - <a href="http://blog.fatfreevegan.com/">Fat Free Vegan</a></li>
+<li><a href="http://transcriptionconnections.com/">Transcription Connections</a></li>
+<li><a href="http://annebender.com/">Anne Bender</a></li>
+<li><a href="http://bransonsparks.com">Branson Sparks</a></li>
+</ul>
+<p>If would like to take your place at the head of 
+this list, hit that shiny orange PayPal Donate
+button right above.  Thanks!</p>
 EOF;
 	hrecipe_postbox($id,$title,$content);
 }
@@ -430,9 +440,9 @@ EOF;
 ?>
 <?php //bpe_appreciation('bpe-appreciation','Like this plugin?'); ?> 
 <?php //bpe_support('bpe-get-support','Need support?'); ?>
-<?php hrecipe_donate_postbox('donate','<strong class="red">Donate $5, $10, $20 or $50!</strong>'); ?>
-<?php hrecipe_news('wiawlatest', 'News: Website In A Weekend','http://website-in-a-weekend.net/feed/','wiaw'); ?>
+<?php hrecipe_donate_postbox('donate','<strong class="red">Donate $5, $12, $25 or $50!</strong>'); ?>
 <?php hrecipe_news('hrecipelatest', 'News: hRecipe for WordPress','http://hrecipe.com/feed/','hrecipe'); ?>
+<?php hrecipe_news('wiawlatest', 'News: Website In A Weekend','http://website-in-a-weekend.net/feed/','wiaw'); ?>
 <?php hrecipe_news('tinoboxlatest', 'News: There Is No Box','http://tinobox.com/wordpress/feed/','tinobox'); ?>
 
 </div><!-- meta-box-sortables -->

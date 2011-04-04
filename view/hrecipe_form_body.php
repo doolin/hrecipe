@@ -1,5 +1,5 @@
 <div class="wrap">
-<h2><?php _e('New Recipe','hrecipe'); ?></h2>
+<h2><?php _e('New Semantic Recipe','hrecipe'); ?></h2>
 
 
 <div>

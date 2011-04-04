@@ -43,9 +43,8 @@ This is a partial list, more coming soon:
 I know there are more. If you weren't listed, contact me, I'll add you in.
 
 = Contributors = 
-
 * Anu Kumar of the The Spicy Yatra http://thespiceyatra.com sent some options coding for Vietnamese and Marathi cuisine.
-*Javascript for post boxes fixed, courtesy of MicroMedia Websites http://micromediawebsites.com
+* Javascript for post boxes fixed, courtesy of MicroMedia Websites http://micromediawebsites.com
 
 
 
