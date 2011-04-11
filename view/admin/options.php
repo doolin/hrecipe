@@ -1,7 +1,7 @@
 
 <!-- Thank you Michael Torbert of All In One SEO Pack -->
 <script type="text/javascript"> 
-<!--
+//<!--
     function toggleVisibility(id) {
        var e = document.getElementById(id);
        if(e.style.display == 'block')
@@ -37,40 +37,26 @@
 <?php   
     }
     
-		function hrecipe_news_old($id, $title, $feed, $class) {
-			require_once(ABSPATH.WPINC.'/rss.php');
-			if ( $rss = fetch_rss($feed)) {
-			    $content = '<ul>';
-				$rss->items = array_slice( $rss->items, 0, 3 );
-				foreach ( (array) $rss->items as $item ) {
-				    /* Credit: Joost de Valk, yoast.com */
-					$content .= '<li class="'.$class.'">';
-					$content .= '<a class="rsswidget" href="'.esc_url( $item['link'], $protocolls=null, 'display' ).'">'. htmlentities($item['title']) .'</a> ';
-					$content .= '</li>';
-				}
-				$content .= '<li class="rss"><a href="'.$feed.'">Subscribe with RSS</a></li>';
-				hrecipe_postbox($id, $title, $content);
-			} else {
-				hrecipe_postbox($id, $title, 'Nothing to say...');
-			}
-		}
     
     // http://www.mrspeaker.net/2009/08/07/convert-wordpress-fetch_rss-to-fetch_feed/
+    // http://codex.wordpress.org/Function_Reference/fetch_feed
     function hrecipe_news($id, $title, $feed, $class) {
-      if ( $rss = fetch_feed($feed)) {
-        $content = '<ul>';
-        $rssitems = array_slice( $rss->get_items(), 0, 3 );
-        foreach ((array)$rssitems as $item) {
-          /* Credit: Joost de Valk, yoast.com */
-          $content .= '<li class="'.$class.'">';
-          $content .= '<a class="rsswidget" href="'.esc_url( $item->get_permalink(), $protocolls=null, 'display' ).'">'. htmlentities($item->get_title()) .'</a> ';
-          $content .= '</li>';
-        }
-        $content .= '<li class="rss"><a href="'.$feed.'">Subscribe with RSS</a></li>';
-        hrecipe_postbox($id, $title, $content);
-      } else {
-        hrecipe_postbox($id, $title, 'Nothing to say...');
+      
+      $rss = fetch_feed($feed);
+      if (is_wp_error($rss)) {
+        return;
       }
+      
+      $content = '<ul>';
+      $rssitems = array_slice( $rss->get_items(), 0, 3 );
+      foreach ((array)$rssitems as $item) {
+       /* Credit: Joost de Valk, yoast.com */
+        $content .= '<li class="'.$class.'">';
+        $content .= '<a class="rsswidget" href="'.esc_url( $item->get_permalink(), $protocolls=null, 'display' ).'">'. htmlentities($item->get_title()) .'</a> ';
+        $content .= '</li>';
+      }
+      $content .= '<li class="rss"><a href="'.$feed.'">Subscribe with RSS</a></li></ul>';
+      hrecipe_postbox($id, $title, $content);
     }
     
 ?>
@@ -421,7 +407,8 @@ hRecipe is truly a labor of love, but
 love always goes better with a little bread.
 </p>
 <ul>
-<li>Theresa S.</li>
+<li>Commercial Sponsor <a href="http://yummly.com/">Yummly</a>.</li>
+<li>Theresa Carle-Sanders <a href="http://islandvittles.com/">Island Vittles</a>.</li>
 <li>Susan Voison - <a href="http://blog.fatfreevegan.com/">Fat Free Vegan</a></li>
 <li><a href="http://transcriptionconnections.com/">Transcription Connections</a></li>
 <li><a href="http://annebender.com/">Anne Bender</a></li>
@@ -440,7 +427,7 @@ EOF;
 ?>
 <?php //bpe_appreciation('bpe-appreciation','Like this plugin?'); ?> 
 <?php //bpe_support('bpe-get-support','Need support?'); ?>
-<?php hrecipe_donate_postbox('donate','<strong class="red">Donate $5, $12, $25 or $50!</strong>'); ?>
+<?php hrecipe_donate_postbox('donate','<strong class="red">Donate $12, $25 or $50!</strong>'); ?>
 <?php hrecipe_news('hrecipelatest', 'News: hRecipe for WordPress','http://hrecipe.com/feed/','hrecipe'); ?>
 <?php hrecipe_news('wiawlatest', 'News: Website In A Weekend','http://website-in-a-weekend.net/feed/','wiaw'); ?>
 <?php hrecipe_news('tinoboxlatest', 'News: There Is No Box','http://tinobox.com/wordpress/feed/','tinobox'); ?>

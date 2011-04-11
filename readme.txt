@@ -2,8 +2,8 @@
 Contributors: doolin
 Tags: hrecipe, editor, microformat
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 0.5.5
+Tested up to: 3.1.1
+Stable tag: 0.5.6
 
 This is a plugin to allow the easy entry of microformat content for
 recipes (i.e. the hRecipe microformat) in WordPress pages and
@@ -21,7 +21,8 @@ and search engines will like them better too.
 
 Each of the following people have donated to help hRecipe to continue development:
 
-* Theresa S.
+* Commercial sponsorship http://yummly.com Thanks guys!
+* Theresa Carle-Sanders http://islandvittles.com
 * Susan Voisin http://http://sbvdesigns.com/ and http://blog.fatfreevegan.com/
 * Anon: http://transcriptionconnections.com/
 * Anne Bender: http://annebender.com/
@@ -90,6 +91,9 @@ microformat.
 
 = 0.5.5.1 = 
 * Add Theresa S to supporters list.
+* Fixed a type in a javascript function.
+* Closed the ul in the new feed creator.
+
  
 = 0.5.5 =
 * Updated from rss to simplepie feed reader
