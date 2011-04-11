@@ -89,13 +89,15 @@ microformat.
 
 == Changelog ==
 
-= 0.5.5.1 = 
-* Add Theresa S to supporters list.
+= 0.5.6 = 
+* Added http://yummly.com to supporters list, first commercial supporter
+* Add Theresa Carle-Sanders (http://islandvittles.com) to supporters list.
 * Fixed a type in a javascript function.
 * Closed the ul in the new feed creator.
 
  
 = 0.5.5 =
+* Added Susan Voisin http://http://sbvdesigns.com/ and http://blog.fatfreevegan.com/ to supporters
 * Updated from rss to simplepie feed reader
 * Fixed index error associated with null index in GET for donation support
 * Updated css to match current WordPress media popup for tabs, much cleaner now
