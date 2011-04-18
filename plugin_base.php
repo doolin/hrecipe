@@ -178,11 +178,22 @@ class PluginBase {
 		return $path;
 	}	
 	
-	function base () {
+	function base() {
 		$parts = explode( '?', basename( $_SERVER['REQUEST_URI'] ) );
 		return $parts[0];
 	}	
-	
+
+ /**
+  * Not using this currently, kind of obnoxious.
+  * @return nothing
+  */
+  function admin_footer() {
+
+    $plugin_data = get_plugin_data(__FILE__);
+    printf('%1$s plugin | Version %2$s | by %3$s<br />', $plugin_data['Title'], $plugin_data['Version'], $plugin_data['Author']);
+  }
+
+  	
 	
 }
 

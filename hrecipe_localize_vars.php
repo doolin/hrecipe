@@ -9,8 +9,6 @@ function hrecipe_localize_vars() {
     'Permalink' => get_permalink(),
     'AjaxUrl' => admin_url('admin-ajax.php'),
     'PluginsUrl' => plugins_url('hrecipe',dirname(__FILE__)),
-    'OtherText' => __('hRecipe test text', 'hrecipe'),
-    'FooText' => __('Foo! Foo! Foo! hRecipe!', 'hrecipe'),
     'hrecipe_rating_text' => get_option('hrecipe_rating_text'),
     'hrecipe_stars_text' => get_option('hrecipe_stars_text'),
     'hrecipe_ingredientslist' => get_option('hrecipe_ingredientlist'),

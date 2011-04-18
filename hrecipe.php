@@ -40,9 +40,6 @@ lang/hrecipe.pot
 global $hrecipe_plugin_url;
 $hrecipe_plugin_url = WP_PLUGIN_URL.'/hrecipe';
 
-// FirePHP initialization. 
-//require_once('FirePHPCore/FirePHP.class.php');
-//ob_start();
 
 include dirname( __FILE__ ).'/models/options_db.php';
 
@@ -56,35 +53,17 @@ if (class_exists('hrecipe')) {
 
 if ( isset ($recipe)) {
 
-/*
-$firephp = FirePHP::getInstance(true); 
-$firephp->log(__FILE__, 'if (isset())');
-*/
-
     register_activation_hook( __FILE__ , array (&$recipe, 'hrecipe_activate'));
     register_deactivation_hook( __FILE__ , array (&$recipe, 'hrecipe_deactivate'));
-    // TODO: this call only loads a php file which inserts the javascript.
-    // Find a way to leverage wp_enqueue_script for this.
-    //add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
     add_filter('plugin_action_links', 'plugin_links', 10, 2);
     $recipe->init();
-
-
-    //add_action('admin_footer', array ($recipe, 'hrecipe_plugin_footer'));
-    //add_action('admin_print_scripts', array ($recipe, 'hrecipe_plugin_footer'));
-
-    //add_action('wp_head', array ($recipe, 'hrecipe_plugin_head'));
-    //add_action('marker_css', array ($recipe, 'hrecipe_plugin_css'));
-    //This was deleted
-    //add_action('wp_head', array ($recipe, 'hrecipe_header_css'));
         
     add_action('wp_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
     add_action('wp_print_styles', array ($recipe, 'add_hrecipe_editor_stylesheet'));
     add_action('admin_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
 
     add_action('init', array ($recipe, 'hrecipe_plugin_init'));
-    // Not yet ready to move to internal options handling.
-    //add_action('init', array ($recipe, 'register_mysettings'));
+    add_action('admin_init', array($recipe, 'register_mysettings'));
     add_action('admin_menu', array ($recipe, 'hrecipe_plugin_menu'));
 
    /**
