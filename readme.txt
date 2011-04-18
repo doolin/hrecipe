@@ -5,9 +5,9 @@ Requires at least: 3.0
 Tested up to: 3.1.1
 Stable tag: 0.5.6
 
-This is a plugin to allow the easy entry of microformat content for
-recipes (i.e. the hRecipe microformat) in WordPress pages and
-posts. 
+hRecipe is a WordPress plugin for easy entry of your recipe data, and
+microformatting  your recipe blog posts and pages for attractive 
+presentation on both your blog and (important!) search engine results. 
 
 
 == Description ==
@@ -94,6 +94,7 @@ microformat.
 * Add Theresa Carle-Sanders (http://islandvittles.com) to supporters list.
 * Fixed a type in a javascript function.
 * Closed the ul in the new feed creator.
+* Fixed a bad assignment: `if ($rss = fetch_feed(...))` This anti-pattern was copied from a famous plugin developer.
 
  
 = 0.5.5 =

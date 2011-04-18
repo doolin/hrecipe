@@ -393,7 +393,7 @@
             <input type="submit" name="Submit" value="<?php _e('Save Changes','hrecipe') ?>" />
         </p>
         </div>
-            </div><!-- postbox-container -->
+    </div><!-- postbox-container -->
             
 <div class="postbox-container" style="width: 20%;">
 <div class="meta-box-sortables ui-sortable">
