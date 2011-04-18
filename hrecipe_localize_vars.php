@@ -4,6 +4,36 @@
 // TODO: Write an iterator aking array of handles
 // and fetching options.
 function hrecipe_localize_vars() {
+  
+  $options = get_option('hrecipe_options');
+  
+  return array(
+    'SiteUrl' => get_bloginfo('url'),
+    'Permalink' => get_permalink(),
+    'AjaxUrl' => admin_url('admin-ajax.php'),
+    'PluginsUrl' => plugins_url('hrecipe',dirname(__FILE__)),
+    'hrecipe_rating_text'       => $options['rating_text'],
+    'hrecipe_stars_text'        => $options['stars_text'],
+    'hrecipe_ingredientslist'   => $options['ingredientlist'],
+    'hrecipe_ingredients_text'  => $options['ingredients_text'],
+    'hrecipe_instructions_text' => $options['instructions_text'],
+    'hrecipe_quicknotes_text'   => $options['quicknotes_text'],
+    'hrecipe_variations_text'   => $options['variations_text'],
+    'hrecipe_summary_text'      => $options['summary_text'],
+    'hrecipe_enclosure'         => $options['enclosure'],
+    'hrecipe_recipe_text'       => $options['recipe_text'],
+    'hrecipe_copyright'         => $options['copyright'],
+    'hrecipe_byline'            => $options['byline'],
+    'hrecipe_linklove'          => (isset($options['linklove'])) ? "on" : "off",
+    'hrecipe_reciply'           => (isset($options['reciply'])) ? "on" : "off",
+    'hrecipe_enclosure'         => $options['enclosure'],
+    'hrecipe_ingredientlist'    => $options['ingredientlist'],
+    'hrecipe_instructionlist'   => $options['instructionlist']
+  );
+}
+
+
+function hrecipe_localize_vars_old() {
   return array(
     'SiteUrl' => get_bloginfo('url'),
     'Permalink' => get_permalink(),
@@ -26,5 +56,6 @@ function hrecipe_localize_vars() {
     'hrecipe_enclosure' => get_option('hrecipe_enclosure')
   );
 }
+
 
 ?>

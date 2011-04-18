@@ -3,14 +3,6 @@
 /*global tinyMCE, edInsertContent, edCanvas */
 
 
-/*
- * enqueue this script with a dependency on 'quicktags'
- */
-//(function () {
-
-  //alert("In script...");
-  // Get this script included...
-  //http://wordpress.org/support/topic/understanding-admin_print_scripts-page-hook?replies=13
 
   var hrecipe_from_gui;
 
@@ -111,6 +103,9 @@
 
 
   function format_instructions(itemDescription) {
+
+    //listtype
+    var lt =  (hrecipe_handle.hrecipe_instructionlist === 'bullets') ? 'ul' : 'ol';
     var imarkup = '';
     var lines = '';
     var i;
@@ -118,12 +113,12 @@
     lines = itemDescription.split("*");
     imarkup = '<div class="instructions">';
     imarkup += '<h4 class="instructions">' + hrecipe_handle.hrecipe_instructions_text + '</h4>';
-    imarkup += '<ol class="instructions">';
+    imarkup += '<' + lt + ' class="instructions">';
     for (i = 0; i < lines.length; i++) {
       if (lines[i] === '') { continue; }
       imarkup += '<li>' + lines[i] + '</li>';
     }
-    imarkup += '</ol>';
+    imarkup += '</' + lt + '>';
     imarkup += '</div>';
     return imarkup;
   }
@@ -168,18 +163,6 @@
     return markup;
   }
 
-
-/*
-  function format_summary(itemSummary) {
-    var markup = '';
-    if (itemSummary === '') { return; }
-    markup = '<h4 class="summary">';
-    markup += hrecipe_handle.hrecipe_summary_text;
-    markup += '<em>' + itemSummary + '</em>';    
-    markup += '</h4>';
-    return markup;
-  }
-*/
 
 /**
  * Thanks for Michael Allen Smith for help 
@@ -242,7 +225,7 @@
   }
 
   function linklove() {   
-    return 'Microformatting by <a href="http://website-in-a-weekend.net/hrecipe/" target="_blank">hRecipe</a>.<br />';
+    return 'Microformatting by <a href="http://hrecipe.com/community/" target="_blank">hRecipe</a>.<br />';
   }
 
   function reciply() {
@@ -288,12 +271,14 @@
     }
     //*/
 
+    // TODO: Clean up superfluous code
     var want_linklove = (hrecipe_handle.hrecipe_linklove === 'on') ? 'true' : '';
     //alert (want_linklove);
     if (want_linklove) {
       HRecipeOutput += linklove();
     }
   
+    // TODO: Clean up superfluous code
     var want_reciply = (hrecipe_handle.hrecipe_reciply === 'on') ? 'true' : '';
     //alert (want_reciply);
     if (want_reciply) {

@@ -125,7 +125,7 @@ function hrecipe_options_tip($id, $label, $tip) {
       <tr>
         <th align="right"><?php _e ('Plugin Support', 'hrecipe'); ?>:</th>
         <td>
-          <input type="checkbox" name="hrecipe_support" <?php echo $this->checked (get_option('hrecipe_support')); ?> id="support"/> 
+          <input type='checkbox' id='support' name='hrecipe_options[support]' <?php checked( isset( $options['support'])); ?> /> 
           <label for="support"><span class="sub"><?php _e ('I\'m a nice person and I have helped support the author of this plugin', 'hrecipe'); ?></span></label>
         </td>
       </tr>
@@ -135,7 +135,7 @@ function hrecipe_options_tip($id, $label, $tip) {
                 </th>
                 <td>
                     <input type='checkbox' id='linklove' name='hrecipe_options[linklove]'
-                    <?php checked( isset( $options['linklove']));?>>
+                    <?php checked( isset( $options['linklove']));?> />
                     <?php _e('Yes!', 'hrecipe'); ?>
                 </td>
             </tr>
@@ -145,7 +145,7 @@ function hrecipe_options_tip($id, $label, $tip) {
                 </th>
                 <td>
                     <input type='checkbox' id='reciply' name='hrecipe_options[reciply]' 
-                    <?php checked( isset( $options['reciply']));?>>
+                    <?php checked( isset( $options['reciply']));?> />
                     <?php _e('Yes!', 'hrecipe'); ?>
                 </td>
             </tr>

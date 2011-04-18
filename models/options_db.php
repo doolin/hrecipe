@@ -50,7 +50,7 @@ EOD;
                     'background_color' => 'white',
                     'recipe_text' => __('Recipe','hrecipe'),
                     'summary_text' => __('Summary','hrecipe'),
-                    'ingredients_text' => __('ingredients','hrecipe'),
+                    'ingredients_text' => __('Ingredients','hrecipe'),
                     'instructions_text' => __('Instructions','hrecipe'),
                     'quicknotes_text' => __('Quick notes','hrecipe'),
                     'variations_text' => __('Variations','hrecipe'),
