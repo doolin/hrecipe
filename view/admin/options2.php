@@ -122,13 +122,21 @@ function hrecipe_options_tip($id, $label, $tip) {
 
 
     <table cellpadding="3" width="100%" class="form-table">
+
+<?php 
+function hrecipe_emit_donation_html($options) {
+?>
       <tr>
         <th align="right"><?php _e ('Plugin Support', 'hrecipe'); ?>:</th>
         <td>
-          <input type='checkbox' id='support' name='hrecipe_options[support]' <?php checked( isset( $options['support'])); ?> /> 
+          <input type='checkbox' id='support' name='hrecipe_options[support]' <?php checked(isset( $options['support'])); ?> /> 
           <label for="support"><span class="sub"><?php _e ('I\'m a nice person and I have helped support the author of this plugin', 'hrecipe'); ?></span></label>
         </td>
       </tr>
+<?php
+}
+//hrecipe_emit_donation_html($options);
+?>
             <tr valign="top">
                 <th scope="row">
                     <?php hrecipe_options_tip('hrecipe_linklove_tip', 'Link love!', 'Link love sends a trackback to the hRecipe home page.  You get a backlink to your recipe. I use it to see how people use hRecipe and fix problems.'); ?>                                    
@@ -136,19 +144,25 @@ function hrecipe_options_tip($id, $label, $tip) {
                 <td>
                     <input type='checkbox' id='linklove' name='hrecipe_options[linklove]'
                     <?php checked( isset( $options['linklove']));?> />
-                    <?php _e('Yes!', 'hrecipe'); ?>
+                    <?php _e('Yes! Help hRecipe help you, and find other bloggers.', 'hrecipe'); ?>
                 </td>
             </tr>
+<?php
+function hrecipe_emit_reciply_html($options) {
+?>
             <tr valign="top">
                 <th scope="row">
                     <?php hrecipe_options_tip('hrecipe_reciply_tip', 'Recip.ly', '(UK only!) Recip.ly lets you earn money and save time by ordering recipe ingredients online'); ?>                                    
                 </th>
                 <td>
-                    <input type='checkbox' id='reciply' name='hrecipe_options[reciply]' 
-                    <?php checked( isset( $options['reciply']));?> />
+                    <input type='checkbox' id='reciply' name='hrecipe_options[reciply]' <?php checked( isset( $options['reciply']));?> />
                     <?php _e('Yes!', 'hrecipe'); ?>
                 </td>
             </tr>
+<?php
+}
+//hrecipe_emit_reciply_html($options);
+?>
       </table>
 
           <p class="submit">
@@ -246,7 +260,10 @@ function hrecipe_options_tip($id, $label, $tip) {
                     </div>
                 </div>
 
-          
+          <p class="submit">
+            <input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Changes'); ?>" />
+          </p>
+         
                 <div id="hrecipestyling-old" class="postbox">
                     <div class="handlediv" title="Click to toggle">
                         <br/>
@@ -343,13 +360,7 @@ EOP;
                                     <?php _e('Instruction list formatting', 'hrecipe'); ?>
                                 </th>                                
                                 <td>
-
-                                    <input type="radio" name='hrecipe_options[instructionlist]' value="none"
-                                    <?php if ($options['instructionlist'] == 'bullets') echo 'checked="checked"'; else echo 'checked=""';?>>
-                                    <?php _e('None', 'hrecipe'); ?>
-
-                                    &nbsp;&nbsp;
-                                    
+                                                                      
                                     <input type="radio" name='hrecipe_options[instructionlist]' value="bullets"
                                     <?php if ($options['instructionlist'] == 'bullets') echo "checked"?>>
                                     <?php _e('Bullets', 'hrecipe'); ?>

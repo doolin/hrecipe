@@ -1,18 +1,11 @@
 <?php
 
-// http://planetozh.com/blog/2009/09/top-10-most-common-coding-mistakes-in-wordpress-plugins/
-// http://striderweb.com/nerdaphernalia/2008/07/consolidate-options-with-arrays/
-// Some "best practice" 
-/**
- * http://scribu.net/wordpress/front-end-editor
- * http://wordpress.stackexchange.com/questions/266/best-of-breed-features-of-a-high-end-wordpress-web-host
- * http://wordpress.stackexchange.com/questions/4702/best-practices-for-a-b-testing
- * http://wordpress.stackexchange.com/questions/715/objective-best-practices-for-plugin-development
- * http://www.heavyworks.net/blog/posts/5-best-practices-on-developing-wordpress-plugins
- */
-
 
 function hrecipe_add_options() {
+  
+  if (get_option('hrecipe_options')) {
+    return;
+  }
   
   hrecipe_set_default_options();
   //hrecipe_set_old_default_options();
@@ -21,7 +14,7 @@ function hrecipe_add_options() {
  
 function hrecipe_delete_options() {
   
-  delete_option('hrecipe_options');
+  //delete_option('hrecipe_options');
   //hrecipe_delete_old_options();
 }
 
@@ -39,30 +32,31 @@ the future, it should be safe to leave this
 in your WordPress options table.
 EOD;
   
-  $options = array ('description' => $description,
-                    'ingredientlist' => 'bullets',
-                    'instructionlist' => 'numbers',
-                    'enclosure' => 'div',
-                    'byline' => '',
-                    'copyright' => '',
-                    'linklove' => '',
-                    'reciply' => '',
-                    'background_color' => 'white',
-                    'recipe_text' => __('Recipe','hrecipe'),
-                    'summary_text' => __('Summary','hrecipe'),
-                    'ingredients_text' => __('Ingredients','hrecipe'),
-                    'instructions_text' => __('Instructions','hrecipe'),
-                    'quicknotes_text' => __('Quick notes','hrecipe'),
-                    'variations_text' => __('Variations','hrecipe'),
+  $options = array ('description'        => $description,
+                    'ingredientlist'     => 'bullets',
+                    'instructionlist'    => 'numbers',
+                    'enclosure'          => 'div',
+                    'background_color'   => 'white',
+                    'recipe_text'        => __('Recipe','hrecipe'),
+                    'summary_text'       => __('Summary','hrecipe'),
+                    'ingredients_text'   => __('Ingredients','hrecipe'),
+                    'instructions_text'  => __('Instructions','hrecipe'),
+                    'quicknotes_text'    => __('Quick notes','hrecipe'),
+                    'variations_text'    => __('Variations','hrecipe'),
                     'culinary_tradition' => __('Culinary tradition','hrecipe'),
-                    'rating_text' => __('My rating','hrecipe'),
-                    'stars_text' => __('stars','hrecipe'),
-                    'support' => ''
+                    'rating_text'        => __('My rating','hrecipe'),
+                    'stars_text'         => __('stars','hrecipe'),
+                    'byline'             => '',
+                    'copyright'          => '',
+                    'linklove'           => '',
+                    'reciply'            => '',
+                    'support'            => ''
   );
   
   update_option('hrecipe_options', $options);
   
 } 
+
 
  
 function hrecipe_set_old_default_options() {

@@ -8,7 +8,7 @@
  * Author URI: http://website-in-a-weekend.net/
  */ 
 
-/*  Copyright 2009 David M. Doolin
+/*  Copyright 2009-2011 David M. Doolin
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -35,6 +35,9 @@ lang/hrecipe.pot
    * Procedure for merging updated translations: TBD
    */
 
+   
+define('HRECIPE_VERSION', 5.6);   
+   
 // Find the full URL to the plugin directory and store it
 // @todo define(HRECIPE_PLUGIN_URL) instead of this.
 global $hrecipe_plugin_url;
