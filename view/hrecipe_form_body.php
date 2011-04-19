@@ -6,10 +6,9 @@
   
   <div id="hrecipe-tab-wrapper">
     <ul class="tabs">
-      <li><a class="tab-1" href="#tab-1">General</a></li>
-      <li><a class="tab-2" href="#tab-2">Ingredients/Instructions</a></li>
-      <li><a class="tab-3" href="#tab-3">Additional Information</a></li>
-      <li><a class="tab-4" href="#tab-4">Notes/Variations</a></li>
+      <li><a class="tab-1" href="#tab-1">Ingredients/Instructions</a></li>
+      <li><a class="tab-2" href="#tab-2">More Details</a></li>
+      <li><a class="tab-3" href="#tab-3">Notes/Variations</a></li>
     </ul>
   </div><!-- tabbed menu wrapper -->
 
@@ -30,21 +29,9 @@
 
 <tr valign="top">
 <th scope="row"><?php _e('Summary','hrecipe'); ?></th>
-<td><input type="text" id="item-summary" size="45" /></td>
+<td><input type="text" id="item-summary" size="45" cols="45" /></td>
 </tr>
-</table>
 
-
-
-<ul class="tabs bottom">
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-2">Next</a></li>
-</ul>
-  
-</div>
-
-<div id="tab-2" class="tab_content">
-
-<table class="form-table">
 <tr valign="top">
 <th scope="row"><?php _e('Ingredients','hrecipe'); ?><br /><?php _e('(One ingredient per line, please)','hrecipe'); ?></th>
 <td><textarea id="item-ingredients" rows="10" cols="45"></textarea></td>
@@ -55,24 +42,57 @@
 <th scope="row"><?php _e('Instructions','hrecipe'); ?><br /><?php _e('(One step per line)','hrecipe'); ?></th>
 <td><textarea id="item-description" rows="10" cols="45"></textarea></td>
 </tr>
-</table>
-
-<ul class="tabs bottom">
-  <li class="btmtabs"><a href="#tab-1">Back</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-3">Next</a></li>
-</ul>
-
-</div>
-
-
-<div id="tab-3" class="tab_content">
-
-<table class="form-table">
 
 <tr valign="top">
 <th scope="row"><?php _e('Preparation time (minutes)','hrecipe'); ?></th>
 <td><input type="text" id="item-duration" size="5" /></td>
 </tr>
+
+
+<tr valign="top">
+<th scope="row"><?php _e('Number of servings:','hrecipe'); ?></th>
+<td>
+<select id="item-servings">
+<option></option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>6</option>
+<option>8</option>
+<option>12</option>
+</select>
+</td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><?php _e('My rating:','hrecipe'); ?><br />
+<?php _e('(number of stars, leave blank if rating is undesired)','hrecipe'); ?></th>
+<td>
+<select id="item-rating">
+<option></option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select></td>
+</tr>
+
+
+</table>
+
+<ul class="tabs bottom">
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-2">More...</a></li>
+</ul>
+
+</div>
+
+
+<div id="tab-2" class="tab_content">
+
+<table class="form-table">
 
 <tr valign="top">
 <th scope="row"><?php _e('Recipe type:','hrecipe'); ?></th>
@@ -93,21 +113,6 @@
 </tr>
 
 
-<tr valign="top">
-<th scope="row"><?php _e('Number of servings:','hrecipe'); ?></th>
-<td>
-<select id="item-servings">
-<option></option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>6</option>
-<option>8</option>
-<option>12</option>
-</select>
-</td>
-</tr>
 
 
 <tr valign="top">
@@ -184,27 +189,17 @@
 <option><?php _e('Indian (Marathi Cuisine)','hrecipe'); ?></option></select></td>
 </tr>
 
-<tr valign="top">
-<th scope="row"><?php _e('My rating:','hrecipe'); ?><br />
-<?php _e('(number of stars, leave blank if rating is undesired)','hrecipe'); ?></th>
-<td>
-<select id="item-rating">
-<option></option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-</select></td>
-</tr>
 </table>
+
+
 <ul class="tabs bottom">
-  <li class="btmtabs"><a href="#tab-3">Back</a></li>
+  <li class="btmtabs"><a href="#tab-1">Back</a></li>
   <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-3">More...</a></li>
 </ul>
 </div>
 
-<div id="tab-4" class="tab_content">
+<div id="tab-3" class="tab_content">
 
 <table class="form-table">
 
@@ -222,7 +217,7 @@
 </table>
 <ul class="tabs bottom">
   <li class="btmtabs"><a href="#tab-2">Back</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-4">Next</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
 </ul>
 </div>
 

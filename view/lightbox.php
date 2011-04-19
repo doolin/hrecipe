@@ -71,7 +71,7 @@ ul.tabs {
     float: none;
     font-weight: normal;
     left: 0;
-    margin: 0 5px;
+    margin: 0px 5px;
     overflow: hidden;
     font-size: 12px;
     list-style: none outside none;
