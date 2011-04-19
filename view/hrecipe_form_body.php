@@ -8,8 +8,8 @@
     <ul class="tabs">
       <li><a class="tab-1" href="#tab-1">General</a></li>
       <li><a class="tab-2" href="#tab-2">Ingredients/Instructions</a></li>
-      <li><a class="tab-3" href="#tab-3">Notes/Variations</a></li>
-      <li><a class="tab-4" href="#tab-4">Additional Information</a></li>
+      <li><a class="tab-3" href="#tab-3">Additional Information</a></li>
+      <li><a class="tab-4" href="#tab-4">Notes/Variations</a></li>
     </ul>
   </div><!-- tabbed menu wrapper -->
 
@@ -34,6 +34,8 @@
 </tr>
 </table>
 
+
+
 <ul class="tabs bottom">
   <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-2">Next</a></li>
 </ul>
@@ -44,13 +46,13 @@
 
 <table class="form-table">
 <tr valign="top">
-<th scope="row"><?php _e('Ingredients','hrecipe'); ?><br /><?php _e('(May use HTML)','hrecipe'); ?></th>
+<th scope="row"><?php _e('Ingredients','hrecipe'); ?><br /><?php _e('(One ingredient per line, please)','hrecipe'); ?></th>
 <td><textarea id="item-ingredients" rows="10" cols="45"></textarea></td>
 </tr>
 
 
 <tr valign="top">
-<th scope="row"><?php _e('Instructions','hrecipe'); ?><br /><?php _e('(May use HTML)','hrecipe'); ?></th>
+<th scope="row"><?php _e('Instructions','hrecipe'); ?><br /><?php _e('(One step per line)','hrecipe'); ?></th>
 <td><textarea id="item-description" rows="10" cols="45"></textarea></td>
 </tr>
 </table>
@@ -62,29 +64,8 @@
 
 </div>
 
+
 <div id="tab-3" class="tab_content">
-
-<table class="form-table">
-
-<tr valign="top">
-<th scope="row"><?php _e('Quick Notes','hrecipe'); ?><br /><?php _e('(May use HTML)','hrecipe'); ?></th>
-<td><textarea id="item-quicknotes" rows="5" cols="45"></textarea></td>
-</tr>
-
-
-<tr valign="top">
-<th scope="row"><?php _e('Variations','hrecipe'); ?><br /><?php _e('(May use HTML)','hrecipe'); ?></th>
-<td><textarea id="item-variations" rows="5" cols="45"></textarea></td>
-</tr>
-
-</table>
-<ul class="tabs bottom">
-  <li class="btmtabs"><a href="#tab-2">Back</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-4">Next</a></li>
-</ul>
-</div>
-
-<div id="tab-4" class="tab_content">
 
 <table class="form-table">
 
@@ -222,5 +203,29 @@
   <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
 </ul>
 </div>
+
+<div id="tab-4" class="tab_content">
+
+<table class="form-table">
+
+<tr valign="top">
+<th scope="row"><?php _e('Quick Notes','hrecipe'); ?><br /><?php _e('(May use HTML)','hrecipe'); ?></th>
+<td><textarea id="item-quicknotes" rows="5" cols="45"></textarea></td>
+</tr>
+
+
+<tr valign="top">
+<th scope="row"><?php _e('Variations','hrecipe'); ?><br /><?php _e('(May use HTML)','hrecipe'); ?></th>
+<td><textarea id="item-variations" rows="5" cols="45"></textarea></td>
+</tr>
+
+</table>
+<ul class="tabs bottom">
+  <li class="btmtabs"><a href="#tab-2">Back</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-4">Next</a></li>
+</ul>
+</div>
+
+
 </form>
 </div>

@@ -86,8 +86,7 @@
     var imarkup = '';
     var lines = '';
     var i;
-    //lines = itemIngredients.split("\*");
-    lines = itemIngredients.split("*");
+    lines = itemIngredients.split("\n");
     imarkup = '<div class="ingredients">';
     imarkup += '<h4  class="ingredients">' + hrecipe_handle.hrecipe_ingredients_text + '</h4>';
     imarkup += '<' + lt + ' class="ingredients">';
@@ -109,8 +108,7 @@
     var imarkup = '';
     var lines = '';
     var i;
-    //lines = itemDescription.split("\*");
-    lines = itemDescription.split("*");
+    lines = itemDescription.split("\n");
     imarkup = '<div class="instructions">';
     imarkup += '<h4 class="instructions">' + hrecipe_handle.hrecipe_instructions_text + '</h4>';
     imarkup += '<' + lt + ' class="instructions">';
