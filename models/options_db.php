@@ -14,7 +14,7 @@ function hrecipe_add_options() {
  
 function hrecipe_delete_options() {
   
-  delete_option('hrecipe_options');
+  //delete_option('hrecipe_options');
   //hrecipe_delete_old_options();
 }
 
