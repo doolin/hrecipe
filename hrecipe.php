@@ -36,7 +36,7 @@ lang/hrecipe.pot
    */
 
    
-define('HRECIPE_VERSION', 5.6);   
+define('HRECIPE_VERSION', 5.7);   
    
 // Find the full URL to the plugin directory and store it
 // @todo define(HRECIPE_PLUGIN_URL) instead of this.

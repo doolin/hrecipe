@@ -174,14 +174,17 @@
  // TODO: Add an hrlabel span for formatting
   function format_duration(totalminutes) {
 
+alert("Total minutes: " + totalminutes);
     //Convert the minutes into hours and minutes
     var hours = Math.floor(totalminutes / 60);
     var minutes = totalminutes % 60;
     
     var markup = '';
-    markup = '<p class="duration">Cooking time (duration): ';
-    markup += '<span class="value-title" title="PT' + hours + 'H' + minutes + 'M"></span>';    
-    markup += totalminutes + '</p>';
+    markup = '<p class="duration">';
+    markup += '<span class="hrlabel">Cooking time (duration): </span>';
+    markup += '<span class="hritem value-title" title="PT' + hours + 'H' + minutes + 'M">';
+    markup += hours + ' hour(s), ' + minutes + ' minutes</span>';    
+    markup += '</p>';
     return markup;
   }
     
@@ -223,7 +226,7 @@
   }
 
   function linklove() {   
-    return 'Microformatting by <a href="http://hrecipe.com/community/" target="_blank">hRecipe</a>.<br />';
+    return 'Microformatting by <a href="http://hrecipe.com/recipe-seo/" target="_blank">hRecipe</a>.<br />';
   }
 
   function reciply() {

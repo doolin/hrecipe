@@ -89,8 +89,13 @@ microformat.
 
 == Changelog ==
 
+= 0.5.7 =
+* Big rewrite on the options page handling code.
+* Instructions list formatting bug fixed.
+* Updated recipe entry UI thickbox, 3 pages instead of 4, insert on every page.
+
 = 0.5.6 = 
-* Added http://yummly.com to supporters list, first commercial supporter
+* Added http://yummly.com to supporters list, first commercial supporter.
 * Add Theresa Carle-Sanders (http://islandvittles.com) to supporters list.
 * Fixed a type in a javascript function.
 * Closed the ul in the new feed creator.

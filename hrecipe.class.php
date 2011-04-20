@@ -56,12 +56,12 @@ class hrecipe extends PluginBase {
 
        global $hrecipe_options_file;
 
-        register_setting('hrecipe_options_group', 'hrecipe_options', array($this,'hrecipe_options_validate'));
+        register_setting('hrecipe_options_group', 'hrecipe_options');//, array($this,'hrecipe_options_validate')); #next rev
         add_settings_section('hrecipe_labels', '', 'hrecipe_labels_text', $hrecipe_options_file);
         add_settings_section('hrecipe_structure', '', 'hrecipe_structure_text', $hrecipe_options_file);        
 
         add_settings_section('hrecipe_styling', '', array($this,'hrecipe_styling_text'), $hrecipe_options_file);
-        add_settings_field('hrecipe_border_color', __('Border color', 'hrecipe'),     array($this,'border_color'),     $hrecipe_options_file, 'hrecipe_styling');        
+        add_settings_field('hrecipe_border_color', __('Border color', 'hrecipe'), array($this,'border_color'), $hrecipe_options_file, 'hrecipe_styling');        
         //add_settings_field('hrecipe_background_color', 'Background color', array($this,'background_color'), $hrecipe_options_file, 'hrecipe_styling');        
     }
 

@@ -129,7 +129,7 @@ function hrecipe_emit_donation_html($options) {
       <tr>
         <th align="right"><?php _e ('Plugin Support', 'hrecipe'); ?>:</th>
         <td>
-          <input type='checkbox' id='support' name='hrecipe_options[support]' <?php checked(isset( $options['support'])); ?> /> 
+          <input type='checkbox' id='support' name='hrecipe_options[support]' <?php checked(!empty( $options['support'])); ?> /> 
           <label for="support"><span class="sub"><?php _e ('I\'m a nice person and I have helped support the author of this plugin', 'hrecipe'); ?></span></label>
         </td>
       </tr>
@@ -143,7 +143,7 @@ function hrecipe_emit_donation_html($options) {
                 </th>
                 <td>
                     <input type='checkbox' id='linklove' name='hrecipe_options[linklove]'
-                    <?php checked( isset( $options['linklove']));?> />
+                    <?php checked( !empty( $options['linklove']));?> />
                     <?php _e('Yes! Help hRecipe help you, and find other bloggers.', 'hrecipe'); ?>
                 </td>
             </tr>
@@ -155,7 +155,7 @@ function hrecipe_emit_reciply_html($options) {
                     <?php hrecipe_options_tip('hrecipe_reciply_tip', 'Recip.ly', '(UK only!) Recip.ly lets you earn money and save time by ordering recipe ingredients online'); ?>                                    
                 </th>
                 <td>
-                    <input type='checkbox' id='reciply' name='hrecipe_options[reciply]' <?php checked( isset( $options['reciply']));?> />
+                    <input type='checkbox' id='reciply' name='hrecipe_options[reciply]' <?php checked( !empty( $options['reciply']));?> />
                     <?php _e('Yes!', 'hrecipe'); ?>
                 </td>
             </tr>
