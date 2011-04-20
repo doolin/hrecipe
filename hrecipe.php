@@ -3,7 +3,7 @@
  * Plugin Name: hRecipe
  * Plugin URI: http://hrecipe.com/
  * Description: Fast and easy recipe formatting. Allows the correct microformat content to be easily added for recipes.
- * Version: 0.5.6
+ * Version: 0.5.7
  * Author: Dave Doolin
  * Author URI: http://hrecipe.com/about
  */ 

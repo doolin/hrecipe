@@ -3,7 +3,7 @@ Contributors: doolin
 Tags: hrecipe, editor, microformat
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable tag: 0.5.6
+Stable tag: 0.5.7
 
 hRecipe is a WordPress plugin for easy entry of your recipe data, and
 microformatting  your recipe blog posts and pages for attractive 
