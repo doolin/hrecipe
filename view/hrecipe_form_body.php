@@ -45,7 +45,12 @@
 
 <tr valign="top">
 <th scope="row"><?php _e('Preparation time (minutes)','hrecipe'); ?></th>
-<td><input type="text" id="item-duration" size="5" /></td>
+<td><input type="text" id="item-preptime" size="5" /></td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><?php _e('Cooking time (minutes)','hrecipe'); ?></th>
+<td><input type="text" id="item-cooktime" size="5" /></td>
 </tr>
 
 

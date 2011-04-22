@@ -168,6 +168,8 @@ function clearForm() {
   document.getElementById('item-servings').value = '';
   document.getElementById('item-rating').value = '';
   document.getElementById('item-duration').value = '';
+  document.getElementById('item-preptime').value = '';
+  document.getElementById('item-cooktime').value = '';
 }
 
 
@@ -258,7 +260,12 @@ function submitForm() {
        
    r["tradition"] = getSelectValue('item-culinarytradition');
    r["rating"] = getSelectValue('item-rating');
-   r["duration"] = document.getElementById('item-duration').value;
+
+   // When this id doesn't exist, call fails.
+   //r["duration"] = document.getElementById('item-duration').value;
+   r["preptime"] = document.getElementById('item-preptime').value;
+   r["cooktime"] = document.getElementById('item-cooktime').value;
+
    r["diettype"] = getSelectValue('item-diettype');
    r["mealtype"] = getSelectValue('item-mealtype');
    r["dietother"] = getCheckedValues();

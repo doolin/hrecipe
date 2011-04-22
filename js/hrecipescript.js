@@ -1,12 +1,19 @@
 
+function toggleVisibility(id) {
 
-/**
- * Testing...
- */
-function hrecipe_plugin_alert() {
-  alert(hrecipe_handle.PluginsUrl);  
+  var e = document.getElementById(id);
+  if(e.style.display == 'block')
+    e.style.display = 'none';
+  else
+    e.style.display = 'block';
 }
 
-function hrecipe_foo_alert() {
-  alert(hrecipe_handle.Permalink);
-}
+jQuery(document).ready( function($) {
+
+  // close postboxes that should be closed
+  $('.if-js-closed').removeClass('if-js-closed').addClass('closed');
+  // postboxes setup
+  //postboxes.add_postbox_toggles('<?php global $hrecipe_pagehook; echo $hrecipe_pagehook; ?>');
+  postboxes.add_postbox_toggles('settings_page_view/admin/options2');
+});
+

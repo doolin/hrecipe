@@ -1,29 +1,4 @@
-
-<!-- Thank you Michael Torbert of All In One SEO Pack -->
-<script type="text/javascript"> 
-//<!--
-    function toggleVisibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script> 
-
-
-<script type="text/javascript">
-		//<![CDATA[
-		jQuery(document).ready( function($) {
-			// close postboxes that should be closed
-			$('.if-js-closed').removeClass('if-js-closed').addClass('closed');
-			// postboxes setup
-			postboxes.add_postbox_toggles('<?php global $hrecipe_pagehook; echo $hrecipe_pagehook; ?>');
-		});
-		//]]>
-	</script>
-
+        
 <?php 
     function hrecipe_postbox($id, $title, $content) {
 ?>
@@ -96,10 +71,6 @@ function hrecipe_options_tip($id, $label, $tip) {
 
 <div class="wrap">
 
-<?php 
-//echo $this->url(); 
-//$options = get_option('hrecipe_options');
-?>
 
 <?php screen_icon(); ?>
 

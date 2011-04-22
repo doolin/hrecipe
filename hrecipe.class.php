@@ -48,8 +48,10 @@ class hrecipe extends PluginBase {
         //wp_enqueue_script('hrecipe-reciply');
         wp_register_script('hrecipeformat',plugins_url('hrecipe/js/hrecipe_format.js', dirname(__FILE__)),'','',true);
         wp_localize_script('hrecipeformat','hrecipe_handle',hrecipe_localize_vars());
+        wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js', dirname(__FILE__)),'','',true);
 
         wp_enqueue_script('hrecipeformat');                
+        wp_enqueue_script('hrecipescript');                
     }
     
     function register_mysettings() {
@@ -117,7 +119,7 @@ class hrecipe extends PluginBase {
 
             global $hrecipe_pagehook;
             $hrecipe_pagehook = add_options_page('hRecipe Options', 'hRecipe', 'administrator', $hrecipe_options_file, array($this, 'hrecipe_plugin_options_page'));
-            //add_action('load-'.$hrecipe_pagehook, array($this,'on_load_page'));
+            add_action('load-'.$hrecipe_pagehook, array($this,'on_load_page'));
         }
     }
 

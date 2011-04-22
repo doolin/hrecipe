@@ -171,10 +171,9 @@
  */
  // Example from http://microformats.org/wiki/hrecipe#duration
  //<span class="duration"><span class="value-title" title="PT1H30M"> </span>90 min</span>
- // TODO: Add an hrlabel span for formatting
   function format_duration(totalminutes) {
 
-alert("Total minutes: " + totalminutes);
+    //alert("Total minutes: " + totalminutes);
     //Convert the minutes into hours and minutes
     var hours = Math.floor(totalminutes / 60);
     var minutes = totalminutes % 60;
@@ -188,6 +187,60 @@ alert("Total minutes: " + totalminutes);
     return markup;
   }
     
+    
+    
+  function format_iso_time(totalminutes) {
+    
+    var hours = Math.floor(totalminutes / 60);
+    var minutes = totalminutes % 60;
+    var markup = '';
+    if (hours > 0) {
+      markup += hours + ' hour(s) ';
+    }
+    if (minutes > 0) {
+      markup += minutes + ' minute(s)';
+    }
+    markup += '<span class="hritem value-title" title="PT' + hours + 'H' + minutes + 'M"> </span>';
+    return markup;
+  }  
+
+/*
+  function format_cook_time(totalminutes, classname, label) {
+
+    var markup = '';
+    markup = '<p>';
+    markup += label + ': <span class="' + classname + '">';
+    markup += format_iso_time(totalminutes);
+    markup += '</span>';    
+    markup += '</p>';
+    return markup;
+  }
+ */
+ 
+/*
+  function format_prep_time(totalminutes, classname, label) {
+    
+    var markup = '';
+    markup = '<p>';
+    markup += label + ': <span class="' + classname + '">';
+    markup += format_iso_time(totalminutes);
+    markup += '</span>';    
+    markup += '</p>';
+    return markup;
+  }
+ */ 
+  
+  function format_time(totalminutes, classname, label) {
+    
+    var markup = '';
+    markup = '<p>';
+    markup += label + ': <span class="' + classname + '">';
+    markup += format_iso_time(totalminutes);
+    markup += '</span>';    
+    markup += '</p>';
+    return markup;
+  }
+  
   
 /**
  * Refactor format_item into something which can be used for all the 
@@ -247,7 +300,9 @@ alert("Total minutes: " + totalminutes);
     HRecipeOutput += (r.description ? format_instructions(r.description) : '');
     HRecipeOutput += (r.quicknotes  ? format_quicknotes(r.quicknotes) : '');
     HRecipeOutput += (r.variations  ? format_variations(r.variations) : '');
-    HRecipeOutput += (r.duration    ? format_duration(r.duration) : '');
+    //HRecipeOutput += (r.duration    ? format_duration(r.duration) : '');
+    HRecipeOutput += (r.preptime    ? format_time(r.preptime, 'preptime', 'Preparation time') : '');
+    HRecipeOutput += (r.cooktime    ? format_time(r.cooktime, 'cooktime', 'Cooking time') : '');
     
     HRecipeOutput += (r.diettype    ? format_item('diettype', 'Diet type', r.diettype) : '');
     HRecipeOutput += (r.dietother   ? format_item('dietother', 'Diet (other)', r.dietother) : '');

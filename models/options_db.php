@@ -4,7 +4,7 @@
 function hrecipe_add_options() {
   
   if (get_option('hrecipe_options')) {
-    return;
+    //return;
   }
   
   hrecipe_set_default_options();

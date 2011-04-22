@@ -1,12 +1,11 @@
 === hRecipe ===
 Contributors: doolin
-Tags: hrecipe, editor, microformat
+Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable tag: 0.5.7
+Stable tag: 0.5.8.2
 
-hRecipe is a WordPress plugin for easy entry of your recipe data, and
-microformatting  your recipe blog posts and pages for attractive 
+hRecipe is a WordPress plugin for easy entry of your recipe data, and microformatting  your recipe blog posts and pages for attractive 
 presentation on both your blog and (important!) search engine results. 
 
 
@@ -88,6 +87,18 @@ microformat.
 
 
 == Changelog ==
+
+= 5.8.2 = 
+* Settings link now fixed to work from Plugins page.
+
+= 5.8.1 = 
+* Default options loading now fixed.
+
+= 0.5.8 =
+* Split duration into preparation and cooking time for better Google Rich Snippets
+
+= 0.5.7.1 =
+* Removed alert
 
 = 0.5.7 =
 * Big rewrite on the options page handling code.

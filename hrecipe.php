@@ -3,7 +3,7 @@
  * Plugin Name: hRecipe
  * Plugin URI: http://hrecipe.com/
  * Description: Fast and easy recipe formatting. Allows the correct microformat content to be easily added for recipes.
- * Version: 0.5.7
+ * Version: 0.5.8.2
  * Author: Dave Doolin
  * Author URI: http://hrecipe.com/about
  */ 
@@ -36,7 +36,7 @@ lang/hrecipe.pot
    */
 
    
-define('HRECIPE_VERSION', 5.7);   
+define('HRECIPE_VERSION', "5.8");   
    
 // Find the full URL to the plugin directory and store it
 // @todo define(HRECIPE_PLUGIN_URL) instead of this.
@@ -81,7 +81,7 @@ if ( isset ($recipe)) {
 		    }
 		
         if ($file == $this_plugin) {
-            $settings_link = '<a href="admin.php?page=hrecipe.class">'.__("Settings", "hrecipe").'</a>';
+            $settings_link = '<a href="admin.php?page=view/admin/options2.php">'.__("Settings", "hrecipe").'</a>';
             array_unshift($links, $settings_link);
         }
         
