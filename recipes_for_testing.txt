@@ -9,27 +9,30 @@ Summary:
 A great and fairly easy soup to make.
 
 Ingredients:
-* 4-5 ancho chiles.  The original recipe calls for 3 large dried pasilla chiles, which I couldn't find.   The ancho chiles I used are sold as Pasillas under the <em>Milpas</em> brand name.
-* 1 quart hot water	
-* 3 tablespoons olive oil
-* 1 medium onion, coarsely chopped
-* 1 head garlic, cloves peeled and coarsely chopped
-* 1 large tomato, cut into 1-inch dice (I used a Roma, it was the only ripe tomato I could find for a reasonable price.
-* 1/2 teaspoon dried oregano, preferably Mexican
-* Salt
-* Herb croutons.  The original recipe calls for 1 cup 1/2-inch dice of country bread or baguette, but that's going a little over board in my opinion, unless you happen to have a stale baguette laying around.
-* 1/4 cup of fresh cotija cheese.  The original recipe calls for 1/4 cup creme fraiche or sour cream.  That would have been fine, except I had the cotija, and didn't have either of the other.
-* 1 Hass avocado, cut into 1/2-inch dice
-* 1/4 cup cilantro leaves 
-* 2 tablespoons blackstrap molasses.  The original recipe does not call for molasses, but I find that a small amount of blackstrap provides a lot of depth without much sweetness.  In this case, the molasses cut the slightly bitter aftertaste of the chiles without ruining the chile flavor.
+4-5 ancho chiles.  The original recipe calls for 3 large dried pasilla chiles, which I couldn't find.   The ancho chiles I used are sold as Pasillas under the <em>Milpas</em> brand name.
+1 quart hot water	
+3 tablespoons olive oil
+1 medium onion, coarsely chopped
+1 head garlic, cloves peeled and coarsely chopped
+1 large tomato, cut into 1-inch dice (I used a Roma, it was the only ripe tomato I could find for a reasonable price.
+1/2 teaspoon dried oregano, preferably Mexican
+Salt
+Herb croutons.  The original recipe calls for 1 cup 1/2-inch dice of country bread or baguette, but that's going a little over board in my opinion, unless you happen to have a stale baguette laying around.
+1/4 cup of fresh cotija cheese.  The original recipe calls for 1/4 cup creme fraiche or sour cream.  That would have been fine, except I had the cotija, and didn't have either of the other.
+1 Hass avocado, cut into 1/2-inch dice
+1/4 cup cilantro leaves 
+2 tablespoons blackstrap molasses.  The original recipe does not call for molasses, but I find that a small amount of blackstrap provides a lot of depth without much sweetness.  In this case, the molasses cut the slightly bitter aftertaste of the chiles without ruining the chile flavor.
 
 Instructions:
-* In a large bowl, cover the chiles with the hot water; set a small plate over the chiles to keep them submerged. Let soak until softened, about 20 minutes. Make sure all the chiles are completely submerged. Stem, seed and coarsely chop the chiles.   Strain the seeds from the soaking liquid and save it for simmering the soup.
-* If you're making your own croutons, preheat the oven to 400.
-* Onions and Garlic: In a large saucepan, heat 2 tablespoons of the oil. Add the onion and garlic and cook over moderate heat until softened, about 5 minutes. Add the chopped chiles and cook, stirring, for 1 minute. Add the tomato, oregano, a pinch of salt and the strained chile soaking liquid and bring to a boil. Cover the soup and simmer gently over low heat for 20 minutes.
-* If you do have a stale baguette, make your own croutons.  In a cake pan, toss the diced baguette with the remaining 1 tablespoon of olive oil and spread in an even layer. Bake until golden brown, about 8 minutes.
-* Puree the soup in a blender, batching if your blender isn't big enough or burly enough. Return the soup to the saucepan, bring to a simmer and season with salt. Ladle the soup into bowls. I like to run very hot water over the bowls to warm them up first.
-* Top with crumbled cotija cheese (or creme fraiche, sour cream), avocado, cilantro leaves and croutons and serve.
+In a large bowl, cover the chiles with the hot water; set a small plate over the chiles to keep them submerged. Let soak until softened, about 20 minutes. Make sure all the chiles are completely submerged. Stem, seed and coarsely chop the chiles.   Strain the seeds from the soaking liquid and save it for simmering the soup.
+If you're making your own croutons, preheat the oven to 400.
+Onions and Garlic: In a large saucepan, heat 2 tablespoons of the oil. Add the onion and garlic and cook over moderate heat until softened, about 5 minutes. Add the chopped chiles and cook, stirring, for 1 minute. Add the tomato, oregano, a pinch of salt and the strained chile soaking liquid and bring to a boil. Cover the soup and simmer gently over low heat for 20 minutes.
+If you do have a stale baguette, make your own croutons.  In a cake pan, toss the diced baguette with the remaining 1 tablespoon of olive oil and spread in an even layer. Bake until golden brown, about 8 minutes.
+Puree the soup in a blender, batching if your blender isn't big enough or burly enough. Return the soup to the saucepan, bring to a simmer and season with salt. Ladle the soup into bowls. I like to run very hot water over the bowls to warm them up first.
+Top with crumbled cotija cheese (or creme fraiche, sour cream), avocado, cilantro leaves and croutons and serve.
+
+Prep time: 50 minutes
+Cook time: 20 minutes
 
 Meal type:
 Dinner
@@ -39,7 +42,7 @@ USA Southwestern
 
 Wine:
 The wine recommendation comes directly from the article cited above.  I don't partake, so you're on your own here.
-<blockquote>Dried purple-black pasillas give this soup a chocolaty note, ideal with a rich, mocha-inflected red from the south of France. The Costi�res de N�mes region, just south of the Rh�ne Valley, is known for its robust red blends in wines like the sweet, plummy, Syrah-based 2001 Ch�teau Lamargue Grande R�serve or the spicy 2001 Ch�teau de Campuget Tradition, a blend of Syrah and Grenache.
+<blockquote>Dried purple-black pasillas give this soup a chocolaty note, ideal with a rich, mocha-inflected red from the south of France. The Costieres de Nimes region, just south of the Rhone Valley, is known for its robust red blends in wines like the sweet, plummy, Syrah-based 2001 Chateau Lamargue Grande Reserve or the spicy 2001 Chateau de Campuget Tradition, a blend of Syrah and Grenache.
 </blockquote>
 
 4 Stars
