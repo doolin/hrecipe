@@ -94,7 +94,8 @@ microformat.
 
 = 0.5.8.3 = 
 * More UJS cleanups. Started removing custom javascript code in favor of future proofing with WordPress builtin code.
-* Better descriptions added for readme and plugin source file. 
+* Better descriptions added for readme and plugin source file.
+* New screenshots explaining new data entry one per line for ingredients and instructions.
 
 = 5.8.2 = 
 * Settings link now fixed to work from Plugins page.
