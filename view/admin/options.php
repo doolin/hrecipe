@@ -58,7 +58,7 @@ function hrecipe_postbox_fields($id, $title, $content, $section) {
 
 function hrecipe_options_tip($id, $label, $tip) {
 ?>
-  <a style="cursor:pointer;" title="Click for Help!" onclick="toggleVisibility('<?php echo $id; ?>');">
+  <a style="cursor:pointer;" title="Click for Help!" onclick="hrecipe_toggle_visibility('<?php echo $id; ?>');">
   <?php _e($label, 'hrecipe'); ?>
   </a>
   <div style="max-width:500px; text-align:left; display:none" id="<?php echo $id; ?>">
@@ -257,7 +257,7 @@ EOP;
                         <table class="form-table">
                             <tr valign="top">
                                 <th scope="row">
-                                    <a style="cursor:pointer;" title="Click for Help!" onclick="toggleVisibility('hrecipe_background_color_tip');">
+                                    <a style="cursor:pointer;" title="Click for Help!" onclick="hrecipe_toggle_visibility('hrecipe_background_color_tip');">
                                     
                                         <?php _e('Background color', 'hrecipe'); ?>
                                     </a>

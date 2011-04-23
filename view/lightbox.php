@@ -201,6 +201,7 @@ function getSelectValue(fieldId) {
 // This can be processed as an 
 // arrary traversing id's and names later.
 // Suggestions welcome.
+// Move to hrecipe_format.js
 function getCheckedValues() {
 	
 	var need_comma = false;

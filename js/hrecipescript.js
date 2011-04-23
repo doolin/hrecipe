@@ -1,5 +1,5 @@
 
-function toggleVisibility(id) {
+function hrecipe_toggle_visibility(id) {
 
   var e = document.getElementById(id);
   if(e.style.display == 'block')

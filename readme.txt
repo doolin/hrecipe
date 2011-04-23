@@ -3,10 +3,9 @@ Contributors: doolin
 Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable tag: 0.5.8.2
+Stable tag: 0.5.8.3
 
-hRecipe is a WordPress plugin for easy entry of your recipe data, and microformatting  your recipe blog posts and pages for attractive 
-presentation on both your blog and (important!) search engine results. 
+Use hRecipe for creating Google Rich Snippets, for leveraging SEO results, and for attractively displaying your recipes.
 
 
 == Description ==
@@ -14,7 +13,11 @@ presentation on both your blog and (important!) search engine results.
 
 hRecipe gives you fast, efficient recipe formatting...
 with an SEO advantage.  Your recipes look good,
-and search engines will like them better too.
+and people searching for recipes are attracted to 
+Google Rich Snippet recipe display, which can mean 
+better clickthrough to your blog.
+
+Make sure to stop by the hRecipe home page: [Food Blogging and Recipe SEO](http://hrecipe.com/)
 
 = Supporters =
 
@@ -77,7 +80,7 @@ automatically create an hrecipe/ subdirectory.
 2. In your WordPress admin page, go to the Plugins section and
 Activate the "hRecipe" plugin.
 
-3. When you go to "Write Post" or "Write Page", click on the star logo
+3. When you go to "Write Post" or "Write Page", click on the knife and fork icon
 to pop-up a simple form.  (Or hRecipe button for text formatting)
 
 4. Fill in the fields of the form. 
@@ -88,6 +91,10 @@ microformat.
 
 
 == Changelog ==
+
+= 0.5.8.3 = 
+* More UJS cleanups. Started removing custom javascript code in favor of future proofing with WordPress builtin code.
+* Better descriptions added for readme and plugin source file. 
 
 = 5.8.2 = 
 * Settings link now fixed to work from Plugins page.
@@ -302,7 +309,23 @@ information. This plugin uses the hRecipe microformat for recipe type
 information. For more information, see to <a
 href="http://microformats.org">the main microformats site</a>.
 
+= Do microformats improve SEO? =
 
+Yes and no. 
+
+According to Google, microformatting your recipe 
+will not improve your search ranking, by itself.
+It's not a magic bullet, you still have to do the 
+plain old SEO work you normally do.
+
+However, when you're doing SEO right, many people have 
+reported that having their recipes displayed as Rich 
+Snippets improves their search results.
+
+Microformatting may not improve your ranking but, 
+microformatting will probably improve your results.
+
+Think of microformatting as leverage.
 
 
 == Screenshots ==
@@ -385,6 +408,6 @@ Should you be on this list?  Contact me and let me know.
 
 == More info ==
 
-* For more info, version history, etc. check out the page on Website In A Weekend about the [hRecipe Plugin for WordPress](http://website-in-a-weekend.net/hrecipe/).
+* For more information, check out the [hRecipe Plugin for WordPress](http://hrecipe.com/) homepage.
 
 
