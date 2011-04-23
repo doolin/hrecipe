@@ -20,6 +20,7 @@ and search engines will like them better too.
 
 Each of the following people have donated to help hRecipe to continue development:
 
+* Tamara R 
 * Commercial sponsorship http://yummly.com Thanks guys!
 * Theresa Carle-Sanders http://islandvittles.com
 * Susan Voisin http://http://sbvdesigns.com/ and http://blog.fatfreevegan.com/

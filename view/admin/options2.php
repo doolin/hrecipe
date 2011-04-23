@@ -389,6 +389,7 @@ hRecipe is truly a labor of love, but
 love always goes better with a little bread.
 </p>
 <ul>
+<li>Tamara R</li>
 <li>Commercial Sponsor <a href="http://yummly.com/">Yummly</a>.</li>
 <li>Theresa Carle-Sanders <a href="http://islandvittles.com/">Island Vittles</a>.</li>
 <li>Susan Voison - <a href="http://blog.fatfreevegan.com/">Fat Free Vegan</a></li>

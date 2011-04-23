@@ -6,7 +6,7 @@ include_once dirname( __FILE__ ).'/models/options_db.php';
 
 
 $hrecipe_pagehook = null;
-$hrecipe_options_file = 'view/admin/options2.php';
+$hrecipe_options_file = 'view/admin/options.php';
 //$hrecipe_options_file = __FILE__;
   
 include('hrecipe_localize_vars.php');
@@ -140,7 +140,7 @@ class hrecipe extends PluginBase {
         if ( isset($_GET['sub']) && $_GET['sub'] == 'support' ) {
             return $this->render_admin('support');
         } else {
-            include ('view/admin/options2.php');
+            include ('view/admin/options.php');
         }
     }
 

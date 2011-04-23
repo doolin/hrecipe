@@ -14,6 +14,6 @@ jQuery(document).ready( function($) {
   $('.if-js-closed').removeClass('if-js-closed').addClass('closed');
   // postboxes setup
   //postboxes.add_postbox_toggles('<?php global $hrecipe_pagehook; echo $hrecipe_pagehook; ?>');
-  postboxes.add_postbox_toggles('settings_page_view/admin/options2');
+  postboxes.add_postbox_toggles('settings_page_view/admin/options');
 });
 
