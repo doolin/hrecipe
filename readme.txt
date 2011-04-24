@@ -97,10 +97,10 @@ microformat.
 * Better descriptions added for readme and plugin source file.
 * New screenshots explaining new data entry one per line for ingredients and instructions.
 
-= 5.8.2 = 
+= 0.5.8.2 = 
 * Settings link now fixed to work from Plugins page.
 
-= 5.8.1 = 
+= 0.5.8.1 = 
 * Default options loading now fixed.
 
 = 0.5.8 =
@@ -332,7 +332,7 @@ Think of microformatting as leverage.
 == Screenshots ==
 
 
-1. Blue Corn Pozole recipe displayed with hRecipe formatting in post.
+1. Blue Corn Pozole recipe displayed with hRecipe formatting in blog post.
 2. Adding general information about your recipe.
 3. Listing the ingredients and explaining how to prepare your recipe.
 4. Helpful information for your readers.
