@@ -19,12 +19,8 @@
   }
 
   hrecipe_qttoolbar = document.getElementById("ed_toolbar");
-/*
-  if (hrecipe_qttoolbar === null) {
-    alert("ed_toolber element is null");
-  }
- */
-  //if (hrecipe_qttoolbar = document.getElementById("ed_toolbar")) {
+
+
   if (hrecipe_qttoolbar !== null) {
     newbutton = document.createElement("input");
     newbutton.type = "button";
@@ -43,8 +39,8 @@
   function google_compliant_rating(itemRating) {
 
     var markup = '';
-    //var solid_star = ''
-    //var outline_star = ''
+    //var solid_star = '&#9733;'
+    //var outline_star = '&#9734;'
       
     if (itemRating) {        
       var i;
@@ -204,31 +200,6 @@
     return markup;
   }  
 
-/*
-  function format_cook_time(totalminutes, classname, label) {
-
-    var markup = '';
-    markup = '<p>';
-    markup += label + ': <span class="' + classname + '">';
-    markup += format_iso_time(totalminutes);
-    markup += '</span>';    
-    markup += '</p>';
-    return markup;
-  }
- */
- 
-/*
-  function format_prep_time(totalminutes, classname, label) {
-    
-    var markup = '';
-    markup = '<p>';
-    markup += label + ': <span class="' + classname + '">';
-    markup += format_iso_time(totalminutes);
-    markup += '</span>';    
-    markup += '</p>';
-    return markup;
-  }
- */ 
   
   function format_time(totalminutes, classname, label) {
     
@@ -260,16 +231,17 @@
 
   function format_enclosure(itemName, itemURL) {
 
+    var padding = ' <br /> <br /> <br /> ';
     var et =  (hrecipe_handle.hrecipe_enclosure === 'div') ? 'div' : 'fieldset';
     var markup = '';
   
     if ("div" === et) {
-      markup += '<div class="hrecipe">';
+      markup += padding + '<div class="hrecipe">';
       markup += '<h2 class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
       markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
       markup += '</h2>';
     } else {
-      markup += '<fieldset class="hrecipe">';
+      markup += padding + '<fieldset class="hrecipe">';
       markup += '<legend class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
       markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
       markup += '</legend>';
@@ -349,8 +321,9 @@
     // From keith@solowebdesigns.net
     //HRecipeOutput += '<a class="printlink" href="#" onclick="javascript:window.print();">Print this recipe</a>';
   
+    var padding = ' <br /> <br /> <br /> ';
     var et =  (hrecipe_handle.hrecipe_enclosure === 'div') ? 'div' : 'fieldset';
-    HRecipeOutput += '</' + et + '>';
+    HRecipeOutput += '</' + et + '>' + padding;
     //HRecipeOutput += '</div>';
 
     if (hrecipe_from_gui) {

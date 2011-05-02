@@ -3,23 +3,46 @@
 
 function hrecipe_add_options() {
   
+//*
+  $options = get_option('hrecipe_options');
+  // get_options returns either an array, or false...
+  
+  if (false === $options) {
+    hrecipe_set_default_options();
+  } else {
+    //We have the current user-adjusted $options
+    //Grab the default options, which may be extended from 
+    //from version to version.
+    $default_options = hrecipe_create_default_options();
+    //Make merged options using wp_parse_args
+    $merged_options = wp_parse_args($options, $default_options);
+    //Update the options table using merged options
+    update_option('hrecipe_options', $merged_options);
+  }
+//*/
+
+
+/*  
   if (get_option('hrecipe_options')) {
     //return;
   }
   
   hrecipe_set_default_options();
   //hrecipe_set_old_default_options();
+//*/
+
 } 
 
  
+// Only call this on uninstall 
 function hrecipe_delete_options() {
   
   //delete_option('hrecipe_options');
   //hrecipe_delete_old_options();
 }
 
- 
-function hrecipe_set_default_options() {
+
+function hrecipe_create_default_options() {
   
   $description = <<<EOD
 hRecipe plugin for WordPress makes it easy 
@@ -31,8 +54,13 @@ If you intend on (re)installing hRecipe in
 the future, it should be safe to leave this
 in your WordPress options table.
 EOD;
+
+  $url = <<<EOD
+http://hrecipe.com/
+EOD;
   
   $options = array ('description'        => $description,
+                    'url'                => $url,
                     'ingredientlist'     => 'bullets',
                     'instructionlist'    => 'numbers',
                     'enclosure'          => 'div',
@@ -52,9 +80,15 @@ EOD;
                     'reciply'            => '',
                     'support'            => ''
   );
+    
+  return $options;
+}
+
+ 
+function hrecipe_set_default_options() {
   
+  $options = hrecipe_create_default_options();
   update_option('hrecipe_options', $options);
-  
 } 
 
 

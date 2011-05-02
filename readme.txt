@@ -3,7 +3,7 @@ Contributors: doolin
 Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable tag: 0.5.8.3
+Stable tag: 0.5.8.4
 
 Use hRecipe for creating Google Rich Snippets, for leveraging SEO results, and for attractively displaying your recipes.
 
@@ -91,6 +91,13 @@ microformat.
 
 
 == Changelog ==
+
+= 0.5.8.4 = 
+* Added some padding before and after the hrecipe div block to help with TinyMCE visual editor
+* Fixed a postbox handling bug
+* Source cleanup, removed superfluous functions, obsolete commented out sections, etc.
+* Extended options handling to save existing user options and merge with newly defined options.
+
 
 = 0.5.8.3 = 
 * More UJS cleanups. Started removing custom javascript code in favor of future proofing with WordPress builtin code.

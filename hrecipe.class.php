@@ -30,9 +30,13 @@ class hrecipe extends PluginBase {
 
 
     function hrecipe_deactivate() {
-        hrecipe_delete_options();
     }
 
+    // Stub
+    function hrecipe_uninstall() {
+      
+      //hrecipe_delete_options();
+    }
 
     function hrecipe_plugin_init() {
 
@@ -51,7 +55,7 @@ class hrecipe extends PluginBase {
         wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js', dirname(__FILE__)),'','',true);
 
         wp_enqueue_script('hrecipeformat');                
-        wp_enqueue_script('hrecipescript');                
+        //wp_enqueue_script('hrecipescript');                
     }
     
     function register_mysettings() {
@@ -128,6 +132,7 @@ class hrecipe extends PluginBase {
         wp_enqueue_script('common');
         wp_enqueue_script('wp-lists');
         wp_enqueue_script('postbox');
+        wp_enqueue_script('hrecipescript');                
     }
 
 
@@ -161,13 +166,9 @@ class hrecipe extends PluginBase {
 
     function hrecipe_plugin_footer() {
 
-        // TODO: see if the necessary javascript can be enqueued from here instead 
-        // of in the init function.  All the php in the hrecipe_format.php file
-        // should go away, and it should be renamed to hrecipe_format.js        
-        // See if wp_enqueue_script will work here.
+        // TODO: Wrap to load only on post or page editing admin pages.
         wp_register_script('hrecipeformat',plugins_url('hrecipe/js/hrecipe_format.js', dirname(__FILE__)),'','',true);
         wp_enqueue_script('hrecipeformat');
-        //include ('hrecipe_format.php');
     }
 
     function add_hrecipe_stylesheet() {
