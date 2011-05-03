@@ -66,7 +66,23 @@ function hrecipe_options_tip($id, $label, $tip) {
   </div>
 <?php  
 }
+
+function hrecipe_emit_donation_badge() {
 ?>
+
+<?php if (!get_option('hrecipe_support')) : ?>
+  <div style="text-align: center; width: 80px; height: 50px; float: right; margin: 5px 15px 1px 0; padding: 4px 3px 0px 3px;-moz-border-radius: 5px; -webkit-border-radius: 5px;" id="support-annoy">
+       
+       <a href="<?php echo $this->base(); ?>?page=hrecipe.class&amp;sub=support">
+         <img src="<?php echo $this->url() ?>/images/donate.gif" alt="support" />
+       </a>
+  </div>
+<?php endif; ?>
+
+<?php  
+}
+?>
+
 
 
 <div class="wrap">
@@ -74,14 +90,6 @@ function hrecipe_options_tip($id, $label, $tip) {
 
 <?php screen_icon(); ?>
 
-<?php if (!get_option('hrecipe_support')) : ?>
-	<div style="text-align: center; width: 80px; height: 50px; float: right; margin: 5px 15px 1px 0; padding: 4px 3px 0px 3px;-moz-border-radius: 5px; -webkit-border-radius: 5px;" id="support-annoy">
-       
-       <a href="<?php echo $this->base(); ?>?page=hrecipe.class&amp;sub=support">
-	       <img src="<?php echo $this->url() ?>/images/donate.gif" alt="support" />
-       </a>
-</div>
-<?php endif; ?>
 
     <h2>
         <?php _e('hRecipe Support for Editor', 'hrecipe'); ?>
@@ -397,9 +405,11 @@ love always goes better with a little bread.
 <li><a href="http://annebender.com/">Anne Bender</a></li>
 <li><a href="http://bransonsparks.com">Branson Sparks</a></li>
 </ul>
-<p>If would like to take your place at the head of 
+<p><deL>If would like to take your place at the head of 
 this list, hit that shiny orange PayPal Donate
-button right above.  Thanks!</p>
+button right above.  Thanks!</deL></p>
+<p>Donations are closed for now, thank you for 
+your interest.</p>
 EOF;
   hrecipe_postbox($id,$title,$content);
 }
