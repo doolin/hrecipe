@@ -1,3 +1,8 @@
+
+<script type="text/javascript">
+alert("in options.php...");
+</script>
+
         
 <?php 
     function hrecipe_postbox($id, $title, $content) {
@@ -31,7 +36,6 @@ function hrecipe_postbox_fields($id, $title, $content, $section) {
 <?php   
 }
 
-
    
     // http://www.mrspeaker.net/2009/08/07/convert-wordpress-fetch_rss-to-fetch_feed/
     // http://codex.wordpress.org/Function_Reference/fetch_feed
@@ -61,7 +65,7 @@ function hrecipe_options_tip($id, $label, $tip) {
   <a style="cursor:pointer;" title="Click for Help!" onclick="hrecipe_toggle_visibility('<?php echo $id; ?>');">
   <?php _e($label, 'hrecipe'); ?>
   </a>
-  <div style="max-width:500px; text-align:left; display:none" id="<?php echo $id; ?>">
+  <div class="hrecipe-options-tip" style="max-width:500px; text-align:left; display:none" id="<?php echo $id; ?>">
   <?php _e($tip, 'hrecipe'); ?>
   </div>
 <?php  
