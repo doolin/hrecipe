@@ -5,6 +5,8 @@
 // and fetching options.
 function hrecipe_localize_vars() {
   
+  global $pagenow;
+  global $hrecipe_pagehook;
   $options = get_option('hrecipe_options');
   
   return array(
@@ -12,6 +14,8 @@ function hrecipe_localize_vars() {
     'Permalink' => get_permalink(),
     'AjaxUrl' => admin_url('admin-ajax.php'),
     'PluginsUrl' => plugins_url('hrecipe',dirname(__FILE__)),
+    'PageNow' => $pagenow,
+    'PageHook' => $hrecipe_pagehook,
     'hrecipe_rating_text'       => $options['rating_text'],
     'hrecipe_stars_text'        => $options['stars_text'],
     'hrecipe_ingredientslist'   => $options['ingredientlist'],

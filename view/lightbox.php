@@ -6,6 +6,7 @@
 // BOGUS!  These paths need to be redone, correctly.
 // http://ottodestruct.com/blog/2010/dont-include-wp-load-please/
 // http://ottopress.com/2010/passing-parameters-from-php-to-javascripts-in-plugins/
+
 require_once('../../../../wp-admin/admin.php'); 
 
 //@header('Content-Type: ' . get_option('html_type') . '; charset=' . get_option('blog_charset'));
@@ -16,9 +17,15 @@ require_once('../../../../wp-admin/admin.php');
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php echo get_option('blog_charset'); ?>" />
 <title><?php bloginfo('name') ?> &rsaquo; <?php _e('hRecipe'); ?> &#8212; <?php _e('WordPress'); ?></title>  
 <?php
+
   wp_enqueue_style( 'global' );
   wp_enqueue_style( 'wp-admin' );
-  wp_enqueue_style( 'colors' );
+  // post.php loads thickbox.css after global.css and wp-admin.css
+  wp_enqueue_style( 'thickbox' );
+  
+  //wp_enqueue_style( 'colors' );
+  // Try something new
+  wp_enqueue_style( 'colors-fresh' );
   wp_enqueue_style( 'ie' );
 ?>
 
@@ -46,6 +53,7 @@ isRtl = <?php echo (int) is_rtl(); ?>;
 
 
 <!-- Tabs CSS -->
+<!-- -->
 <style type="text/css">
 
 div#hrecipe-tab-wrapper {
@@ -149,6 +157,7 @@ ul.tabs li.btmtabs a:hover {
 	background:#ccc;
 }
 </style>
+<!-- -->
 <!-- end tabs CSS -->
 
 <script type="text/javascript">//<!CDATA[

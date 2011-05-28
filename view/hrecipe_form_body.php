@@ -5,6 +5,7 @@
 <div>
   
   <div id="hrecipe-tab-wrapper">
+  <!-- div id="sidemenu" -->
     <ul class="tabs">
       <li><a class="tab-1" href="#tab-1">Ingredients/Instructions</a></li>
       <li><a class="tab-2" href="#tab-2">More Details</a></li>

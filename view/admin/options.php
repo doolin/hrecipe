@@ -1,6 +1,6 @@
 
 <script type="text/javascript">
-alert("in options.php...");
+//alert("in options.php...");
 </script>
 
         
@@ -412,8 +412,8 @@ love always goes better with a little bread.
 <p><deL>If would like to take your place at the head of 
 this list, hit that shiny orange PayPal Donate
 button right above.  Thanks!</deL></p>
-<p>Donations are closed for now, thank you for 
-your interest.</p>
+<p><strong>Donations are closed for now, thank you for 
+your interest.</strong></p>
 EOF;
   hrecipe_postbox($id,$title,$content);
 }
