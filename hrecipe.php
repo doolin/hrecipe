@@ -68,6 +68,7 @@ if ( isset ($recipe)) {
 
     add_action('init', array ($recipe, 'hrecipe_plugin_init'));
     add_action('admin_init', array($recipe, 'register_mysettings'));
+    add_action('admin_init', array($recipe, 'hrecipe_admin_init'));
     add_action('admin_menu', array ($recipe, 'hrecipe_plugin_menu'));
 
    /**

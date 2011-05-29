@@ -397,9 +397,9 @@ function recipe() {}
 
 jQuery(document).ready(function() {
 
-  jQuery("#hrecipe-ujs").click(function() {
+  jQuery(".hrecipe-ujs").click(function() {
 
-   alert("In UJS");
+   //alert("In UJS");
 
    r = new recipe();
    r["name"] = document.getElementById('item-name').value;
@@ -463,8 +463,6 @@ jQuery(document).ready(function() {
     jQuery(activeTab).fadeIn(); //Fade in the active content
     return false;
   });
-  
-
   
 });
 

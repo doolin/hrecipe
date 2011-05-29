@@ -85,8 +85,7 @@
 </table>
 
 <ul class="tabs bottom">
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a id="hrecipe-ujs" href="#">Insert UJS</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a class="hrecipe-ujs" href="#">Insert</a></li>
   <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-2">More...</a></li>
 </ul>
 
@@ -197,7 +196,7 @@
 
 <ul class="tabs bottom">
   <li class="btmtabs"><a href="#tab-1">Back</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a class="hrecipe-ujs" href="#">Insert</a></li>
   <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-3">More...</a></li>
 </ul>
 </div>
@@ -220,7 +219,7 @@
 </table>
 <ul class="tabs bottom">
   <li class="btmtabs"><a href="#tab-2">Back</a></li>
-  <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a class="hrecipe-ujs" href="#">Insert</a></li>
 </ul>
 </div>
 

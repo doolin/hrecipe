@@ -23,7 +23,7 @@ require_once('../../../../wp-admin/admin.php');
   wp_enqueue_style( 'colors' );
   wp_enqueue_style( 'ie' );
   // Maybe not needed, handled with admin_print_styles hook.
-  wp_enqueue_style('hrecipe_editor_stylesheet');
+  //wp_enqueue_style('hrecipe_editor_stylesheet');
 ?>
 
 <script type="text/javascript">
@@ -47,45 +47,9 @@ isRtl = <?php echo (int) is_rtl(); ?>;
 //]]>
 </script>
 
-
-
-<script type="text/javascript">//<!CDATA[
-
-function submitForm() {
-	
-   r = new recipe();
-   r["name"] = document.getElementById('item-name').value;
-
-   if ("" == r["name"]) {
-      alert("You need to provide a name for the recipe.");
-      return false;
-   }
-
-   r["url"] = document.getElementById('item-url').value;
-   r["summary"] = document.getElementById('item-summary').value;
-   r["ingredients"] = document.getElementById('item-ingredients').value;
-   r["description"] = document.getElementById('item-description').value;
-   
-   r["quicknotes"] = document.getElementById('item-quicknotes').value;
-   r["variations"] = document.getElementById('item-variations').value;
-       
-   r["tradition"] = getSelectValue('item-culinarytradition');
-   r["rating"] = getSelectValue('item-rating');
-
-   // When this id doesn't exist, call fails.
-   //r["duration"] = document.getElementById('item-duration').value;
-   r["preptime"] = document.getElementById('item-preptime').value;
-   r["cooktime"] = document.getElementById('item-cooktime').value;
-
-   r["diettype"] = getSelectValue('item-diettype');
-   r["mealtype"] = getSelectValue('item-mealtype');
-   r["dietother"] = getCheckedValues();
-   r["restriction"] = document.getElementById('item-dietrestriction').value; 
-   r["servings"] = document.getElementById('item-servings').value; 
-   
-   window.parent.edInsertHRecipeDone(r);
-}
-
+<script type="text/javascript">
+//<!CDATA[
+// Get rid of this or move it.
 function abortForm() {
   window.parent.edInsertHRecipeAbort();
 }
@@ -109,81 +73,6 @@ do_action('admin_head');
 <script type="text/javascript">
   if(typeof wpOnload=='function')
     wpOnload();
-</script>
-<script type="text/javascript">
-//<!CDATA[
-/*
-jQuery(document).ready(function() {
-
-  //Default Action
-  jQuery(".tab_content").hide(); //Hide all content
-  jQuery("ul.tabs li:first a").addClass("current").show(); //Activate first tab
-  jQuery(".tab_content:first").show(); //Show first tab content
-  
-  //On Click Event for the sidemenu across the media popup
-  jQuery("ul.tabs li a").click(function() {
-    jQuery("ul.tabs li a").removeClass("current"); 
-    jQuery(this).addClass("current"); 
-    jQuery(".tab_content").hide(); //Hide all tab content
-    var activeTab = jQuery(this).attr("href"); //Find the rel attribute value to identify the active tab + content
-    jQuery(activeTab).fadeIn(); //Fade in the active content
-    return false;
-  });
-  
-  jQuery("#hrecipe-ujs-old").click(function() {
-
-   alert("In -UJS-");
-
-   r = new recipe();
-   r["name"] = document.getElementById('item-name').value;
-
-   if ("" === r["name"]) {
-      alert("You need to provide a name for the recipe.");
-      return false;
-   }
-
-   r["url"] = document.getElementById('item-url').value;
-   r["summary"] = document.getElementById('item-summary').value;
-   r["ingredients"] = document.getElementById('item-ingredients').value;
-   r["description"] = document.getElementById('item-description').value;
-   
-   r["quicknotes"] = document.getElementById('item-quicknotes').value;
-   r["variations"] = document.getElementById('item-variations').value;
-       
-   r["tradition"] = getSelectValue('item-culinarytradition');
-   r["rating"] = getSelectValue('item-rating');
-
-   // When this id doesn't exist, call fails.
-   //r["duration"] = document.getElementById('item-duration').value;
-   r["preptime"] = document.getElementById('item-preptime').value;
-   r["cooktime"] = document.getElementById('item-cooktime').value;
-
-   r["diettype"] = getSelectValue('item-diettype');
-   r["mealtype"] = getSelectValue('item-mealtype');
-   r["dietother"] = getCheckedValues();
-   r["restriction"] = document.getElementById('item-dietrestriction').value; 
-   r["servings"] = document.getElementById('item-servings').value; 
-   
-   window.parent.edInsertHRecipeDone(r);
-
-  });
-
-
-  // Handle the bottom tabs.
-  jQuery("ul.tabs li.btmtabs a").click(function() {
-    //alert("Bottom tab clicked " + this);
-    var activeTab = jQuery(this).attr("href"); //Find the rel attribute value to identify the active tab + content
-    //alert("Active tab: " + activeTab);
-    jQuery("ul.tabs li a").removeClass("current"); 
-    //alert("ul.tabs li a."+activeTab.substring(1));
-    jQuery("ul.tabs li a."+activeTab.substring(1)).addClass("current"); 
-    jQuery(".tab_content").hide(); //Hide all tab content
-    jQuery(activeTab).fadeIn(); //Fade in the active content
-    return false;
-  });  
-});
-*/
-//]]>
 </script>
 
 </body>

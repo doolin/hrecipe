@@ -52,15 +52,17 @@ class hrecipe extends PluginBase {
         //wp_enqueue_script('hrecipe-reciply');
         wp_register_script('hrecipeformat',plugins_url('hrecipe/js/hrecipe_format.js', dirname(__FILE__)),'','',true);
         wp_localize_script('hrecipeformat','hrecipe_handle',hrecipe_localize_vars());
-
         wp_register_script('hrecipelaunch',plugins_url('hrecipe/js/hrecipe_launch.js', dirname(__FILE__)),'','',true);
-
         wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js', dirname(__FILE__)),'','',true);
         wp_register_style('hrecipe_editor_stylesheet',plugins_url('hrecipe/hrecipe-editor.css', dirname(__FILE__)),'','');
 
-        wp_enqueue_script('hrecipeformat');                
-        wp_enqueue_script('hrecipelaunch');                
-        //wp_enqueue_script('hrecipescript');                
+    }
+
+   function hrecipe_admin_init() {
+      
+        wp_enqueue_script('hrecipeformat');
+        wp_enqueue_script('hrecipelaunch');
+        wp_enqueue_style('hrecipe_editor_stylesheet');
     }
     
     function register_mysettings() {
