@@ -1,8 +1,3 @@
-
-<script type="text/javascript">
-//alert("in options.php...");
-</script>
-
         
 <?php 
     function hrecipe_postbox($id, $title, $content) {
