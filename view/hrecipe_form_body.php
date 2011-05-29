@@ -1,17 +1,13 @@
-<div class="wrap">
-<h2><?php _e('New Semantic Recipe','hrecipe'); ?></h2>
 
 
-<div>
+<div id="media-upload-header">
   
-  <div id="hrecipe-tab-wrapper">
-  <!-- div id="sidemenu" -->
-    <ul class="tabs">
+    <ul id="sidemenu" class="tabs">
       <li><a class="tab-1" href="#tab-1">Ingredients/Instructions</a></li>
       <li><a class="tab-2" href="#tab-2">More Details</a></li>
       <li><a class="tab-3" href="#tab-3">Notes/Variations</a></li>
     </ul>
-  </div><!-- tabbed menu wrapper -->
+</div>
 
 <form name="recipeForm">
 
@@ -229,4 +225,3 @@
 
 
 </form>
-</div>

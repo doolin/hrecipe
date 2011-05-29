@@ -62,8 +62,9 @@ if ( isset ($recipe)) {
     $recipe->init();
         
     add_action('wp_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
-    add_action('wp_print_styles', array ($recipe, 'add_hrecipe_editor_stylesheet'));
-    add_action('admin_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
+    // Probably ought to split this out into admin style sheet.
+    add_action('admin_print_styles', array (&$recipe, 'add_hrecipe_stylesheet'));
+    //add_action('hrecipe_admin_print_styles', array (&$recipe, 'add_hrecipe_editor_stylesheet'));
 
     add_action('init', array ($recipe, 'hrecipe_plugin_init'));
     add_action('admin_init', array($recipe, 'register_mysettings'));

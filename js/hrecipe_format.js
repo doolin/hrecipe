@@ -3,19 +3,26 @@
 /*global tinyMCE, edInsertContent, edCanvas */
 
 
-
+/**
+ * This next block needs to be split from the recipe
+ * formatting functions. At issue: the launching code is 
+ * required on the post editing page, but it also requires
+ * the driver function at the end of this file to work.
+ * Conundrum.
+ */
+/*
   var hrecipe_from_gui;
 
   // TODO: rename these next two functions appropriately.
   function edInsertHRecipe() {    
     tb_show("Add an hRecipe", hrecipe_handle.PluginsUrl + "/view/lightbox.php?TB_iframe=true");
-    hrecipe_from_gui = true; /** Called from TinyMCE **/
+    hrecipe_from_gui = true; // Called from TinyMCE
   }
 
 
   function edInsertHRecipeCode() {
     tb_show("Add an hRecipe", hrecipe_handle.PluginsUrl + "/view/lightbox.php?TB_iframe=true");
-    hrecipe_from_gui = false; /** Called from Quicktags **/
+    hrecipe_from_gui = false; // Called from Quicktags
   }
 
   hrecipe_qttoolbar = document.getElementById("ed_toolbar");
@@ -34,7 +41,7 @@
   function edInsertHRecipeAbort() {
     tb_remove();
   } 
-
+ */
   
   function google_compliant_rating(itemRating) {
 

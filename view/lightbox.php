@@ -20,13 +20,25 @@ require_once('../../../../wp-admin/admin.php');
 
   wp_enqueue_style( 'global' );
   wp_enqueue_style( 'wp-admin' );
-  // post.php loads thickbox.css after global.css and wp-admin.css
-  wp_enqueue_style( 'thickbox' );
+  // post.php loads media.css after global.css and wp-admin.css;
+  // we'll do this too and save some manual css.
+  wp_enqueue_style( 'media' );
   
   //wp_enqueue_style( 'colors' );
   // Try something new
   wp_enqueue_style( 'colors-fresh' );
   wp_enqueue_style( 'ie' );
+
+  // Maybe not needed, handled with admin_print_styles hook.          
+  //wp_register_style('hrecipe_editor_stylesheet',plugins_url('/hrecipe-editor.css', dirname(__FILE__)),'','');
+  wp_enqueue_style('hrecipe_editor_stylesheet');
+
+  // TODO: Split this out into the parts that control 
+  // the thickboc launch, and the parts which control 
+  // the recipe formatting.
+  //wp_enqueue_script('hrecipeformat');                
+
+
 ?>
 
 
@@ -52,113 +64,6 @@ isRtl = <?php echo (int) is_rtl(); ?>;
 </script>
 
 
-<!-- Tabs CSS -->
-<!-- -->
-<style type="text/css">
-
-div#hrecipe-tab-wrapper {
-    background-color: #F9F9F9;
-    border-bottom-color: #DFDFDF;
-    
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0 5px;
-    position: relative;
-    color: #333333;
-    line-height: 1.4em;
-    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
-    font-size: 13px;    
-}
-
-
-ul.tabs {
-
-    bottom: -1px;
-    float: none;
-    font-weight: normal;
-    left: 0;
-    margin: 0px 5px;
-    overflow: hidden;
-    font-size: 12px;
-    list-style: none outside none;
-    padding-left: 10px;
-    position: relative;
-}
-
-ul.tabs li {
-
-    display: inline;
-    line-height: 200%;
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    white-space: nowrap;
-}
-
-ul.tabs li a {
-
-    background-color: #F9F9F9;
-    border-color: #F9F9F9 #F9F9F9 #DFDFDF;
-
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    display: block;
-    float: left;
-    line-height: 28px;
-    padding: 0 7px;
-    text-decoration: none;
-
-}
-
-ul.tabs li a.current {
-  background-color: #FFFFFF;
-  border-color: #DFDFDF #DFDFDF #FFFFFF;
- -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-  color: #d54e21;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-
-ul.tabs.bottom {
-  background-color: transparent;
-  margin-top: 50px;
-  border: 0px;
-}
-
-ul.tabs li.btmtabs {
-	background: transparent;
-	border:0px;
-	height:50px;
-}
-
-ul.tabs li.btmtabs a{
-	border: 1px solid #999;
-	border-bottom:1px solid #999;
-	width:50px;
-	font-size:11px;
-	text-align:center;
-	background:#ddd;
-	margin-bottom:10px;
-	float:left; display:inline;
-	margin-left:15px;
-}
-
-ul.tabs li.btmtabs a:hover {
-	background:#ccc;
-}
-</style>
-<!-- -->
-<!-- end tabs CSS -->
 
 <script type="text/javascript">//<!CDATA[
 function clearForm() {
@@ -293,15 +198,16 @@ function abortForm() {
 
 <?php
 do_action('admin_print_styles');
+// TODO: Get this custom hook conencted.
+//do_action('hrecipe_admin_print_styles');
 do_action('admin_print_scripts');
 do_action('admin_head');
 ?>
 </head>
-<body<?php if ( isset($GLOBALS['body_id']) ) echo ' id="' . $GLOBALS['body_id'] . '"'; ?>>
+<!-- body<?php if ( isset($GLOBALS['body_id']) ) echo ' id="' . $GLOBALS['body_id'] . '"'; ?> -->
+<body id='media-upload'  class="js">
 <?php 
   include('hrecipe_form_body.php');
-?>
-<?php
   do_action('admin_print_footer_scripts');
 ?>
 <script type="text/javascript">
