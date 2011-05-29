@@ -35,7 +35,8 @@ require_once('../../../../wp-admin/admin.php');
 
   // TODO: Split this out into the parts that control 
   // the thickboc launch, and the parts which control 
-  // the recipe formatting.
+  // the recipe formatting. First cut showed this to be
+  // harder than it would seem.
   //wp_enqueue_script('hrecipeformat');                
 
 
