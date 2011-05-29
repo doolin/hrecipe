@@ -351,7 +351,8 @@ function recipe() {}
     HRecipeOutput += (r.tradition   ? format_item('tradition', 'Culinary tradition', r.tradition) : '');
 
 
-
+    // These need to be pushed into 
+    //HRecipeOutput += hrecipe_format_nutrition(r);
     HRecipeOutput += (r.calories    ? format_item('calories', 'Calories', r.calories) : '');
     HRecipeOutput += (r.fat         ? format_item('fat', 'Fat', r.fat) : '');
     HRecipeOutput += (r.protein     ? format_item('protein', 'Protein', r.protein) : '');

@@ -10,7 +10,7 @@
 			<div id="<?php echo $id; ?>" class="postbox">
 				<div class="handlediv" title="Click to toggle"><br /></div>
 				<h3 class="hndle"><span><?php echo $title; ?></span></h3>
-				<div class="inside">
+				<div class="inside hrecipe">
 					<?php echo $content; ?>
 				</div>
 			</div>
@@ -26,7 +26,7 @@ function hrecipe_postbox_fields($id, $title, $content, $section) {
       <div id="<?php echo $id; ?>" class="postbox">
         <div class="handlediv" title="Click to toggle"><br /></div>
         <h3 class="hndle"><span><?php echo $title; ?></span></h3>
-        <div class="inside">
+        <div class="inside hrecipe">
            <?php echo $content; ?>
            <table class="form-table">
              <?php //echo $section ?>
@@ -163,7 +163,7 @@ function hrecipe_emit_reciply_html($options) {
                   <div id="hrecipelabels" class="postbox ">
                     <div class="handlediv" title="Click to toggle"><br/></div><!-- handlediv -->
                     <h3 class="hndle"><span><?php _e('Recipe Labels', 'hrecipe'); ?></span></h3>
-                    <div class="inside">
+                    <div class="inside hrecipe">
                     <p>
                     Actions here control how your recipe is labeled. 
                     </p>
@@ -255,7 +255,7 @@ function hrecipe_emit_reciply_html($options) {
                     
                     <h3 class="hndle"><span>Recipe Styling</span></h3>
 
-                    <div class="inside">
+                    <div class="inside hrecipe">
                       <?php
                       $stylingcontent = <<<EOP
                     <p>
@@ -296,7 +296,7 @@ EOP;
                     </div>
                     <h3 class="hndle"><span>Recipe Structure</span></h3>
                     
-                    <div class="inside">
+                    <div class="inside hrecipe">
                     <p>
                         The actions in this section control how your recipe is structured. 
                     </p>

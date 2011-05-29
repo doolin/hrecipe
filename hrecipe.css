@@ -243,46 +243,52 @@ div.hrecipe fieldset.instructions {
  * TODO: Move these to their own css file.
  */
 
-div.inside p {
+
+
+div.inside.hrecipe p {
 	margin-left: 20px;
 }
 
-div.inside ul {
+div.inside.hrecipe ul {
 	margin-left: 20px;
 	padding-left: 10px;
 	padding-top: 10px;
 }
 
+
+/*
 div.inside ul li {
 	list-style: square;
 	line-height:16px;
 	padding-left: 0px;
 }
+*/
 
-div.inside a, div.inside a.rsswidget {
+div.inside.hrecipe a, div.inside a.rsswidget {
 	font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
 	text-decoration: none;
 }
-div.inside a:hover, div.inside a.rsswidget:hover {
+
+div.inside.hrecipe a:hover, div.inside a.rsswidget:hover {
 	text-decoration: underline;
 }
-div.inside ul li.rss {
+div.inside.hrecipe ul li.rss {
 	list-style-image: url(images/rss.png);
 }
 
-div.inside ul li.email {
+div.inside.hrecipe ul li.email {
 	list-style-image: url(images/email_sub.png);
 }
 
-div.inside ul li.wiaw {
+div.inside.hrecipe ul li.wiaw {
 	list-style-image: url(images/wiaw_icon.png); 
 }
 
-div.inside ul li.tinobox {
+div.inside.hrecipe ul li.tinobox {
 	list-style-image: url(images/tinobox_icon.png); 
 }
 
-div.inside ul li.hrecipe {
+div.inside.hrecipe ul li.hrecipe {
 	list-style-image: url(images/hrecipe_icon.png); 
 }
 
@@ -290,6 +296,14 @@ div.inside ul li.hrecipe {
 	border-color: #fa0913;
 	border-width: 2px;
 }
+
+.postbox#donate div.inside ul li {
+  list-style: square;
+/*  line-height:16px;
+  padding-left: 0px;
+  */
+}
+
 
 strong.red {
 	color: #fa0913;
