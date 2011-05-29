@@ -86,6 +86,7 @@
 
 <ul class="tabs bottom">
   <li class="btmtabs" style="float:right; display:inline;"><a href="#" onclick="javascript:submitForm()">Insert</a></li>
+  <li class="btmtabs" style="float:right; display:inline;"><a id="hrecipe-ujs" href="#">Insert UJS</a></li>
   <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-2">More...</a></li>
 </ul>
 

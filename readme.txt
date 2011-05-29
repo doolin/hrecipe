@@ -95,7 +95,7 @@ microformat.
 = 0.5.9.0 =
 * Moved css styling into for entry navigation into editor css file.
 * Removed custom styling for thickbox tabs in favor of WP-builtin. Looks the same, easier to maintain.
-
+* Started splitting out Javascript, turning it into UJS with some jQuery help.
 
 = 0.5.8.5 =
 * Closing donations for now, will reopen later.

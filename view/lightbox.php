@@ -17,31 +17,14 @@ require_once('../../../../wp-admin/admin.php');
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php echo get_option('blog_charset'); ?>" />
 <title><?php bloginfo('name') ?> &rsaquo; <?php _e('hRecipe'); ?> &#8212; <?php _e('WordPress'); ?></title>  
 <?php
-
   wp_enqueue_style( 'global' );
   wp_enqueue_style( 'wp-admin' );
-  // post.php loads media.css after global.css and wp-admin.css;
-  // we'll do this too and save some manual css.
   wp_enqueue_style( 'media' );
-  
-  //wp_enqueue_style( 'colors' );
-  // Try something new
-  wp_enqueue_style( 'colors-fresh' );
+  wp_enqueue_style( 'colors' );
   wp_enqueue_style( 'ie' );
-
-  // Maybe not needed, handled with admin_print_styles hook.          
-  //wp_register_style('hrecipe_editor_stylesheet',plugins_url('/hrecipe-editor.css', dirname(__FILE__)),'','');
+  // Maybe not needed, handled with admin_print_styles hook.
   wp_enqueue_style('hrecipe_editor_stylesheet');
-
-  // TODO: Split this out into the parts that control 
-  // the thickboc launch, and the parts which control 
-  // the recipe formatting. First cut showed this to be
-  // harder than it would seem.
-  //wp_enqueue_script('hrecipeformat');                
-
-
 ?>
-
 
 <script type="text/javascript">
 //<![CDATA[
@@ -67,94 +50,6 @@ isRtl = <?php echo (int) is_rtl(); ?>;
 
 
 <script type="text/javascript">//<!CDATA[
-function clearForm() {
-	
-  document.getElementById('item-name').value = '';
-  document.getElementById('item-url').value = '';
-  document.getElementById('item-summary').value = '';
-  document.getElementById('item-ingredients').value = '';
-  document.getElementById('item-description').value = '';
-  document.getElementById('item-quicktnotes').value = '';
-  document.getElementById('item-variations').value = '';
-  document.getElementById('item-diettype').value = '';
-  document.getElementById('item-dietrestriction').value = '';
-  document.getElementById('item-culinarytradition').value = '';
-  document.getElementById('item-mealtype').value = '';
-  document.getElementById('item-servings').value = '';
-  document.getElementById('item-rating').value = '';
-  document.getElementById('item-duration').value = '';
-  document.getElementById('item-preptime').value = '';
-  document.getElementById('item-cooktime').value = '';
-}
-
-
-
-function getSelectValue(fieldId) {
-    
-  var selectItem = document.getElementById(fieldId);
-  var selectValue = selectItem.value;
-
-  if ("" != selectValue) {
-    return selectValue;
-  }
-  
-  // avoid bug in old browsers where they never give any value directly
-  var selectIdx = selectItem.selectedIndex;
-  selectValue = selectItem.options[selectIdx].value;
-
-  if ("" != selectValue) {
-    return selectValue;
-  }
-  
-  // and cope with IE
-  selectValue = (selectItem.options[selectIdx]).text;
-  return selectValue;
-}
-
-
-// Process the checkboxes here.
-// This can be processed as an 
-// arrary traversing id's and names later.
-// Suggestions welcome.
-// Move to hrecipe_format.js
-function getCheckedValues() {
-	
-	var need_comma = false;
-	var comma = ', ';
-	var diet = '';
-	if (document.getElementById('low_calorie').checked) { 
-	   diet += 'Low calorie';
-	   need_comma = true; 
-	}
-	if (document.getElementById('reduced_fat').checked) { 
-	   if (need_comma) diet += comma;
-	   diet += 'Reduced fat'; 
-	   need_comma = true; 
-	}
-	if (document.getElementById('reduced_carbohydrate').checked) { 
-	   if (need_comma) diet += comma;
-	   diet += 'Reduced carbohydrate'; 
-	   need_comma = true; 
-	}
-	if (document.getElementById('high_protein').checked) { 
-	   if (need_comma) diet += comma;
-	   diet += 'High protein'; 
-	   need_comma = true; 	   
-	}
-	if (document.getElementById('gluten_free').checked) { 
-	   if (need_comma) diet += comma;
-	   diet += 'Gluten free';
-	   need_comma = true; 	    
-	}
-	if (document.getElementById('raw').checked) { 
-	   if (need_comma) diet += comma;
-	   diet += 'Raw'; 
-	}
-
-	return  diet;
-}
-
-function recipe() {}
 
 function submitForm() {
 	
@@ -217,6 +112,7 @@ do_action('admin_head');
 </script>
 <script type="text/javascript">
 //<!CDATA[
+/*
 jQuery(document).ready(function() {
 
   //Default Action
@@ -234,6 +130,45 @@ jQuery(document).ready(function() {
     return false;
   });
   
+  jQuery("#hrecipe-ujs-old").click(function() {
+
+   alert("In -UJS-");
+
+   r = new recipe();
+   r["name"] = document.getElementById('item-name').value;
+
+   if ("" === r["name"]) {
+      alert("You need to provide a name for the recipe.");
+      return false;
+   }
+
+   r["url"] = document.getElementById('item-url').value;
+   r["summary"] = document.getElementById('item-summary').value;
+   r["ingredients"] = document.getElementById('item-ingredients').value;
+   r["description"] = document.getElementById('item-description').value;
+   
+   r["quicknotes"] = document.getElementById('item-quicknotes').value;
+   r["variations"] = document.getElementById('item-variations').value;
+       
+   r["tradition"] = getSelectValue('item-culinarytradition');
+   r["rating"] = getSelectValue('item-rating');
+
+   // When this id doesn't exist, call fails.
+   //r["duration"] = document.getElementById('item-duration').value;
+   r["preptime"] = document.getElementById('item-preptime').value;
+   r["cooktime"] = document.getElementById('item-cooktime').value;
+
+   r["diettype"] = getSelectValue('item-diettype');
+   r["mealtype"] = getSelectValue('item-mealtype');
+   r["dietother"] = getCheckedValues();
+   r["restriction"] = document.getElementById('item-dietrestriction').value; 
+   r["servings"] = document.getElementById('item-servings').value; 
+   
+   window.parent.edInsertHRecipeDone(r);
+
+  });
+
+
   // Handle the bottom tabs.
   jQuery("ul.tabs li.btmtabs a").click(function() {
     //alert("Bottom tab clicked " + this);
@@ -245,9 +180,9 @@ jQuery(document).ready(function() {
     jQuery(".tab_content").hide(); //Hide all tab content
     jQuery(activeTab).fadeIn(); //Fade in the active content
     return false;
-  });
-  
+  });  
 });
+*/
 //]]>
 </script>
 
