@@ -252,11 +252,13 @@ div.inside ul {
 	padding-left: 10px;
 	padding-top: 10px;
 }
+
 div.inside ul li {
 	list-style: square;
 	line-height:16px;
 	padding-left: 0px;
 }
+
 div.inside a, div.inside a.rsswidget {
 	font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
 	text-decoration: none;

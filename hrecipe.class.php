@@ -51,12 +51,12 @@ class hrecipe extends PluginBase {
         //wp_register_script('hrecipe-reciply', 'http://www.recip.ly/static/js/jquery-reciply.js');
         //wp_enqueue_script('hrecipe-reciply');
         wp_register_script('hrecipeformat',plugins_url('hrecipe/js/hrecipe_format.js', dirname(__FILE__)),'','',true);
-        wp_localize_script('hrecipeformat','hrecipe_handle',hrecipe_localize_vars());
         wp_register_script('hrecipelaunch',plugins_url('hrecipe/js/hrecipe_launch.js', dirname(__FILE__)),'','',true);
         wp_register_script('hrecipescript',plugins_url('hrecipe/js/hrecipescript.js', dirname(__FILE__)),'','',true);
         wp_register_style('hrecipe_editor_stylesheet',plugins_url('hrecipe/hrecipe-editor.css', dirname(__FILE__)),'','');
 
     }
+
 
    function hrecipe_admin_init() {
       
@@ -64,6 +64,7 @@ class hrecipe extends PluginBase {
         wp_enqueue_script('hrecipelaunch');
         wp_enqueue_style('hrecipe_editor_stylesheet');
     }
+    
     
     function register_mysettings() {
 
@@ -131,11 +132,16 @@ class hrecipe extends PluginBase {
             global $hrecipe_pagehook;
             $hrecipe_pagehook = add_options_page('hRecipe Options', 'hRecipe', 'administrator', $hrecipe_options_file, array($this, 'hrecipe_plugin_options_page'));
             add_action('load-'.$hrecipe_pagehook, array($this,'on_load_page'));
+            // For plugins, admin_menu fires before admin_init, so we set the 
+            // page hook variable for our spiffy UJS. See the Codex:
+            // http://codex.wordpress.org/Plugin_API/Action_Reference
+            wp_localize_script('hrecipeformat','hrecipe_handle',hrecipe_localize_vars());
         }
     }
 
 
     function on_load_page() {
+      
         wp_enqueue_script('common');
         wp_enqueue_script('wp-lists');
         wp_enqueue_script('postbox');
@@ -171,6 +177,8 @@ class hrecipe extends PluginBase {
         return $buttons;
     }
 
+
+    // TODO: Schedule for deletion...
     function hrecipe_plugin_footer() {
 
         // TODO: Wrap to load only on post or page editing admin pages.
@@ -178,6 +186,7 @@ class hrecipe extends PluginBase {
         wp_enqueue_script('hrecipeformat');
     }
 
+    // TODO: Schedule for deletion...
     function add_hrecipe_stylesheet() {
 
         // TODO: Replace constants with plugins_url()
@@ -189,7 +198,7 @@ class hrecipe extends PluginBase {
         }
     }
 
-// TODO: Add this in as a custom hook later.
+    // TODO: Schedule for deletion...
     function add_hrecipe_editor_stylesheet() {
 
        wp_enqueue_style('hrecipe_editor_stylesheet');

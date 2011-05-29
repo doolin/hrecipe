@@ -1,6 +1,6 @@
 === hRecipe ===
 Contributors: doolin
-Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting
+Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting, unobtrusive javascript, unobtrusive, javascript, food, cooking, food preparation 
 Requires at least: 3.0
 Tested up to: 3.1.2
 Stable tag: 0.5.8.5
@@ -96,6 +96,8 @@ microformat.
 * Moved css styling into for entry navigation into editor css file.
 * Removed custom styling for thickbox tabs in favor of WP-builtin. Looks the same, easier to maintain.
 * Started splitting out Javascript, turning it into UJS with some jQuery help.
+* localized page hook to get postbox handling into UJS.
+* Change class `mealtype` to `recipeType`, which is supported by rich snippets.
 
 = 0.5.8.5 =
 * Closing donations for now, will reopen later.

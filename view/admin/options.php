@@ -18,6 +18,7 @@
     }
 
 
+// Not currently in use, but very cool.
 function hrecipe_postbox_fields($id, $title, $content, $section) {
   global $hrecipe_options_file;
 ?>
@@ -377,8 +378,9 @@ EOP;
                     </div>
                 </div>
 
-             
-             <?php /* future... */ //hrecipe_postbox_fields('hrecipestyling', 'hRecipe Styling', $stylingcontent, 'hrecipe_styling'); ?>                            
+             <?php /* future... */ 
+             //hrecipe_postbox_fields('hrecipestyling', 'hRecipe Styling', $stylingcontent, 'hrecipe_styling'); 
+             ?>                            
 
           <p class="submit">
           <input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Changes'); ?>" />

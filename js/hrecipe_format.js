@@ -17,12 +17,15 @@ function clearForm() {
   document.getElementById('item-diettype').value = '';
   document.getElementById('item-dietrestriction').value = '';
   document.getElementById('item-culinarytradition').value = '';
-  document.getElementById('item-mealtype').value = '';
+  document.getElementById('item-recipetype').value = '';
   document.getElementById('item-servings').value = '';
   document.getElementById('item-rating').value = '';
   document.getElementById('item-duration').value = '';
   document.getElementById('item-preptime').value = '';
   document.getElementById('item-cooktime').value = '';
+  document.getElementById('item-calories').value = '';
+  document.getElementById('item-fat').value = '';
+  document.getElementById('item-protein').value = '';
 }
 
 
@@ -317,6 +320,11 @@ function recipe() {}
     return '<div class="reciply-addtobasket-widget" href="' + url + '"></div>';
   }
   
+  function hrecipe_format_nutrition(r) {
+    
+  }
+  
+  
 // Add Restrictions, Yield, Author, and Published (date) into first parameter, 
 // an object which gets passed in this function.
   function edInsertHRecipeDone(r) {
@@ -336,11 +344,18 @@ function recipe() {}
     HRecipeOutput += (r.cooktime    ? format_time(r.cooktime, 'cooktime', 'Cooking time') : '');
     
     HRecipeOutput += (r.diettype    ? format_item('diettype', 'Diet type', r.diettype) : '');
-    HRecipeOutput += (r.dietother   ? format_item('dietother', 'Diet (other)', r.dietother) : '');
+    HRecipeOutput += (r.dietother   ? format_item('dietother', 'Diet tags', r.dietother) : '');
     HRecipeOutput += (r.restriction ? format_item('restriction', 'Dietary restriction', r.restriction) : '');
     HRecipeOutput += (r.servings    ? format_item('yield', 'Number of servings (yield)', r.servings) : '');
-    HRecipeOutput += (r.mealtype    ? format_item('mealtype', 'Meal type', r.mealtype) : '');
+    HRecipeOutput += (r.mealtype    ? format_item('recipeType', 'Meal type', r.mealtype) : '');
     HRecipeOutput += (r.tradition   ? format_item('tradition', 'Culinary tradition', r.tradition) : '');
+
+
+
+    HRecipeOutput += (r.calories    ? format_item('calories', 'Calories', r.calories) : '');
+    HRecipeOutput += (r.fat         ? format_item('fat', 'Fat', r.fat) : '');
+    HRecipeOutput += (r.protein     ? format_item('protein', 'Protein', r.protein) : '');
+
 
     HRecipeOutput += (r.rating      ? google_compliant_rating(r.rating) : '');
 
@@ -426,10 +441,15 @@ jQuery(document).ready(function() {
    r["cooktime"] = document.getElementById('item-cooktime').value;
 
    r["diettype"] = getSelectValue('item-diettype');
-   r["mealtype"] = getSelectValue('item-mealtype');
+   r["recipetype"] = getSelectValue('item-recipetype');
    r["dietother"] = getCheckedValues();
    r["restriction"] = document.getElementById('item-dietrestriction').value; 
    r["servings"] = document.getElementById('item-servings').value; 
+
+   r["calories"] = document.getElementById('item-calories').value; 
+   r["fat"] = document.getElementById('item-fat').value; 
+   r["protein"] = document.getElementById('item-protein').value; 
+
    
    window.parent.edInsertHRecipeDone(r);
 

@@ -36,7 +36,7 @@ lang/hrecipe.pot
    */
 
    
-define('HRECIPE_VERSION', "5.8");   
+define('HRECIPE_VERSION', "5.9");   
    
 // Find the full URL to the plugin directory and store it
 // @todo define(HRECIPE_PLUGIN_URL) instead of this.
@@ -58,7 +58,7 @@ if ( isset ($recipe)) {
 
     register_activation_hook( __FILE__ , array (&$recipe, 'hrecipe_activate'));
     register_deactivation_hook( __FILE__ , array (&$recipe, 'hrecipe_deactivate'));
-    add_filter('plugin_action_links', 'plugin_links', 10, 2);
+    add_filter('plugin_action_links', 'hrecipe_plugin_links', 10, 2);
     $recipe->init();
         
     add_action('wp_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
@@ -74,7 +74,7 @@ if ( isset ($recipe)) {
    /**
      * Adds an action link to the Plugins page
      */
-    function plugin_links($links, $file) {
+    function hrecipe_plugin_links($links, $file) {
     	
         static $this_plugin;
         

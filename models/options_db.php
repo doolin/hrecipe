@@ -65,6 +65,7 @@ EOD;
                     'instructionlist'    => 'numbers',
                     'enclosure'          => 'div',
                     'background_color'   => 'white',
+                    'border_color'       => 'white',
                     'recipe_text'        => __('Recipe','hrecipe'),
                     'summary_text'       => __('Summary','hrecipe'),
                     'ingredients_text'   => __('Ingredients','hrecipe'),
