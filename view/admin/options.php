@@ -248,46 +248,18 @@ function hrecipe_emit_reciply_html($options) {
             <input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Changes'); ?>" />
           </p>
          
-                <div id="hrecipestyling-old" class="postbox">
-                    <div class="handlediv" title="Click to toggle">
-                        <br/>
-                    </div>
-                    
-                    <h3 class="hndle"><span>Recipe Styling</span></h3>
 
-                    <div class="inside hrecipe">
-                      <?php
-                      $stylingcontent = <<<EOP
-                    <p>
-                        The actions in this section control how your recipe is styled. 
-                        At the moment, only the global background color can be 
-                        set as an option.  In the future, fonts and font styles 
-                        will be customizable.
-                    </p>
+                <?php 
+$stylingcontent = <<<EOP
+<p>
+The actions in this section control how your recipe is styled. 
+At the moment, only a custom css class can be 
+set as an option.  In the future, fonts and font styles 
+may be customizable.
+</p>
 EOP;
-                        echo $stylingcontent;
-?>
-                        <table class="form-table">
-                            <tr valign="top">
-                                <th scope="row">
-                                    <a style="cursor:pointer;" title="Click for Help!" onclick="hrecipe_toggle_visibility('hrecipe_background_color_tip');">
-                                    
-                                        <?php _e('Background color', 'hrecipe'); ?>
-                                    </a>
-                                    <div style="max-width:500px; text-align:left; display:none" id="hrecipe_background_color_tip">
-                                        <?php _e('Set the background color for the enclosing container.', 'hrecipe'); ?>
-                                    </div>
-                                </th>
-                                <td>
-                                    <?php
-                                      echo "<input id='hrecipe_background_color' name='hrecipe_options[background_color]' size='40' type='text' value='{$options['background_color']}' />"; 
-                                     ?>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
+                    hrecipe_postbox_fields('hrecipestyling', 'hRecipe Styling', $stylingcontent, 'hrecipe_styling'); 
+                ?>                            
 
             
                 <div id="hrecipestructure" class="postbox ">
@@ -378,9 +350,6 @@ EOP;
                     </div>
                 </div>
 
-             <?php /* future... */ 
-             //hrecipe_postbox_fields('hrecipestyling', 'hRecipe Styling', $stylingcontent, 'hrecipe_styling'); 
-             ?>                            
 
           <p class="submit">
           <input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Changes'); ?>" />

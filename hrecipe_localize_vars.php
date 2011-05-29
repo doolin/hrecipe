@@ -28,6 +28,7 @@ function hrecipe_localize_vars() {
     'hrecipe_recipe_text'       => $options['recipe_text'],
     'hrecipe_copyright'         => $options['copyright'],
     'hrecipe_byline'            => $options['byline'],
+    'hrecipe_custom_style'      => $options['custom_style'],
     'hrecipe_linklove'          => (!empty($options['linklove'])) ? "on" : "off",
     'hrecipe_reciply'           => (!empty($options['reciply'])) ? "on" : "off",
     'hrecipe_enclosure'         => $options['enclosure'],

@@ -298,12 +298,12 @@ function recipe() {}
     var markup = '';
   
     if ("div" === et) {
-      markup += padding + '<div class="hrecipe">';
+      markup += padding + '<div class="hrecipe ' + hrecipe_handle.hrecipe_custom_style + '">';
       markup += '<h2 class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
       markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
       markup += '</h2>';
     } else {
-      markup += padding + '<fieldset class="hrecipe">';
+      markup += padding + '<fieldset class="hrecipe ' + hrecipe_handle.hrecipe_custom_style + '">';
       markup += '<legend class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
       markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
       markup += '</legend>';

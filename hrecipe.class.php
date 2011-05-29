@@ -75,10 +75,17 @@ class hrecipe extends PluginBase {
         add_settings_section('hrecipe_structure', '', 'hrecipe_structure_text', $hrecipe_options_file);        
 
         add_settings_section('hrecipe_styling', '', array($this,'hrecipe_styling_text'), $hrecipe_options_file);
-        add_settings_field('hrecipe_border_color', __('Border color', 'hrecipe'), array($this,'border_color'), $hrecipe_options_file, 'hrecipe_styling');        
+        add_settings_field('hrecipe_custom_style', __('Custom CSS class', 'hrecipe'), array($this,'custom_style'), $hrecipe_options_file, 'hrecipe_styling');        
+        //add_settings_field('hrecipe_border_color', __('Border color', 'hrecipe'), array($this,'border_color'), $hrecipe_options_file, 'hrecipe_styling');        
         //add_settings_field('hrecipe_background_color', 'Background color', array($this,'background_color'), $hrecipe_options_file, 'hrecipe_styling');        
     }
 
+
+  function custom_style() {
+    
+    $options = get_option('hrecipe_options');
+    echo "<input id='hrecipe_custom_style' name='hrecipe_options[custom_style]' size='40' type='text' value='{$options['custom_style']}' />";
+  }
 
   function bordercolor() {
   }
