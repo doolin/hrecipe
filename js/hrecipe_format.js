@@ -322,6 +322,16 @@ function recipe() {}
   
   function hrecipe_format_nutrition(r) {
     
+    var markup = '';
+    if (r.calories || r.fat || r.protein) {
+      markup += '<div class="nutrition">';
+      markup += (r.calories    ? format_item('calories', 'Calories', r.calories) : '');
+      markup += (r.fat         ? format_item('fat', 'Fat', r.fat) : '');
+      markup += (r.protein     ? format_item('protein', 'Protein', r.protein) : '');
+      markup += '</div>';
+    }
+    return markup;
+    
   }
   
   
@@ -352,10 +362,7 @@ function recipe() {}
 
 
     // These need to be pushed into 
-    //HRecipeOutput += hrecipe_format_nutrition(r);
-    HRecipeOutput += (r.calories    ? format_item('calories', 'Calories', r.calories) : '');
-    HRecipeOutput += (r.fat         ? format_item('fat', 'Fat', r.fat) : '');
-    HRecipeOutput += (r.protein     ? format_item('protein', 'Protein', r.protein) : '');
+    HRecipeOutput += hrecipe_format_nutrition(r);
 
 
     HRecipeOutput += (r.rating      ? google_compliant_rating(r.rating) : '');

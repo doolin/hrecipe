@@ -99,7 +99,7 @@ microformat.
 * localized page hook to get postbox handling into UJS.
 * Change class `mealtype` to `recipeType`, which is supported by rich snippets.
 * Fixed a css problem where hrecipe `div.inside` was overriding WP native css. Thanks to Tom Coady (http://web-tart.co.uk/) for pointing this out and suggesting the fix.
-
+* Added nutrition information with calories, fat and protein.
 
 
 = 0.5.8.5 =
