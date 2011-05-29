@@ -83,7 +83,7 @@ if ( isset ($recipe)) {
 		    }
 		
         if ($file == $this_plugin) {
-            $settings_link = '<a href="admin.php?page=view/admin/options.php">'.__("Settings", "hrecipe").'</a>';
+            $settings_link = '<a href="options-general.php?page=view/admin/options.php">'.__("Settings", "hrecipe").'</a>';
             array_unshift($links, $settings_link);
         }
         

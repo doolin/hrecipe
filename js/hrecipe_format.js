@@ -299,6 +299,7 @@ function recipe() {}
   
     if ("div" === et) {
       markup += padding + '<div class="hrecipe ' + hrecipe_handle.hrecipe_custom_style + '">';
+      // TODO: Deal with colon when recipe_text is empty.
       markup += '<h2 class="fn">' + hrecipe_handle.hrecipe_recipe_text  + ': ';
       markup += (itemURL ? '<a class="url" href="' + itemURL + '">' : '') + itemName + (itemURL ? '</a>' : '');
       markup += '</h2>';
