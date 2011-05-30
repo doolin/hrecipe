@@ -3,7 +3,7 @@ Contributors: doolin
 Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting, unobtrusive javascript, unobtrusive, javascript, food, cooking, food preparation 
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 0.5.9.0
+Stable tag: 0.5.9.1
 
 Use hRecipe for creating Google Rich Snippets, for leveraging SEO results, and for attractively displaying your recipes.
 
@@ -91,6 +91,9 @@ microformat.
 
 
 == Changelog ==
+
+= 0.5.9.1 = 
+* Blunder: Forgot to add `hrecipe_launch.js` to repository for 0.5.9.0. Now added.
 
 = 0.5.9.0 =
 * Moved css styling into for entry navigation into editor css file.

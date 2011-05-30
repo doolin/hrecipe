@@ -3,7 +3,7 @@
  * Plugin Name: hRecipe
  * Plugin URI: http://hrecipe.com/
  * Description: Fast and easy recipe formatting for Google Rich Snippet display and better search results click throughs. Leverage your recipe SEO with the hrecipe microformatting! It's easy using hRecipe plugin for WordPress. Visit the plugin home page for tips and techniques on food blogging, SEO and more. 
- * Version: 0.5.9.0
+ * Version: 0.5.9.1
  * Author: Dave Doolin
  * Author URI: http://hrecipe.com/about
  */ 

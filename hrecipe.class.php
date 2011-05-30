@@ -84,6 +84,8 @@ class hrecipe extends PluginBase {
   function custom_style() {
     
     $options = get_option('hrecipe_options');
+    echo "Add the styling for your custom class in your theme's style.css, or create your own recipe styling plugin.";  
+    echo " Your custom css class will be automatically added to the recipe output.<br />";
     echo "<input id='hrecipe_custom_style' name='hrecipe_options[custom_style]' size='40' type='text' value='{$options['custom_style']}' />";
   }
 
