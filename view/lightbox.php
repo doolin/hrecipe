@@ -3,13 +3,11 @@
 // Do some javascript checking with jslint:
 // http://www.crockford.com/javascript/
 /* This is the form entry page that is used by hrecipe.php */
-// BOGUS!  These paths need to be redone, correctly.
 // http://ottodestruct.com/blog/2010/dont-include-wp-load-please/
 // http://ottopress.com/2010/passing-parameters-from-php-to-javascripts-in-plugins/
 
-require_once('../../../../wp-admin/admin.php'); 
+//require_once('../../../../wp-admin/admin.php'); 
 
-//@header('Content-Type: ' . get_option('html_type') . '; charset=' . get_option('blog_charset'));
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php do_action('admin_xml_ns'); ?> <?php language_attributes(); ?>>
