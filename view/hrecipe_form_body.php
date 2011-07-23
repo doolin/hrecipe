@@ -9,7 +9,7 @@
     </ul>
 </div>
 
-<form name="recipeForm">
+<form name="recipeForm" class="media-upload-form type-form validate">
 
 <div id="tab-1" class="tab_content">
 
@@ -214,6 +214,7 @@
   <li class="btmtabs" style="float:right; display:inline;"><a class="hrecipe-ujs" href="#">Insert</a></li>
   <li class="btmtabs" style="float:right; display:inline;"><a href="#tab-3">More...</a></li>
 </ul>
+
 </div>
 
 <div id="tab-3" class="tab_content">
