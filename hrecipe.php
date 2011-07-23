@@ -56,15 +56,12 @@ if (class_exists('hrecipe')) {
 
 if ( isset ($recipe)) {
 
-    register_activation_hook( __FILE__ , array (&$recipe, 'hrecipe_activate'));
-    register_deactivation_hook( __FILE__ , array (&$recipe, 'hrecipe_deactivate'));
+    register_activation_hook( __FILE__ , array ($recipe, 'hrecipe_activate'));
+    register_deactivation_hook( __FILE__ , array ($recipe, 'hrecipe_deactivate'));
     add_filter('plugin_action_links', 'hrecipe_plugin_links', 10, 2);
     $recipe->init();
 
     add_action('wp_print_styles', array ($recipe, 'add_hrecipe_stylesheet'));
-    // Probably ought to split this out into admin style sheet.
-    add_action('admin_print_styles', array (&$recipe, 'add_hrecipe_stylesheet'));
-    //add_action('hrecipe_admin_print_styles', array (&$recipe, 'add_hrecipe_editor_stylesheet'));
 
     add_action('init', array ($recipe, 'hrecipe_plugin_init'));
     add_action('admin_init', array($recipe, 'register_mysettings'));
@@ -81,14 +78,12 @@ if ( isset ($recipe)) {
         if (!$this_plugin) {
             $this_plugin =  plugin_basename(__FILE__);
 		    }
-
         if ($file == $this_plugin) {
             $settings_link = '<a href="options-general.php?page=view/admin/options.php">'.__("Settings", "hrecipe").'</a>';
             array_unshift($links, $settings_link);
         }
         return $links;
     }
-
 
     function media_hrecipe_tb_callback() {
         include(dirname( __FILE__ ) . '/view/hrecipe_form_body.php');
