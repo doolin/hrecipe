@@ -1,3 +1,76 @@
 /**
  * Stylesheet for the hrecipe options page.
  */
+
+/* Admin page css.
+ * From yoast tools, thanks Joost! 
+ * TODO: Move these to their own css file.
+ */
+
+
+
+div.inside.hrecipe p {
+  margin-left: 20px;
+}
+
+div.inside.hrecipe ul {
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+
+/*
+div.inside ul li {
+  list-style: square;
+  line-height:16px;
+  padding-left: 0px;
+}
+*/
+
+div.inside.hrecipe a, div.inside a.rsswidget {
+  font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+  text-decoration: none;
+}
+
+div.inside.hrecipe a:hover, div.inside a.rsswidget:hover {
+  text-decoration: underline;
+}
+div.inside.hrecipe ul li.rss {
+  list-style-image: url(images/rss.png);
+}
+
+div.inside.hrecipe ul li.email {
+  list-style-image: url(images/email_sub.png);
+}
+
+div.inside.hrecipe ul li.wiaw {
+  list-style-image: url(images/wiaw_icon.png); 
+}
+
+div.inside.hrecipe ul li.tinobox {
+  list-style-image: url(images/tinobox_icon.png); 
+}
+
+div.inside.hrecipe ul li.hrecipe {
+  list-style-image: url(images/hrecipe_icon.png); 
+}
+
+.postbox#donate {
+  border-color: #fa0913;
+  border-width: 2px;
+}
+
+.postbox#donate div.inside ul li {
+  list-style: square;
+/*  line-height:16px;
+  padding-left: 0px;
+  */
+}
+
+
+strong.red {
+  color: #fa0913;
+  font-weight: bold;
+  font-size: 105%;
+}
