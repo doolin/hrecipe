@@ -4,14 +4,14 @@
   var hrecipe_from_gui;
 
   // TODO: rename these next two functions appropriately.
-  function edInsertHRecipe() {    
-    tb_show("Add an hRecipe", hrecipe_handle.PluginsUrl + "/view/lightbox.php?TB_iframe=true");
+  function edInsertHRecipe() {
+    tb_show("Add an hRecipe", 'media-upload.php?type=hrecipe&tab=hrecipe&amp;TB_iframe=true');
     hrecipe_from_gui = true; // Called from TinyMCE
   }
 
 
   function edInsertHRecipeCode() {
-    tb_show("Add an hRecipe", hrecipe_handle.PluginsUrl + "/view/lightbox.php?TB_iframe=true");
+    tb_show("Add an hRecipe", 'media-upload.php?type=hrecipe&tab=hrecipe&amp;TB_iframe=true');
     hrecipe_from_gui = false; // Called from Quicktags
   }
 
