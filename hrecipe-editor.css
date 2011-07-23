@@ -1,33 +1,4 @@
 
-/**
- *   Might need to move this block into hrecipe.css
- */
-
-/*
-div.hrecipe p.item {
-    font-size: 1.6em;
-    text-align: left;
-    margin-top: !important 0px;
-    color: #1374B9;
-}
-
-div.hrecipe p.summary {
-    font-weight: bold;
-    padding-top: 0px;
-    margin-top: 0px;
-}
-
-div.hrecipe p.ingredients {
-    font-style: italic;
-    padding-top: 0px;
-    margin-top: 0px;
-}
-
-div.hrecipe p.myrating {
-    font-weight: bold;
-}
-*/
-
 
 /**
  *   Try to get rid of these asap; replace with 
@@ -36,12 +7,6 @@ div.hrecipe p.myrating {
  * hook for admin_print_styles in hrecipe.php.
  */
 
-
-ul.tabs.bottom {
-  background-color: transparent;
-  margin-top: 50px;
-  border: 0px;
-}
 
 ul.tabs li {
 
@@ -54,13 +19,23 @@ ul.tabs li {
     white-space: nowrap;
 }
 
+
+ul.tabs.bottom {
+  background-color: transparent;
+  margin-top: 50px;
+  border: 0px;
+}
+
+
+
 ul.tabs li.btmtabs {
+  line-height: 200%;
   background: transparent;
   border:0px;
   height:50px;
 }
 
-ul.tabs li.btmtabs a{
+ul.tabs li.btmtabs a {
   border: 1px solid #999;
   border-bottom:1px solid #999;
   width:50px;
@@ -75,7 +50,5 @@ ul.tabs li.btmtabs a{
 ul.tabs li.btmtabs a:hover {
   background-color:#ccc;
 }
-
-/* End thickbox formatting block. */
 
 
