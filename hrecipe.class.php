@@ -58,7 +58,7 @@ class hrecipe extends PluginBase {
     }
 
 
-   function hrecipe_admin_init() {
+    function hrecipe_admin_init() {
       
         wp_enqueue_script('hrecipeformat');
         wp_enqueue_script('hrecipelaunch');
@@ -75,11 +75,19 @@ class hrecipe extends PluginBase {
         add_settings_section('hrecipe_structure', '', 'hrecipe_structure_text', $hrecipe_options_file);        
 
         add_settings_section('hrecipe_styling', '', array($this,'hrecipe_styling_text'), $hrecipe_options_file);
-        add_settings_field('hrecipe_custom_style', __('Custom CSS class', 'hrecipe'), array($this,'custom_style'), $hrecipe_options_file, 'hrecipe_styling');        
+        add_settings_field('hrecipe_custom_style', __('Custom CSS class', 'hrecipe'), array($this,'custom_style'), $hrecipe_options_file, 'hrecipe_styling');
+        // Testing...!!!!
+        add_settings_field('hrecipe_custom_style', $this->custom_style_label(), array($this,'custom_style'), $hrecipe_options_file, 'hrecipe_styling');        
+
         //add_settings_field('hrecipe_border_color', __('Border color', 'hrecipe'), array($this,'border_color'), $hrecipe_options_file, 'hrecipe_styling');        
         //add_settings_field('hrecipe_background_color', 'Background color', array($this,'background_color'), $hrecipe_options_file, 'hrecipe_styling');        
     }
 
+  // Check carefully... if this works, all these functions should be 
+  // loaded from a file.
+  function custom_style_label() {
+    return __('Custom CSS class, from a custom function call...', 'hrecipe');
+  }
 
   function custom_style() {
     

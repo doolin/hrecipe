@@ -55,7 +55,9 @@ function hrecipe_postbox_fields($id, $title, $content, $section) {
     }
 
 
-
+// TODO: make this a HEREDOC, return the string.
+// Then move the call into hrecipe.class to be handled
+// during options settings.
 function hrecipe_options_tip($id, $label, $tip) {
 ?>
   <a style="cursor:pointer;" title="Click for Help!" onclick="hrecipe_toggle_visibility('<?php echo $id; ?>');">
