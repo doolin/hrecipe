@@ -37,23 +37,23 @@ div.inside.hrecipe a:hover, div.inside a.rsswidget:hover {
   text-decoration: underline;
 }
 div.inside.hrecipe ul li.rss {
-  list-style-image: url(images/rss.png);
+  list-style-image: url(../images/rss.png);
 }
 
 div.inside.hrecipe ul li.email {
-  list-style-image: url(images/email_sub.png);
+  list-style-image: url(../images/email_sub.png);
 }
 
 div.inside.hrecipe ul li.wiaw {
-  list-style-image: url(images/wiaw_icon.png); 
+  list-style-image: url(../images/wiaw_icon.png); 
 }
 
 div.inside.hrecipe ul li.tinobox {
-  list-style-image: url(images/tinobox_icon.png); 
+  list-style-image: url(../images/tinobox_icon.png); 
 }
 
 div.inside.hrecipe ul li.hrecipe {
-  list-style-image: url(images/hrecipe_icon.png); 
+  list-style-image: url(../images/hrecipe_icon.png); 
 }
 
 .postbox#donate {
