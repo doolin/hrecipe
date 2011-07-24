@@ -92,6 +92,11 @@ microformat.
 
 == Changelog ==
 
+= 0.6.0 =
+* Recipe entry form now routed through native WP media box functions, resulting in less code for hrecipe and better future proofing. An annoying undefined index problem was solved with this as well.
+* Many small code cleanups committed.
+* Application layout restructuring to put files in appropriate places.
+
 = 0.5.9.1 = 
 * Blunder: Forgot to add `hrecipe_launch.js` to repository for 0.5.9.0. Now added.
 
