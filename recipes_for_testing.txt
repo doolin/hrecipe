@@ -36,9 +36,9 @@ Cook time: 20 minutes
 
 Number of servings: 4
 
-Calories: 4000
-Fat: 999
-Protein: 2
+Calories: 400
+Fat: 50
+Protein: 25
 
 Recipe type:
 Dinner
