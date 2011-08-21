@@ -6,7 +6,7 @@ describe("hRecipe", function() {
     expect(jQuery(".hrecipe-options-t1p:visible").length).toEqual(0);
   });
   
-  it("display with intially closed block", function() {
+  it("displays with intially closed block", function() {
     expect(jQuery(".hrecipe-options-tip:visible").length).toEqual(0);
   });
 
