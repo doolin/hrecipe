@@ -24,11 +24,15 @@ describe("hRecipe", function() {
 
     describe("ISO time formatting function", function() {
 
-      it("ISO time should be formatted in a span element", function() {
+      it("should not display human readable time", function() {
+        expect($(format_iso_time(100))).not.toHaveHtml('1 hour 40 minutes');
+      });
+
+      it("should format ISO time in a span element", function() {
         expect($(format_iso_time(100))).toBe('span')
       });
 
-      it("ISO time should be formatted in a span element", function() {
+      it("span element should have hritem class", function() {
         expect($(format_iso_time(100))).toHaveClass('hritem')
       });
 
