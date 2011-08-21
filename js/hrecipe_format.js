@@ -422,46 +422,42 @@ function recipe() {}
 jQuery(document).ready(function() {
 
   jQuery(".hrecipe-ujs").click(function() {
+    //alert("In UJS");
+    r = new recipe();
+    r["name"] = document.getElementById('item-name').value;
 
-   //alert("In UJS");
-
-   r = new recipe();
-   r["name"] = document.getElementById('item-name').value;
-
-   if ("" === r["name"]) {
+    if ("" === r["name"]) {
       alert("You need to provide a name for the recipe.");
       return false;
-   }
+    }
 
-   r["url"] = document.getElementById('item-url').value;
-   r["summary"] = document.getElementById('item-summary').value;
-   r["ingredients"] = document.getElementById('item-ingredients').value;
-   r["description"] = document.getElementById('item-description').value;
+    r["url"] = document.getElementById('item-url').value;
+    r["summary"] = document.getElementById('item-summary').value;
+    r["ingredients"] = document.getElementById('item-ingredients').value;
+    r["description"] = document.getElementById('item-description').value;
    
-   r["quicknotes"] = document.getElementById('item-quicknotes').value;
-   r["variations"] = document.getElementById('item-variations').value;
-       
-   r["tradition"] = getSelectValue('item-culinarytradition');
-   r["rating"] = getSelectValue('item-rating');
+    r["quicknotes"] = document.getElementById('item-quicknotes').value;
+    r["variations"] = document.getElementById('item-variations').value;
 
-   // When this id doesn't exist, call fails.
-   //r["duration"] = document.getElementById('item-duration').value;
-   r["preptime"] = document.getElementById('item-preptime').value;
-   r["cooktime"] = document.getElementById('item-cooktime').value;
+    r["tradition"] = getSelectValue('item-culinarytradition');
+    r["rating"] = getSelectValue('item-rating');
 
-   r["diettype"] = getSelectValue('item-diettype');
-   r["recipetype"] = getSelectValue('item-recipetype');
-   r["dietother"] = getCheckedValues();
-   r["restriction"] = document.getElementById('item-dietrestriction').value; 
-   r["servings"] = document.getElementById('item-servings').value; 
+    // When this id doesn't exist, call fails.
+    //r["duration"] = document.getElementById('item-duration').value;
+    r["preptime"] = document.getElementById('item-preptime').value;
+    r["cooktime"] = document.getElementById('item-cooktime').value;
 
-   r["calories"] = document.getElementById('item-calories').value; 
-   r["fat"] = document.getElementById('item-fat').value; 
-   r["protein"] = document.getElementById('item-protein').value; 
+    r["diettype"] = getSelectValue('item-diettype');
+    r["recipetype"] = getSelectValue('item-recipetype');
+    r["dietother"] = getCheckedValues();
+    r["restriction"] = document.getElementById('item-dietrestriction').value;
+    r["servings"] = document.getElementById('item-servings').value;
 
-   
-   window.parent.edInsertHRecipeDone(r);
+    r["calories"] = document.getElementById('item-calories').value;
+    r["fat"] = document.getElementById('item-fat').value;
+    r["protein"] = document.getElementById('item-protein').value;
 
+    window.parent.edInsertHRecipeDone(r);
   });
   
   //Default Action
