@@ -392,7 +392,7 @@ EOF;
 ?>
 <?php //bpe_appreciation('bpe-appreciation','Like this plugin?'); ?> 
 <?php //bpe_support('bpe-get-support','Need support?'); ?>
-<?php hrecipe_donate_postbox('donate','<strong class="red">Donate $12, $25 or $50!</strong>'); ?>
+<?php //hrecipe_donate_postbox('donate','<strong class="red">Donate $12, $25 or $50!</strong>'); ?>
 <?php hrecipe_news('hrecipelatest', 'News: hRecipe for WordPress','http://hrecipe.com/feed/','hrecipe'); ?>
 <?php hrecipe_news('wiawlatest', 'News: Website In A Weekend','http://website-in-a-weekend.net/feed/','wiaw'); ?>
 <?php hrecipe_news('tinoboxlatest', 'News: There Is No Box','http://tinobox.com/wordpress/feed/','tinobox'); ?>
