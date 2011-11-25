@@ -151,10 +151,10 @@ function hrecipe_emit_reciply_html($options) {
           </p>
 
 
-        <div class="metabox-holder">
+        <div id="dashboard-widgets" class="metabox-holder">
 
-          <div class="postbox-container" style="width: 70%;">          
-          <div class="meta-box-sortables ui-sortable">
+          <div id="postbox-container-1" class="postbox-container" style="width: 65%;">
+          <div id="normal-sortables" class="meta-box-sortables ui-sortable">
           
 
                   <div id="hrecipelabels" class="postbox ">
@@ -357,8 +357,8 @@ EOP;
        
        
                    
-<div class="postbox-container" style="width: 20%;">
-<div class="meta-box-sortables ui-sortable">
+<div id="postbox-container-2" class="postbox-container" style="width: 30%;">
+<div id="side-sortables" class="meta-box-sortables ui-sortable">
 
 <?php 
 function hrecipe_donate_postbox($id,$title) {
