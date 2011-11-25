@@ -3,7 +3,7 @@ Contributors: doolin
 Tags: recipe, recipes, recipe seo, hrecipe, editor, microformat, microformats, microformatting, unobtrusive javascript, unobtrusive, javascript, food, cooking, food preparation 
 Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 0.6.0
+Stable tag: 0.6.1
 
 Use hRecipe for creating Google Rich Snippets, for leveraging SEO results, and for attractively displaying your recipes.
 
@@ -24,7 +24,7 @@ Make sure to stop by the hRecipe home page: [Food Blogging and Recipe SEO](http:
 Each of the following people have donated to help hRecipe to continue development:
 
 * Tamara R 
-* Commercial sponsorship http://yummly.com Thanks guys!
+* Commercial sponsorship from Yummly dot com. Thanks guys!
 * Theresa Carle-Sanders http://islandvittles.com
 * Susan Voisin http://http://sbvdesigns.com/ and http://blog.fatfreevegan.com/
 * Anon: http://transcriptionconnections.com/
@@ -36,20 +36,32 @@ Many thanks!
 
 = Translators = 
 
-This is a partial list, more coming soon:
+This is a partial list of translators.
 
 * Roberto Koci http://robertokoci.com/ for the Hungarian translation.
-* Rene from WP Web Shop http://wpwebshop.com/ sent in a native Dutch translation.
-* Russian translation courtesy of Fat Cow web hosting: http://www.fatcow.com/
+* Rene from WP Web Shop sent in a native Dutch translation.
+* Russian translation courtesy of Fat Cow web hosting
 * Jean-Philippe Daigle sent in the French translation http://friendfeed.com/jpdaigle
 * Danish translation coming from http://www.kokkekniven.com/ Kristian Petersen
 * Thanks to Carsten Peters http://www.rodrigues-peters.com/ for Brazilian Portuguese and German translations.
 
 I know there are more. If you weren't listed, contact me, I'll add you in.
 
+Note: I was contacted in October 2011 by the plugin team at Automattic
+and requested to remove a specific translation link.  Automattic is
+concerned that translations are being provided to obtained valuable
+SEO backlinks.
+
+As a result, I'm delinking all commercial links from the hRecipe
+plugin. If your company provided a translation and you want it
+removed as a result, I'll be happy to do that, just let me.
+
+
+
 = Contributors = 
-* Anu Kumar of the The Spicy Yatra http://thespiceyatra.com sent some options coding for Vietnamese and Marathi cuisine.
-* Javascript for post boxes fixed, courtesy of MicroMedia Websites http://micromediawebsites.com
+
+* Anu Kumar of the The Spicy Yatra sent some options coding for Vietnamese and Marathi cuisine.
+* Javascript for post boxes fixed, courtesy of MicroMedia Websites
 
 
 
@@ -94,6 +106,8 @@ microformat.
 
 = 0.6.1 = 
 * More unit testing for recipe formatting.
+* Updated Quicktags code for WP 3.3 improvements.
+* Updated the hrecipe options dashboard css to leverage native WP styling.
 
 = 0.6.0 =
 * Recipe entry form now routed through native WP media box functions, resulting in less code for hrecipe and better future proofing. An annoying undefined index problem was solved with this as well.
